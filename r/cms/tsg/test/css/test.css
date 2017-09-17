@@ -1,0 +1,141 @@
+/*测试css*/
+.res{font-size:x-large;}
+.col-md-6,.col-md-3{border:0px dotted #000;}
+
+/*正式css*/
+body {
+    /*给navbar留出空间*/
+    padding-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    /*url如果没有/开头，会自动获得{respath}/css的路径前缀*/
+    background:url(../images/bg-homepage.jpg) no-repeat;background-size:cover;
+}
+/*主体（不包含footer）宽度*/
+.container-fluid{max-width:1100px;}
+
+.jumbotron{background-color: rgba(255,255,255,0);}
+
+/*右侧快速链接的css*/
+.div-table{display: table;width:100%;}
+.div-tr{display:table-row;}
+.div-td{display:table-cell;width:100%}
+.div-table a{
+    width:100%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+div#quicklink{background-color: rgba(255,255,255,0);}
+/*div#quicklink .panel.panel-primary{background-color: rgba(255,255,255,0.1);}*/
+#quicklink .btn-default{border:none;border-bottom: 1px solid;border-radius: 0px;border-color:#337ab7;background-color: rgba(255,255,255,0);}
+#quicklink .btn-default:hover{background-color:#5bc0de;}
+#quicklink .panel-body{padding:0px;}
+
+
+/*@media (min-width: 768px) {*/
+    /*.lineheight1 {*/
+        /*line-height: 400%;*/
+    /*}*/
+/*}*/
+
+/*左侧newsbox的css*/
+div#newsbox{background-color: rgba(255,255,255,0.4);}
+div#newsbox.panel{border:0px;}
+#newsbox .panel-heading{
+    padding: 0px;
+    border:0px;
+}
+#newsbox .panel-body{
+    border: 1px solid #337ab7;
+    padding:10px;
+    padding-bottom: 0px;
+}
+#newsbox .panel-footer{
+    border: 1px solid #337ab7;
+    border-top:0px;
+    padding:1px 15px;
+}
+
+#newsbox .panel-heading li.active a{
+    color: #fff;
+    background-color: #337ab7;
+    border:0px ;
+    }
+#newsbox .panel-heading li a{
+    border:0px ;
+    }
+
+.news-item
+{
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555;
+    /*min-height: 49px;*/
+}
+.news-item>a{
+    display: block;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    padding-right: 2px;
+}
+.news-item>span
+{
+    text-align: right;font-style:italic;font-size:10px;float:right;line-height: 20px;
+}
+.glyphicon
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon
+{
+    margin-right:0px !important; /*override*/
+}
+.pagination li a
+{
+    padding:0px 5px; /*override*/
+}
+.panel ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+/*footer*/
+.bs-docs-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    color: #fff;/*#99979c;*/
+    text-align: center;
+    /*背景透明文字不透明*/
+    background-color: rgba(51,122,183,0.9);  /*#2a2730;*/
+    opacity: 0.8;
+}
+.bs-docs-footer a {
+    color:#fff; /*#99979c;*/
+    text-decoration-line: underline;
+}
+.bs-docs-footer-links {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.bs-docs-footer-links li {
+    display: inline-block;
+}
+.bs-docs-footer-links li + li {
+    margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .bs-docs-footer {
+        text-align: left;
+    }
+    .bs-docs-footer p {
+        margin-bottom: 0;
+    }
+}

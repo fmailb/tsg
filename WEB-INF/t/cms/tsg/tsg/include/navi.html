@@ -1,0 +1,42 @@
+<style type="text/css">
+.oldweb {
+             float:right;
+             width:100px;
+             height:50px;
+             right:50px;
+             top:0px;
+             font:aria;
+             font-weight:bold;
+             color:red;
+             }
+</style>
+
+<div class="header">
+  <div class="oldweb"><a href="http://192.168.16.77:8009/index.aspx">旧版网站</a></div>
+</div>
+
+
+<!-- nav 开始-->
+<div class="navbg">
+	<div id="b" class="mc">
+    <div class="topnav">
+	[@cms_channel_list ]<ul class="menu">
+           <li><a  href="http://www.jsit.edu.cn" target="_blank" class="tablink">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校首页&nbsp;&nbsp;&nbsp;&nbsp;</a><!--<div class="s"><img src="../../${res}/images/unilineN.png" /></div>--></li>
+           <li><a  href="${site.url!}" target="_blank" class="tablink">&nbsp;&nbsp;本站首页&nbsp;&nbsp;&nbsp;&nbsp;</a><!--<div class="s"><img src="../../${res}/images/unilineN.png" /></div>--></li>
+		[#list tag_list as c]
+			<!--<li><a  href=""  class="tablink">&nbsp;&nbsp;${c.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+                            <li class="tablink">&nbsp;&nbsp;${c.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <!-- <div class="s"><img src="../../${res}/images/unilineN.png" /></div>-->
+            			[@cms_channel_list parentId='${c.id}']
+					<ul>
+                  				[#list tag_list as d]
+				   		<li class="nofl"><a href="${d.url}">[@text_cut s=d.name append=""/]</a></li>
+				   		[/#list]
+               		 		</ul>
+				[/@cms_channel_list]
+            		</li>
+            	[/#list]
+        </ul>[/@cms_channel_list]
+    </div>
+</div>
+</div>

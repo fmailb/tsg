@@ -1,0 +1,77 @@
+<!--header包含doctype声明，css、js-->
+[#include "../include/header.html"]
+<body>
+<!--导航栏-->
+[#include "../include/navi.html"]
+
+<!--内容部分，三列布局-->
+<div class="container-fluid">
+  <!--标题图片-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>欢迎</h1>
+      <p>图书馆欢迎您1</p>
+      <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+    </div>
+  </div>
+  <div class="row">
+
+    <!--第一列：左侧新闻区-->
+    <div class="col-md-4">
+      [#include "../include/newsbox.html"]
+    </div>
+
+    <!--第2列：搜索栏-->
+    <div class="col-md-6">
+      [#include "../include/search_opac.html"]
+    </div>
+
+    <!--第3列：右侧快速链接-->
+    <div class="col-md-2">
+      <!--panel+div-table-->
+      <div  id="quicklink" class="panel panel-primary">
+        <div class="panel-heading">快速链接</div>
+        <div class="panel-body">
+          <div class="div-table">
+            <div class="div-tr">
+              <a class="btn btn-default" href="http://acad.cnki.net/kns/brief/result.aspx?dbPrefix=CJFQ" title="CNKI" target="_blank">CNKI</a>
+            </div>
+            <div class="div-tr">
+              <a class="btn btn-default"  href="http://c.g.wanfangdata.com.cn/Thesis.aspx" title="万方学位论文库" target="_blank">万方学位论文</a>
+            </div>
+            <div class="div-tr">
+              <a class="btn btn-default"  href="https://58.214.11.20/welcome.php" title="校外访问资源" target="_blank">VPN</a>
+            </div>
+            <div class="div-tr">
+              <a class="btn btn-default"  href="http://lib.jsit.edu.cn/cxdzskhd.jhtml" title="移动图书馆" target="_blank">移动图书馆</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer"></div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--footer-->
+
+
+
+[#include "../include/footer.html"]
+</body>
+
+<!--获取opac登陆的验证码-->
+<!--<a href="home_abc.php?md=&amp;mod=&amp;cat=&amp;type=#">-->
+  <!--<img title="点击刷新" src="http://218.104.52.221:8080/reader/captcha.php"></a>-->
+<!--测试用的底部-->
+<!--<hr/>-->
+<!--<p class="res">-->
+  <!--respath:${res}</br>-->
+  <!--base:${base}-->
+<!--</p>-->
+
+<!--<p>[@cms_channel id='300']${tag_bean.name},${tag_bean.path}[/@cms_channel]-->
+<!--</p>-->
+<!--<hr/>-->

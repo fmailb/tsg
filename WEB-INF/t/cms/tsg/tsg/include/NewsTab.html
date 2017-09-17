@@ -1,0 +1,43 @@
+<div class="column" id="Course teaching" style="width:645px;">
+                <div id="Tab">
+                    <div class="Menubox" style="width:645px;">
+                        <ul>
+                            <li id="menu11" onMouseOver="setTab('menu1',1,5)" class="hover">本馆动态</li>
+                            <!--<li id="menu12" onMouseOver="setTab('menu1',2,5)">资源新闻</li>-->
+                            <li id="menu13" onMouseOver="setTab('menu1',3,5)">通知告示</li>
+                            <!--<li id="menu14" style="color:#FF7575;font-weight:bold" onMouseOver="setTab('menu1',4,5)" >读书节活动</li>-->
+                        </ul>
+                    </div>
+                    <div class="Contentbox"
+                         style="border-left:1px solid #448aca;border-right:1px solid #448aca;border-bottom:1px solid #448aca;border-top:0; height:255px;">
+
+                        <div id="con_menu1_1" class="hover" style="width:645px;">
+                            <div class="more" style="position:absolute; margin-top:-40px; margin-left:590px;">
+                                [@cms_channel id='1272']
+                                <a href="${tag_bean.url}"><img src="../../${res}/images/in02.jpg"/></a>
+                                [/@cms_channel]
+                            </div>
+                            <ul>
+                                <li id="new_tupian" style="width:50px;"></li>
+                                <li id="new_text">
+                                    <table width="580px" border="0" cellspacing="0" cellpadding="0">
+                                        [@cms_content_list orderBy='4' channelId='1272' titLen='43' count=6
+                                        dateFormat='yyyy-MM-dd' ]
+                                        [#list tag_list as d]
+                                        <tr>
+                                            <td><img src="../../${res}/images/p_3.png"/><a href="${d.url}"
+                                                                                           target="_blank">[@text_cut
+                                                s=d.title len=18 append="..."/]</a></td>
+                                            <td class="time_pos">[${d.date?string(dateFormat)}]</td>
+                                        </tr>
+                                        [/#list][/@cms_content_list]
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+
+                   
+                    </div>
+                </div>
+
+            </div>

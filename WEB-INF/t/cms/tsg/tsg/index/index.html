@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="/${res}/css/css.css" rel="stylesheet" type="text/css"/>
+    <meta content="IE=EmulateIE11" http-equiv="X-UA-Compatible"/>
+    <meta name="GENERATOR" content="MSHTML 8.00.6001.19393"/>
+    <meta name="renderer" content="webkit"/>
+    <link href="/${res}/css/zzsc.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="${res}/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+    <!--选项卡JS-->
+    <!--左滑样式2-->
+    <link rel="stylesheet" href="/${res}/css/style.css"/>
+    <!--左滑样式1-->
+    <title>首页 - ${site.name}</title>
+    <script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+    <script src="${resSys}/front.js" type="text/javascript"></script>
+    <style type="text/css">
+        .time_pos {text-align: right;padding-right: 30px;}
+    </style>
+</head>
+<body>
+<div id="content">
+    <!--头部开始-->
+    <!--[#include "../include/add_code.html"] 自己添加的代码放在这里-->
+    [#include "../include/navi.html"]
+
+
+    <!--头部结束-->
+
+    <!--浮动图片开始
+    <div  id="test" style="display:block" >
+    <div style="z-index:999;top:90px;">微信二维码
+      <img src="/u/cms/tsg/201603/29090444nez4.jpg"  width="160" height="160" /></a>
+    </div>
+    <div class="test01" style="z-index:2; text-align:left;">
+    <a href="javascript:void(null);" onclick=" window.document.getElementById('test').style.display = 'none'" style="color: #000000;" >关闭</a></div>
+    </div>
+    浮动图片结束-->
+
+    <!--
+    <!--轮翻图片开始-->
+    <link rel="stylesheet" href="/${res}/css/luara.left.css"/>
+    <script src="/${res}/js/jquery-1.8.3.min.js"></script>
+    <!--Luara js文件-->
+    <script src="/${res}/js/jquery.luara.0.0.1.min.js"></script>
+    <!--<div class="Schoollink">
+    <div class="Schoollink_NBg">
+     <div class="example2">
+            <ul>
+                [@cms_content_list count='2' orderBy='4' typeId='3' titLen='18' channelOption='1' channelId='465']
+                          [#list tag_list as a]
+                <li><img src="${a.typeImg!site.defImg}" alt="${a.title}" /></li>
+                   [/#list]
+            [/@cms_content_list]
+            </ul>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div></div>
+        <!--Luara图片切换骨架end-->
+    <script>
+        $(function () {
+            <!--调用Luara示例-->
+            $(".example2").luara({width: "980", height: "350", interval: 4500, selected: "seleted", deriction: "left"});
+
+        });
+    </script>
+    <!--轮翻图片结束-->
+
+    <!--功能菜单开始-->
+    <div class="link">
+        <!--<div class="link_tit">快速链接</div>-->
+        <div class="link_nr">
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('http://acad.cnki.net/kns/brief/result.aspx?dbPrefix=CJFQ')"
+                   value="中国知网" class="btn_01" style="margin-top:8px;font-size:19px;"/>
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('http://opac.jsit.edu.cn:8080/opac/search.php')" value="书目检索"
+                   class="btn_02" style="margin-top:8px;font-size:19px;"/>
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('http://lib.jsit.edu.cn/cxdzskhd.jhtml')" value="移动图书馆"
+                   class="btn_03" style="margin-top:8px;font-size:19px;"/>
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('http://c.g.wanfangdata.com.cn/Thesis.aspx')" value="万方学位"
+                   class="btn_04" style="margin-top:8px;font-size:19px;"/>
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('http://opac.jsit.edu.cn:8080/reader/login.php')" value="我的图书馆"
+                   class="btn_05" style="margin-top:8px;font-size:19px;"/>
+            <input name="button" type="button" id="button"
+                   onclick="javascript:window.open('https://58.214.11.20/welcome.php')" value="校外访问VPN"
+                   class="btn_06" style="margin-top:8px;font-size:19px;"/>
+        </div>
+    </div>
+    <!--功能菜单结束-->
+    <style type="text/css">
+        <!--
+        #new_text table tr {
+            border-bottom: 1px dashed #cccccc;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        -->
+    </style>
+
+    <div class="main" style="margin-top:90px;">
+        <div class="flow718" style="width:653px;">
+            <!--选项卡功能开始-->
+            <div class="column" id="Course teaching" style="width:645px;">
+                <div id="Tab">
+                    <div class="Menubox" style="width:645px;">
+                        <ul>
+                            <li id="menu11" onMouseOver="setTab('menu1',1,5)" class="hover">新闻通告</li>                            
+                            <!--<li id="menu12" onMouseOver="setTab('menu1',2,5)">通知告示</li>-->
+                            <!--<li id="menu14" style="color:#FF7575;font-weight:bold" onMouseOver="setTab('menu1',4,5)" >读书节活动</li>-->
+                        </ul>
+                    </div>
+                    <div class="Contentbox"
+                         style="border-left:1px solid #448aca;border-right:1px solid #448aca;border-bottom:1px solid #448aca;border-top:0; height:255px;">
+
+                        <div id="con_menu1_1" class="hover" style="width:645px;">
+                            <div class="more" style="position:absolute; margin-top:-40px; margin-left:590px;">
+                                [@cms_channel id='1272']
+                                <a href="${tag_bean.url}"><img src="../../${res}/images/in02.jpg"/></a>
+                                [/@cms_channel]
+                            </div>
+                            <ul>
+                                <li id="new_tupian" style="width:50px;"></li>
+                                <li id="new_text">
+                                    <table width="580px" border="0" cellspacing="0" cellpadding="0">
+                                        [@cms_content_list orderBy='4' channelId='1272' titLen='' count=8
+                                        dateFormat='yyyy-MM-dd' ]
+                                        [#list tag_list as d]
+                                        <tr>
+                                            <td><img src="../../${res}/images/p_3.png"/><a href="${d.url}"
+                                                                                           target="_blank">[@text_cut
+                                                s=d.title len=24 append="..."/]</a></td>
+                                            <td class="time_pos">[${d.date?string(dateFormat)}]</td>
+                                        </tr>
+                                        [/#list][/@cms_content_list]
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>                        
+
+                     
+
+                        <div id="con_menu1_4" style="display:none">
+                            <div class="more" style="position:absolute; margin-top:-40px; margin-left:590px;">
+                                [@cms_channel id='1573']
+                                <a href="${tag_bean.url}"><img src="../../${res}/images/in02.jpg"/></a>
+                                [/@cms_channel]
+                            </div>
+                            <ul>
+                                <li id="new_tupian" style="width:50px;">
+                                </li>
+                                <li id="new_text">
+                                    <table width="580px" border="0" cellspacing="0" cellpadding="0">
+                                        [@cms_content_list orderBy='4' channelId='1573' titLen='43' count=6
+                                        dateFormat='yyyy-MM-dd' ]
+                                        [#list tag_list as d]
+                                        <tr>
+                                            <td><img src="../../${res}/images/p_3.png"/><a href="${d.url}"
+                                                                                           target="_blank">[@text_cut
+                                                s=d.title len=16 append="..."/]</a></td>
+                                            <td class="time_pos">[${d.date?string(dateFormat)}]</td>
+                                        </tr>
+                                        [/#list]
+                                        [/@cms_content_list]
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--选项卡功能结束-->
+        </div>
+
+        <!--视频功能结束-->
+        <script src="/${res}/js/indexshow.js" type="text/javascript"></script>
+        <div class="flow249">
+            <div class="focusBox" id="slideContainer">
+                <div class="block" style="height:271px">
+                    <ul class="pic" id="slidesImgs">
+                        [@cms_content_list count='4' orderBy='4' typeId='2' titLen='18' channelOption='1'
+                        channelId='1272,1273,1274,311']
+                        [#list tag_list as a]
+                        <li>
+                            <a href="${a.url}" target="_blank">
+                                <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
+                            </a>
+                                        <span>
+                                        [@text_cut s=a.title len=titLen /]
+                                        </span>
+                        </li>
+                        [/#list]
+                        [/@cms_content_list]
+                    </ul>
+                </div>
+                <div class="slidebar" id="slideBar">
+                    <ul>
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            SlideShow(3000);
+        </script>
+    </div>
+    <!--视频功能结束-->
+    <!--底开始-->
+    [#include "../include/footer.html"]
+    <!--底结束-->
+    <div>
+</body>
+</html>

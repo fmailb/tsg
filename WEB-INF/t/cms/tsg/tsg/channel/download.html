@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/${res}/css/cssList.css" rel="stylesheet" type="text/css" />
+<meta content="IE=EmulateIE11" http-equiv="X-UA-Compatible"/>
+<meta name="GENERATOR" content="MSHTML 8.00.6001.19393"/>
+<meta name="renderer" content="webkit"/>
+<link href="/${res}/css/zzsc.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<!--选项卡JS--> 
+<script>
+	<!--
+	function setTab(name,cursel,n){
+	for(i=1;i<=n;i++){
+	var menu=document.getElementById(name+i);
+	var con=document.getElementById("con_"+name+"_"+i);
+	menu.className=i==cursel?"hover":"";
+	con.style.display=i==cursel?"block":"none";
+	}
+	}
+	//-->
+ </script>
+ <script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  Cms.channelViewCount("${base}","${channel.id}");
+  Cms.siteFlow("${base}",location.href, document.referrer,"${site.config.flowSwitch?string}");
+});
+</script>
+
+<title>${channel.title!channel.name} - ${site.name}</title>
+</head>
+
+<body>
+<!--头部开始-->
+[#include "../include/navi.html"]
+<!--头部结束-->
+
+<!--中间内容开始-->
+  <div class="main">
+  <table width="100%">
+	<tr><td valign="top">
+  	<div class="m_left">
+	[#assign aa=0] 
+	  [#if channel.id!=71]
+	     [#assign aa=channel.parent.id?number]
+	  [/#if]
+	  [#if channel.id==71]
+	     [#assign aa=channel.parent.id?number]
+	  [/#if]
+	  [@cms_channel_list parentId=aa]
+    <!--二级菜单开始-->
+     <div class="lm1">
+   	   <div class="er_ltit">${channel.parent.title!channel.parent.name}</div>
+            <div class="er_list"><ul>
+               [#list tag_list as d]<!-- 小循环 -->
+						 <li >
+						<a href="${d.url}"   title="${d.name}"><span>[@text_cut s=d.name append=""/]</span></a>
+						 </li>						 
+				    [/#list]
+	   </ul>
+       </div>
+     </div>
+	  [/@cms_channel_list]
+     <!--二级菜单结束-->
+    </div>
+	</td>
+ <td valign="top">
+<div class="er_right">
+  <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="48%" class="z_tit">${channel.title!channel.name}</td>
+      <td width=""></td>
+    </tr>
+  </table>
+[@cms_content_page orderBy='4' channelId=channel.id count=25  sysPage='1'  titLen='30' append='...'  dateFormat='yyyy-MM-dd' channelOption='1']
+<div class="er_rnr">
+
+	  <ul class="lm_list1">
+	  [#list tag_pagination.list as a]
+[#if a.attachments?size gt 0]  
+		[#list a.attachments as attach]  
+		[#if "${attach_index}"=="0"]
+      <li><a href="${attach.path}" title="${a.title}" id="attach${attach_index}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>[${a.date?string(dateFormat)}]</li>
+		[/#if]
+		[/#list]  
+		[/#if] 
+	  [/#list]
+      </ul>
+
+
+</div><!--分页开始-->
+[/@cms_content_page] <!--分页结束-->
+</div>
+</td>
+	</tr>
+</table>
+</div>
+  <!--中间内容结束-->
+<div class="main">&nbsp;</div>
+
+
+<!--底开始-->
+[#include "../include/footer.html"]
+<!--底结束-->
+</body>
+</html>
