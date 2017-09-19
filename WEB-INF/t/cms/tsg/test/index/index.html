@@ -4,31 +4,23 @@
 <!--导航栏-->
 [#include "../include/navi.html"]
 
-<!--内容部分，三列布局-->
+<!--内容部分，三行布局-->
 <div class="container-fluid">
-  <!--标题图片-->
-  <div class="jumbotron">
-    <div class="container">
-      <h1>欢迎</h1>
-      <p>图书馆欢迎您</p>
-      <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+  <!--第一行，搜索-->
+  <div class="row">
+    <div class="searchform">
+      <!--搜索-->
+      [#include "../include/search.html"]
     </div>
   </div>
+<!--第二行，快速链接和。。。-->
   <div class="row">
+    <!--左侧:-->
+    <div class="col-md-8">
+    </div>
 
-    <!--第一列：左侧新闻区-->
+    <!--右侧:快速链接-->
     <div class="col-md-4">
-      [#include "../include/newsbox.html"]
-    </div>
-
-    <!--第2列：搜索栏-->
-    <div class="col-md-6">
-      [#include "../include/search_opac.html"]
-    </div>
-
-    <!--第3列：右侧快速链接-->
-    <div class="col-md-2">
-      <!--panel+div-table-->
       <div  id="quicklink" class="panel panel-primary">
         <div class="panel-heading">快速链接</div>
         <div class="panel-body">
@@ -42,16 +34,19 @@
             <div class="div-tr">
               <a class="btn btn-default"  href="https://58.214.11.20/welcome.php" title="校外访问资源" target="_blank">VPN</a>
             </div>
-            <div class="div-tr">
-              <a class="btn btn-default"  href="http://lib.jsit.edu.cn/cxdzskhd.jhtml" title="移动图书馆" target="_blank">移动图书馆</a>
-            </div>
           </div>
         </div>
         <div class="panel-footer"></div>
 
       </div>
     </div>
-
+  </div>
+<!--第三行，新闻-->
+  <div class="row">
+    <!--第一列：左侧新闻区-->
+    <div class="col-md-8">
+      [#include "../include/newsbox.html"]
+    </div>
   </div>
 </div>
 
