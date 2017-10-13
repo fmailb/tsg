@@ -92,10 +92,10 @@ div#quicklink{background-color: rgba(255,255,255,0);}
 /*左侧newsbox的css*/
 div#newsbox{background-color: rgba(255,255,255,0.8);}
 div#newsbox.panel{border:0px;}
-#newsbox .panel-heading{
-    padding: 0px;
-    border:0px;
-}
+/*#newsbox .panel-heading{*/
+    /*padding: 0px;*/
+    /*border:0px;*/
+/*}*/
 #newsbox .panel-body{
     border: 1px solid #337ab7;
     padding:10px;
