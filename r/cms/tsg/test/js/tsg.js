@@ -39,29 +39,25 @@ $(function() {
         }
     }
 
-    var hoverHandler = function (e) {
-        e.preventDefault()
-        //bootstrap.js的tab的plugin函数，注册到jQuery名为$.fn.tab
-        var self = $(this);
-        $(self.attr("href")).children('ul').addClass('demo2');
-        $(self.attr("href")).siblings().children('ul').removeClass('demo2');
-        $.fn.tab.call(self, 'show');
-
-    }
+    // var hoverHandler = function (e) {
+    //     e.preventDefault()
+    //     //bootstrap.js的tab的plugin函数，注册到jQuery名为$.fn.tab
+    //     var self = $(this);
+    //     $(self.attr("href")).children('ul').addClass('demo2');
+    //     $(self.attr("href")).siblings().children('ul').removeClass('demo2');
+    //     $.fn.tab.call(self, 'show');
+    // }
 
     $(document)
-        .on('mouseover.bs.tab.data-api', '[data-toggle="tab"]', hoverHandler)
-        .on('mouseover.bs.tab.data-api', '[data-toggle="pill"]', hoverHandler)
+        // .on('mouseover.bs.tab.data-api', '[data-toggle="tab"]', hoverHandler)
+        // .on('mouseover.bs.tab.data-api', '[data-toggle="pill"]', hoverHandler)
         .ready(function () {
             $('.demo2').bootstrapNews(options);
         })
 
-    $('[data-toggle="tab"]')
-        .on('shown.bs.tab', function (e) {$(".demo2").bootstrapNews(options)})
+    // $('[data-toggle="tab"]')
+    //     .on('shown.bs.tab', function (e) {$(".demo2").bootstrapNews(options)})
 })
 
-//改变网站色调
-function colorHandler () {
-    $(".color1").css('cssText','background-color:#5cb85c!important')
-}
+
 

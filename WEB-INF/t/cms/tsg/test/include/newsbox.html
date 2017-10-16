@@ -1,13 +1,26 @@
 <div>
     <div id="newsbox" class="panel panel-primary">
-        <div class="panel-heading">
-                &nbsp资源动态
-                &nbsp公告消息
+        <div class="panel-heading div-table">
+                <div class="div-td">&nbsp资源动态</div>
+                <div class="div-td">&nbsp公告消息</div>
         </div>
 
-        <div class="panel-body tab-content">
-            <div id="resnews" class="tab-pane active">
+        <div class="panel-body div-table">
+            <div id="resnews" class="div-td">
                 [@cms_content_list orderBy='4' channelId='300' channelOption=1 count=8 dateFormat='yyyy-MM-dd' ]
+                <ul class="demo2">
+                    [#list tag_list as d]
+                    <li class="news-item">
+                        <span>${d.date?string(dateFormat)}</span>
+                        <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=18 /]">[@text_cut s=d.title len=16 /]</a>
+                    </li>
+                    [/#list]
+                </ul>
+                [/@cms_content_list]
+            </div>
+            <div id="libnews" class="div-td">
+                <!--channelOption=1 包含子栏目-->
+                [@cms_content_list orderBy='4' channelId='301' channelOption=1 count=8 dateFormat='yyyy-MM-dd' ]
                 <ul class="demo2">
                     [#list tag_list as d]
                     <li class="news-item">
@@ -18,22 +31,9 @@
                 </ul>
                 [/@cms_content_list]
             </div>
-            <div id="libnews" class="tab-pane">
-                <!--channelOption=1 包含子栏目-->
-                [@cms_content_list orderBy='4' channelId='301' channelOption=1 count=8 dateFormat='yyyy-MM-dd' ]
-                <ul class="">
-                    [#list tag_list as d]
-                    <li class="news-item">
-                        <span>${d.date?string(dateFormat)}</span>
-                        <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=24 /]">[@text_cut s=d.title len=16 /]</a>
-                    </li>
-                    [/#list]
-                </ul>
-                [/@cms_content_list]
-            </div>
         </div>
 
-        <div class="panel-footer"></div>
+        <div class="panel-footer div-table"></div>
     </div>
 </div>
 

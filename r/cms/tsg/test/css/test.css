@@ -68,7 +68,7 @@ body {
 /*右侧快速链接的css*/
 .div-table{display: table;width:100%;}
 .div-tr{display:table-row;}
-.div-td{display:table-cell;width:100%}
+.div-td{display:table-cell;width:50%;padding-left: 4px;}
 .div-table a{
     width:100%;
     text-align: center;
@@ -118,13 +118,13 @@ div#newsbox.panel{border:0px;}
 
 .news-item
 {
-    padding:4px 4px;
+    padding:4px 8px;
     margin:0px;
     border-bottom:1px dotted #555;
     /*min-height: 49px;*/
 }
 .news-item>a{
-    display: block;
+    /*display: block;*/
     white-space: nowrap;
     text-overflow:ellipsis;
     overflow: hidden;

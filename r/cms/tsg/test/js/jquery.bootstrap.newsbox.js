@@ -134,28 +134,32 @@ if (typeof Object.create !== 'function') {
         buildNavigation: function() { 
             var panel = this.findPanelObject();
             if( panel ) {
-                var nav = '<ul class="pagination pull-right" style="margin: 0px;">' +
+                var nav = '<div class="div-td"><ul class="pagination pull-right" style="margin: 0px;">' +
                              '<li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a></li>' +
                              '<li><a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a></li>' +
-                           '</ul><div class="clearfix"></div>';
+                           '</ul><div class="clearfix"></div></div>';
 
 
                 var footer = $(panel).find(".panel-footer")[0];
                 if( footer ) {
                     //我添加的，防止切换tab时多次创建nav
-                    $(footer).children().remove();
+                    // $(footer).children().remove();
                     $(footer).append(nav);
                 } else {
                     $(panel).append('<div class="panel-footer">' + nav + '</div>');
                 }
 
                 var self = this;
-                $(panel).find('.prev').on('click', function(ev){
+                // $(panel).find('.prev').on('click', function(ev){
+                //我添加的，上一行为原代码
+                $(panel).find('.prev').last().on('click', function(ev){
                     ev.preventDefault();
                     self.onPrev();
                 });
 
-                $(panel).find('.next').on('click', function(ev){
+                // $(panel).find('.next').on('click', function(ev){
+                //我添加的，上一行为原代码
+                $(panel).find('.next').last().on('click', function(ev){
                     ev.preventDefault();
                     self.onNext();
                 });
@@ -270,7 +274,7 @@ if (typeof Object.create !== 'function') {
         //enable multiple DOM object selection (class selector) + enable chaining like $(".class").bootstrapNews().chainingMethod()
         return this.each( function () {
             if (typeof($.fn.newsBox)=="undefined") {
-        // var newsBox = Object.create( NewsBox );
+        // var newsBox = Object.create( NewsBox );我修改过这段
                 $.fn.newsBox = Object.create(NewsBox);
             }
             $.fn.newsBox.init( options, this );
