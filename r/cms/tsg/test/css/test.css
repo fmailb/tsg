@@ -68,9 +68,10 @@ body {
 /*右侧快速链接的css*/
 .div-table{display: table;width:100%;}
 .div-tr{display:table-row;}
-.div-td{display:table-cell;width:50%;padding-left: 4px;}
-.div-table a{
-    /*width:100%;*/
+.div-td-50{display:table-cell;width:50%;padding-left: 4px;}
+.div-td-100{display:table-cell;width:100%;padding-left: 4px;}
+.div-td-100 a{
+    width:100%;
     text-align: center;
     white-space: nowrap;
     text-overflow:ellipsis;
@@ -101,20 +102,14 @@ div#newsbox.panel{border:0px;}
     padding:10px;
     padding-bottom: 0px;
 }
+#newsbox .panel-body>ul{
+    padding-right: 2px;
+}
 #newsbox .panel-footer{
     border: 1px solid #337ab7;
     border-top:0px;
     padding:1px 15px;
 }
-
-#newsbox .panel-heading li.active a{
-    color: #fff;
-    background-color: #337ab7;
-    border:0px ;
-    }
-#newsbox .panel-heading li a{
-    border:0px ;
-    }
 
 .news-item
 {

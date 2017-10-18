@@ -1,14 +1,13 @@
 <div>
     <div id="newsbox" class="panel panel-primary">
         <div class="panel-heading div-table">
-                <div class="div-td">&nbsp资源动态</div>
-                <div class="div-td">&nbsp公告消息</div>
+                <div class="div-td-50">&nbsp资源动态</div>
+                <div class="div-td-50">&nbsp公告消息</div>
         </div>
 
-        <div class="panel-body div-table">
-            <div id="resnews" class="div-td">
+        <div class="panel-body">
                 [@cms_content_list orderBy='4' channelId='300' channelOption=1 count=8 dateFormat='yyyy-MM-dd' ]
-                <ul class="demo1">
+                <ul class="demo1" style="width:50%;float:left">
                     [#list tag_list as d]
                     <li class="news-item">
                         <span>${d.date?string(dateFormat)}</span>
@@ -17,11 +16,10 @@
                     [/#list]
                 </ul>
                 [/@cms_content_list]
-            </div>
-            <div id="libnews" class="div-td">
+
                 <!--channelOption=1 包含子栏目-->
                 [@cms_content_list orderBy='4' channelId='301' channelOption=1 count=8 dateFormat='yyyy-MM-dd' ]
-                <ul class="demo2">
+                <ul class="demo2"  style="width:50%;float:right">
                     [#list tag_list as d]
                     <li class="news-item">
                         <span>${d.date?string(dateFormat)}</span>
@@ -30,7 +28,7 @@
                     [/#list]
                 </ul>
                 [/@cms_content_list]
-            </div>
+
         </div>
 
         <div class="panel-footer div-table"></div>
