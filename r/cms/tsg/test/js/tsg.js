@@ -52,6 +52,7 @@ $(function() {
         // .on('mouseover.bs.tab.data-api', '[data-toggle="tab"]', hoverHandler)
         // .on('mouseover.bs.tab.data-api', '[data-toggle="pill"]', hoverHandler)
         .ready(function () {
+            $('.demo1').bootstrapNews(options);
             $('.demo2').bootstrapNews(options);
         })
 

@@ -271,14 +271,23 @@ if (typeof Object.create !== 'function') {
     };
 
     $.fn.bootstrapNews = function ( options ) {
+        // 我修改过的
+        // return this.each( function () {
+        //     if (typeof($.fn.newsBox)=="undefined") {
+        // // var newsBox = Object.create( NewsBox );
+        //         $.fn.newsBox = Object.create(NewsBox);
+        //     }
+        //     $.fn.newsBox.init( options, this );
+
+        //原代码
         //enable multiple DOM object selection (class selector) + enable chaining like $(".class").bootstrapNews().chainingMethod()
         return this.each( function () {
-            if (typeof($.fn.newsBox)=="undefined") {
-        // var newsBox = Object.create( NewsBox );我修改过这段
-                $.fn.newsBox = Object.create(NewsBox);
-            }
-            $.fn.newsBox.init( options, this );
+
+            var newsBox = Object.create( NewsBox );
+
+            newsBox.init( options, this );
             //console.log(newsBox);
+
         })
     };
 
