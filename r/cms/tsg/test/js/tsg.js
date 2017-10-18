@@ -29,7 +29,7 @@ function resetInput(self) {
 $(function() {
     var options = {
         newsPerPage: 4,
-        autoplay: false,
+        autoplay: true,
         pauseOnHover: true,
         navigation: true,
         direction: 'down',
