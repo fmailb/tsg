@@ -1,9 +1,17 @@
-/*正式css*/
-body {    /*给navbar留出空间*/    padding-top: 50px;    margin-left:auto;    margin-right:auto;
-    /*url如果没有/开头，会自动获得{respath}/css的路径前缀*/
-    /*background:url(../images/bg-2.jpg) no-repeat;*/
-    background-size:cover;}
-
+/*主体（不包含footer）宽度*/
+body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:auto;background-size:cover;}
+.div-table{display: table;width:100%;}
+.div-tr{display:table-row;}
+.div-td-50{display:table-cell;width:50%;}
+.div-td-100{display:table-cell;width:100%;}
+.div-td-100 a{ width:100%; text-align: center; white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
+.container-fluid{max-width:1100px;}
+/*导航条*/
+/*.navbar-default{background-color: #337ab7 !important;}*/
+/*.navbar-nav >li >a {color:#fff !important;}*/
+/*.navbar-brand {color:#fff !important;}*/
+.dropdown-menu li{clear: both}
+/*第一行*/
 /*搜索*/
 .searchform {padding-top: 30px;padding-bottom: 30px;margin-bottom: 30px;color: inherit;background-color: #eee;}
 .searchform h1,.searchform .h1 { color: inherit;}
@@ -19,18 +27,6 @@ body {    /*给navbar留出空间*/    padding-top: 50px;    margin-left:auto;  
 }
 .searchform{background-color: rgba(255,255,255,0);}
 
-/*导航条*/
-.navbar-default{background-color: rgba(51,122,183,0.6) !important;}
-.navbar-nav >li >a {color:#fff !important;}
-.navbar-brand {color:#fff !important;}
-
-/*主体（不包含footer）宽度*/
-.div-table{display: table;width:100%;}
-.div-tr{display:table-row;}
-.div-td-50{display:table-cell;width:50%;}
-.div-td-100{display:table-cell;width:100%;}
-.div-td-100 a{ width:100%; text-align: center; white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
-.container-fluid{max-width:1100px;}
 
 
 /*第二行 全行样式*/
@@ -38,6 +34,7 @@ body {    /*给navbar留出空间*/    padding-top: 50px;    margin-left:auto;  
 @media (min-width: 768px) {.row2 {padding-bottom: 15px;}}
 .row2 a{color:#333}
 .row2 .glyphicon-class {display: block;text-align: center;word-wrap: break-word;}
+.row2 .panel {margin-bottom:0px;}
 /*第二行右侧快速链接的css*/
 .quicklink ul{list-style: none;margin:0px;overflow: auto;  padding:0px;}
 .quicklink li{float: left;width: 50%;padding: 10px;font-size: 10px;line-height: 1.4;
@@ -50,14 +47,14 @@ body {    /*给navbar留出空间*/    padding-top: 50px;    margin-left:auto;  
 .icons ul{list-style: none;margin:0px;overflow: auto;  padding:0px;}/*overflow属性让ul高度不为0*/
 .icons li {float: left;width: 50%;height: 100px;padding: 10px;font-size: 10px;line-height: 1.4;
     text-align: center;background-color: #fff;border: 1px solid #fff;}
-@media (min-width: 768px) {.icons li {  width: 33%;font-size: 12px; }}
+@media (min-width: 768px) {.icons li {  width: 25%;font-size: 12px; }}
 .icons .glyphicon {    margin-top: 5px;    margin-bottom: 10px;    font-size: 24px;}
 /*.icons .glyphicon-class {    display: block;    text-align: center;    word-wrap: break-word;}*/
 .icons li:hover {    color: #fff;    background-color: #563d7c;}
 
 /*第三行左侧newsbox*/
-div#newsbox{background-color: rgba(255,255,255,1);}
-div#newsbox.panel{border:0px;}
+#newsbox{background-color: rgba(255,255,255,1);}
+#newsbox.panel{border:0px;}
 #newsbox .panel-body{    border: 1px solid #337ab7;    padding:10px;    padding-bottom: 0px;}
 #newsbox .panel-body>ul{    padding-right: 2px;}
 #newsbox .panel-footer{    border: 1px solid #337ab7;    border-top:0px;    padding:1px 15px;}
@@ -82,3 +79,6 @@ div#newsbox.panel{border:0px;}
 @media (min-width: 768px) {.bs-docs-footer {        text-align: left;    }
     .bs-docs-footer p {        margin-bottom: 0;    }}
 @media (min-height: 840px) {.bs-docs-footer {        position:fixed;    }}
+
+/*一些细节*/
+/*url如果没有/开头，会自动获得{respath}/css的路径前缀:background:url(../images/bg-2.jpg) no-repeat;*/
