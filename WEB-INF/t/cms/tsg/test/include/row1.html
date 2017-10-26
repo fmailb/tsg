@@ -38,7 +38,7 @@
         <div role="tabpanel" class="tab-pane fade" id="profile">
             <div class="searchform">
                 <div class="text-center">
-                    <form class="form-inline" target="_blank" method="post" action="http://www.yidu.edu.cn/educhina/educhina.do" onsubmit="return check1(this)">
+                    <form class="form-inline" target="_blank" method="post" action="http://www.yidu.edu.cn/educhina/educhina.do" onsubmit="return chkinput(this)">
                         <input type="hidden"  class="form-control" name="artifact" value="">
                         <input type="hidden"  class="form-control"  name="skey" value="0">
                         <div class="form-group">
@@ -55,7 +55,7 @@
             <div class="searchform">
                 <!--搜索-->
                 <div class="text-center">
-                    <form class="form-inline" target="_blank" action="http://xueshu.baidu.com/s">
+                    <form class="form-inline" target="_blank" action="http://xueshu.baidu.com/s" onsubmit="return chkinput(this)">
                         <div class="form-group">
                             <input class="form-control" type="text" size="22" name="wd" maxlenth="100" onclick="resetInput(this)">
                         </div>
