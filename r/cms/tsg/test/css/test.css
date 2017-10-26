@@ -14,14 +14,16 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {color: #555;background-color: #337ab7;}
+.navbar-form{padding:0px 0px;}
 /*第一行*/
 .row1{margin-bottom: 15px;}
-@media (min-width: 1000px){.row1{height:240px;}
+@media screen and (min-width: 768px){.row1{height:240px;}
 /*搜索tabs*/
-.searchTabs{width:50%;position:relative;left:50%;top:50%;transform:translate(-50%,-50%);
+.searchTabs{width:50%;height:120px;position:relative;left:50%;top:50%;transform:translate(-50%,-50%);
     background: rgba(204,204,204, 0.7)!important;}}
-/*搜索*/
 .searchTabs .nav > li > a {padding: 0px 0px;}
+/*搜索*/
+
 .searchform {padding-top: 30px;padding-bottom: 30px;color: inherit;background-color: #eee;}
 .searchform h1,.searchform .h1 { color: inherit;}
 .searchform p {margin-bottom: 15px; font-size: 21px; font-weight: 200;}
@@ -35,26 +37,24 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
     .searchform h1,.searchform .h1 {font-size: 63px;}
 }
 .searchform{background-color: rgba(255,255,255,0);}
-
 /*第二行 全行样式*/
 .row2{padding-bottom:10px; }
-@media (min-width: 768px) {.row2 {padding-bottom: 15px;}}
+@media screen and (min-width: 768px) {.row2 {padding-bottom: 15px;}}
 .row2 a{color:#333}
 .row2 .glyphicon-class {display: block;text-align: center;word-wrap: break-word;}
 .row2 .panel {margin-bottom:0px;}
-/*第二行右侧快速链接的css*/
+/*第二行资源链接*/
 .quicklink ul{list-style: none;margin:0px;overflow: auto;  padding:0px;}
 .quicklink li{float: left;width: 50%;padding: 10px;font-size: 10px;line-height: 1.4;
     text-align: center;background-color: #fff;border: 1px solid #fff;}
 .quicklink li:hover{color: #fff;background-color:#563d7c;}
 .quicklink .panel-body{padding:0px;}
 .quicklink img{height: 30px;width:30px;margin-bottom: 5px;}
-
-/*第二行左侧icons*/
+/*第二行icons*/
 .icons ul{list-style: none;margin:0px;overflow: auto;  padding:0px;}/*overflow属性让ul高度不为0*/
 .icons li {float: left;width: 50%;height: 100px;padding: 10px;font-size: 10px;line-height: 1.4;
     text-align: center;background-color: #fff;border: 1px solid #fff;}
-@media (min-width: 768px) {.icons li {  width: 25%;font-size: 12px; }}
+@media  screen and (min-width: 768px) {.icons li {  width: 25%;font-size: 12px; }}
 .icons .glyphicon {    margin-top: 5px;    margin-bottom: 10px;    font-size: 24px;}
 /*.icons .glyphicon-class {    display: block;    text-align: center;    word-wrap: break-word;}*/
 .icons li:hover {    color: #fff;    background-color: #563d7c;}
@@ -65,16 +65,13 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 #newsbox .panel-body{    border: 1px solid #337ab7;    padding:10px;    padding-bottom: 0px;}
 #newsbox .panel-body>ul{    padding-right: 2px;}
 #newsbox .panel-footer{    border: 1px solid #337ab7;    border-top:0px;    padding:1px 15px;}
-
 .news-item{    padding:4px 8px;    margin:0px;    border-bottom:1px dotted #555; }
 .news-item>a{ white-space: nowrap;    text-overflow:ellipsis;    overflow: hidden;    padding-right: 2px;}
 .news-item>span{text-align: right;font-style:italic;font-size:10px;float:right;line-height: 20px;}
 .glyphicon{    margin-right:4px !important; /*override*/}
-
 .pagination .glyphicon{    margin-right:0px !important; /*override*/}
 .pagination li a{    padding:1px 5px 0px 5px; /*override*/}
 .panel ul{    padding:0px;    margin:0px;    list-style:none;}
-
 /*footer*/
 .bs-docs-footer {width:100%;padding-top: 20px;padding-bottom: 20px;color: #fff;/*#99979c;*/
     text-align: center;/*背景透明文字不透明*/ background-color: rgba(51,122,183,1); bottom:0px;/*opacity: 0.6;*/}
@@ -82,9 +79,11 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 .bs-docs-footer-links {    padding-left: 0;    margin-bottom: 20px;}
 .bs-docs-footer-links li {    display: inline-block;}
 .bs-docs-footer-links li + li {    margin-left: 15px;}
-@media (min-width: 768px) {.bs-docs-footer {text-align: left;position:static}
+@media screen and (min-width: 768px) {.bs-docs-footer {text-align: left;}
     .bs-docs-footer p {margin-bottom: 0;}}
-@media (min-height: 840px) {.bs-docs-footer {position:fixed;}}
+@media screen and(min-height: 840px) {.bs-docs-footer {position:fixed;}}
+@media screen and (max-width: 768px) {.bs-docs-footer {position:static;}}
+
 
 /*一些细节*/
 /*url如果没有/开头，会自动获得{respath}/css的路径前缀:background:url(../images/bg-2.jpg) no-repeat;*/

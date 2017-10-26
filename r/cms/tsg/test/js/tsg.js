@@ -1,7 +1,7 @@
 /**
  * Created by fy on 2017/6/7.
  */
-function check1(self) {
+function chkinput(self) {
     var $input;
     self.name=='navs'?$input='q':$input='strText';
     $input=eval('self.'+$input);
@@ -21,7 +21,7 @@ function check1(self) {
 
 function resetInput(self) {
     self.value="";
-    self.parentNode.className='form-group';
+    // self.parentNode.className='form-group';
 }
 
 //newsbox1：滚动js
