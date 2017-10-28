@@ -41,4 +41,20 @@
         </div>
     </div>
 </div>
-
+<div class="row">
+    <ul class="pic" id="slidesImgs">
+    [@cms_content_list styleList='3-1' count='4' orderBy='4' typeId='2' titLen='18' channelOption='1'  flashWidth='300' flashHeight='200' textHeight='20'
+    channelId='1272,1273,1274,311']
+    [#list tag_list as a]
+    <li>
+        <a href="${a.url}" target="_blank">
+            <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
+        </a>
+        <span>
+                                        [@text_cut s=a.title len=titLen /]
+                                        </span>
+    </li>
+    [/#list]
+    [/@cms_content_list]
+    </ul>
+</div>

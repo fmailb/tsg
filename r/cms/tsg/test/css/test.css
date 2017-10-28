@@ -81,7 +81,7 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 .bs-docs-footer-links li + li {    margin-left: 15px;}
 @media screen and (min-width: 768px) {.bs-docs-footer {text-align: left;}
     .bs-docs-footer p {margin-bottom: 0;}}
-@media screen and(min-height: 840px) {.bs-docs-footer {position:fixed;}}
+@media (min-height: 840px) {.bs-docs-footer {position:fixed;}}
 @media screen and (max-width: 768px) {.bs-docs-footer {position:static;}}
 
 

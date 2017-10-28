@@ -13,8 +13,9 @@ function chkinput(self) {
 }
 
 function resetInput(self) {
-    //点击输入框清空上次输入
+    //点击输入框清空上次输入,取消 has-error状态
     self.value="";
+    self.parentNode.className="form-group"
 }
 
 //使用$(function{})的方式调用newsbox.js的参数，确保在document.ready之后执行。
