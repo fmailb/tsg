@@ -40,12 +40,23 @@
     </div>
 </div>
 <div class="col-md-4 col-sm-4">
-    <div id="newspics" class="panel panel-primary">
+    <div class="newspics panel panel-primary">
         <div class="panel-heading">主题活动</div>
         <div class="panel-body">
-         <div class="pre"><span class="glyphicon glyphicon-triangle-left"></span></div>
-                <div class="pic slider"></div>
-                <div class="nex"><span class="glyphicon glyphicon-triangle-right"></span></div>
+            <!--<div class="pre"><span class="glyphicon glyphicon-triangle-left"></span></div>-->
+            <div class="pic slider">
+                [@cms_content_list count='4' orderBy='4' typeId='2' titLen='18' channelOption='1'
+                channelId='1272,1273,1274,311']
+                [#list tag_list as a]
+                <li>
+                    <a href="${a.url}" target="_blank">
+                        <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
+                    </a>
+                </li>
+                [/#list]
+                [/@cms_content_list]
+            </div>
+            <!--<div class="nex"><span class="glyphicon glyphicon-triangle-right"></span></div>-->
 
         </div>
         <div class="panel-footer"></div>

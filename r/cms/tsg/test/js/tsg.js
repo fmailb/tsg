@@ -36,7 +36,7 @@ $(function() {
     //执行活动新闻的slider js
     $(".pic").slick({
         dots: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
     })
 })

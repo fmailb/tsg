@@ -25,28 +25,8 @@
       <file leaf-file-name="test.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/test.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="row1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="row2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="40" column="81" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="81" />
+            <state relative-caret-position="360">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -55,80 +35,70 @@
       <file leaf-file-name="row3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="46" />
+            <state relative-caret-position="433">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/index/index.html">
+        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slick.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/slick.css">
+      <file leaf-file-name="slicktest1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/test/slicktest1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1170">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/config.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="-97">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="slick.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/slick.js">
+        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slick_test_1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/test/slick_test_1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="110" column="30" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="110" selection-end-column="30" />
+            <state relative-caret-position="13021">
+              <caret line="2418" column="72" lean-forward="false" selection-start-line="2418" selection-start-column="66" selection-end-line="2418" selection-end-column="72" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tsg.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/tsg.js">
+      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick-theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slick.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/slick-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -154,6 +124,12 @@
       <find>col-md-1</find>
       <find>.row</find>
       <find>panel-body</find>
+      <find>slick-next</find>
+      <find>arrow</find>
+      <find>before</find>
+      <find>cloned</find>
+      <find>clone</find>
+      <find>trans</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,12 +156,15 @@
         <option value="$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-slide/index.html" />
         <option value="$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-fade/index.html" />
         <option value="$PROJECT_DIR$/r/cms/tsg/test/bootstrap-3.3.7/dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/r/cms/tsg/test/css/test.css" />
-        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row3.html" />
         <option value="$PROJECT_DIR$/../../../../../http/plugins/test/slick_test_1.html" />
-        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/index/index.html" />
-        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/header.html" />
+        <option value="$PROJECT_DIR$/r/cms/tsg/test/css/test.css" />
         <option value="$PROJECT_DIR$/r/cms/tsg/test/js/tsg.js" />
+        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/header.html" />
+        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/index/index.html" />
+        <option value="$PROJECT_DIR$/../../../../../http/test/test/slicktest1.html" />
+        <option value="$PROJECT_DIR$/../../../../../http/plugins/test/slicktest1.html" />
+        <option value="$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row3.html" />
+        <option value="$PROJECT_DIR$/r/cms/tsg/test/css/slick-theme.css" />
       </list>
     </option>
   </component>
@@ -199,10 +178,10 @@
     <scope name="root" pattern="!file:bg-nav-item.png&amp;&amp;!file:bg-upper.png&amp;&amp;!file:build.xml&amp;&amp;!file:null&amp;&amp;!file:tomcat-power.gif&amp;&amp;!file:index.jsp&amp;&amp;!file:index.jhtml&amp;&amp;!file:tomcat.png&amp;&amp;!file:tomcat.svg&amp;&amp;!file:error.html&amp;&amp;!file:bg-middle.png&amp;&amp;!file:bg-button.png&amp;&amp;!file:bg-nav.png&amp;&amp;!file:asf-logo-wide.gif&amp;&amp;!file:favicon.ico&amp;&amp;!file:install.html&amp;&amp;!file:tomcat.css&amp;&amp;!file:tomcat.gif&amp;&amp;!file:asf-logo.png&amp;&amp;!file:root.iml&amp;&amp;!file:WEB-INF/classes.zip&amp;&amp;!file:WEB-INF/server-config.wsdd&amp;&amp;!file:WEB-INF/web.xml&amp;&amp;!file:WEB-INF/weblogic.xml&amp;&amp;!file:WEB-INF/t/cms/jzgcxy.rar&amp;&amp;!file:WEB-INF/t/cms/xgc.zip&amp;&amp;!file:WEB-INF/t/cms/zsxx.zip&amp;&amp;!file:r/cms/tsg/.idea/misc.xml&amp;&amp;!file:r/cms/tsg/.idea/modules.xml&amp;&amp;!file:r/cms/tsg/.idea/tsg.iml&amp;&amp;!file:r/cms/tsg/.idea/workspace.xml&amp;&amp;!file[ROOT]:*" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
-    <option name="y" value="41" />
-    <option name="width" value="1417" />
-    <option name="height" value="818" />
+    <option name="x" value="13" />
+    <option name="y" value="14" />
+    <option name="width" value="1469" />
+    <option name="height" value="762" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -220,6 +199,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ROOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-excluded-files" value="false" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="root">
           <PATH>
@@ -245,91 +258,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="WEB-INF/t/cms/tsg">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ROOT">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="WEB-INF/t/cms/tsg">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="index">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ROOT">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="WEB-INF/t/cms/tsg">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="include">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ROOT">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="r/cms/tsg">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ROOT">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="r/cms/tsg">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -383,6 +312,100 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="r/cms/tsg">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="test">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fonts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ROOT">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="D:\dev\http\plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="test">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="D:\dev\http\plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="slick-master">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="D:\dev\http\plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="slick-master">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="slick">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="D:\dev\http\plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -396,156 +419,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="t" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <option name="show-excluded-files" value="false" />
-      </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -559,20 +432,22 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../http/refresource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../http/plugins" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="boot&#9;FILE&#9;file://D:/dev/program/common/apache-tomcat-8.5.9/webapps/ROOT/r/cms/tsg/test/bootstrap-3.3.7/dist/css/bootstrap.css" />
+    <property name="SearchEverywhereHistoryKey" value="slick-arrow&#9;null&#9;null&#10;boot&#9;FILE&#9;file://D:/dev/program/common/apache-tomcat-8.5.9/webapps/ROOT/r/cms/tsg/test/bootstrap-3.3.7/dist/css/bootstrap.css" />
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\program\common\apache-tomcat-8.5.9\webapps\ROOT\r\cms\tsg\test\css" />
+      <recent name="D:\dev\program\common\apache-tomcat-8.5.9\webapps\ROOT\r\cms\tsg\test\css\fonts" />
       <recent name="D:\dev\program\common\apache-tomcat-8.5.9\webapps\ROOT\r\cms\tsg\test\js" />
       <recent name="D:\dev\http\test\testres\SlidesJS3-master\SlidesJS3-master\examples\basic-slide\js" />
       <recent name="D:\dev\http\test\testres\SlidesJS3-master\SlidesJS3-master\examples\basic-fade" />
-      <recent name="D:\dev\http\test\testres\jQuery-bootstrap-master" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\program\common\apache-tomcat-8.5.9\webapps\ROOT\r\cms\tsg\test\css" />
+      <recent name="D:\dev\http\test\test" />
       <recent name="D:\dev\http\test\testres\SlidesJS3-master\SlidesJS3-master\examples\basic-fade\js" />
       <recent name="D:\dev\program\common\apache-tomcat-8.5.9\webapps\ROOT\r\cms\tsg\test\images" />
     </key>
@@ -1060,15 +935,17 @@
       <workItem from="1509200267782" duration="264000" />
       <workItem from="1509200584781" duration="11771000" />
       <workItem from="1509327794618" duration="15502000" />
+      <workItem from="1509369465295" duration="3394000" />
+      <workItem from="1509373728012" duration="4130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58383000" />
+    <option name="totallyTimeSpent" value="65907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="41" width="1417" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="13" y="14" width="1469" height="762" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1086,7 +963,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24392042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20440468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1137,71 +1014,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/tsg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="2" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="60" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/jquery.bootstrap.newsbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/newsbox.html" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/newsbox.html" />
-    <entry file="file://$PROJECT_DIR$/1414" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/jQuery-bootstrap-master/demobak.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/newsbox.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/jQuery-bootstrap-master/demo.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/jQuery-bootstrap-master/scripts/jquery.bootstrap.newsbox.js" />
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/jquery.bootstrap.newsbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="156" column="29" lean-forward="true" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/newsbox.html" />
-    <entry file="file://$PROJECT_DIR$/xq.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/icons.html" />
-    <entry file="file://$PROJECT_DIR$/.idea/ROOT.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,57 +1025,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/.gitattributes" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/source/jquery.slides.coffee" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/bower.json" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/source/jquery.slides.js" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-slide/index.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-fade/js/jquery.slides.js" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-slide/js/jquery.slides.js" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/.gitattributes" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/source/jquery.slides.coffee" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/bower.json" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/source/jquery.slides.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/examples/basic-slide/index.html" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/examples/basic-fade/js/jquery.slides.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/examples/basic-slide/js/jquery.slides.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/README.md" />
     <entry file="file://$USER_HOME$/Desktop/Slides-SlidesJS-3/README.textile" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/SlidesJS3-master/SlidesJS3-master/examples/basic-fade/index.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/Makefile" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/slick.jquery.json" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/ISSUE_TEMPLATE.md" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/CONTRIBUTING.md" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/index.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/README.md" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/test/testres/slick-master/slick/slick.js" />
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="-1530">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1506999076000" expanded="true" signature="1543:1694" ph="..." />
-              <marker date="1506999076000" expanded="true" signature="6414:6782" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="6489:6780" ph="[...]" />
-              <marker date="1506999076000" expanded="true" signature="6490:6597" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="6533:6590" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="6599:6701" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="6641:6694" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="6703:6779" ph="{&quot;settings&quot;: &quot;unslick&quot;...}" />
-              <marker date="1506999076000" expanded="true" signature="7035:7074" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="7156:7189" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="7304:7333" ph="{...}" />
-              <marker date="1506999076000" expanded="true" signature="10633:10663" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/SlidesJS3-master/SlidesJS3-master/examples/basic-fade/index.html" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/Makefile" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/slick.jquery.json" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/ISSUE_TEMPLATE.md" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/CONTRIBUTING.md" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/slick/slick.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/README.md" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="40" column="81" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="81" />
-          <folding />
+        <state relative-caret-position="600">
+          <caret line="40" column="81" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1271,62 +1061,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row3.html">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/index.html" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/ajax-loader.gif" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/slick.css" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/config.rb" />
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/slick.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/test/slick_test_1.html" />
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/slick.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1005">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/test.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="197">
           <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/ajax-loader.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/slick.css">
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/tsg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/slick-master/slick/config.rb">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="3240">
+          <caret line="216" column="25" lean-forward="false" selection-start-line="216" selection-start-column="25" selection-end-line="216" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/slick.js">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/plugins/slick-master/slick/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/include/header.html" />
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/js/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1334,36 +1130,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/header.html">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/test/test/slicktest1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/test/slick_test_1.html">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="110" column="30" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="110" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13021">
+          <caret line="2418" column="72" lean-forward="false" selection-start-line="2418" selection-start-column="66" selection-end-line="2418" selection-end-column="72" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/index/index.html">
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/test/slicktest1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="-97">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/js/tsg.js">
+    <entry file="file://$PROJECT_DIR$/WEB-INF/t/cms/tsg/test/include/row3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="433">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/ajax-loader.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../http/plugins/plugins/slick-master/slick/slick.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/slick.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/r/cms/tsg/test/css/slick.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

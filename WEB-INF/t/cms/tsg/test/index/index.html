@@ -12,22 +12,12 @@
   <!--第三行，newsbox和其他资源搜索-->
   <div class="row row3">[#include "../include/row3.html"]</div>
   <div class="row">
-    <ul class="pic" id="slidesImgs">
-      <div class="pic slider">
-        [@cms_content_list count='4' orderBy='4' typeId='2' titLen='18' channelOption='1'
-        channelId='1272,1273,1274,311']
-        [#list tag_list as a]
-        <li>
-          <a href="${a.url}" target="_blank">
-            <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
-          </a>
-        </li>
-      </div>
-    </ul>
-    <span> [@text_cut s=a.title len=titLen /]</span>
-    [/#list]
-    [/@cms_content_list]
+    <div class="col-md-4 col-sm-4">
+
+    </div>
   </div>
+</div>
 <!--footer-->
 [#include "../include/footer.html"]
+
 </body>
