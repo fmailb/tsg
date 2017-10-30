@@ -22,23 +22,23 @@ function resetInput(self) {
 $(function() {
     var options = {
         newsPerPage: 4,
-        autoplay: false,
+        autoplay: true,
         pauseOnHover: true,
         navigation: true,
         direction: 'down',
         newsTickerInterval: 2500,
         onToDo: function () {
         }
-    }
-    $(document)
-        // .on('mouseover.bs.tab.data-api', '[data-toggle="tab"]', hoverHandler)
-        // .on('mouseover.bs.tab.data-api', '[data-toggle="pill"]', hoverHandler)
-        .ready(function () {
-            $('.demo1').bootstrapNews(options);
-            $('.demo2').bootstrapNews(options);
-        })
-    // $('[data-toggle="tab"]')
-    //     .on('shown.bs.tab', function (e) {$(".demo2").bootstrapNews(options)})
+    };
+    //执行新闻盒子的滚动js
+    $('.demo1').bootstrapNews(options);
+    $('.demo2').bootstrapNews(options);
+    //执行活动新闻的slider js
+    $(".pic").slick({
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    })
 })
 
 
