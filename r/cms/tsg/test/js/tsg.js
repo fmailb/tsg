@@ -22,10 +22,10 @@ function resetInput(self) {
 $(function() {
     var options = {
         newsPerPage: 4,
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: true,
         navigation: true,
-        direction: 'down',
+        direction: 'up',
         newsTickerInterval: 2500,
         onToDo: function () {
         }
@@ -35,7 +35,10 @@ $(function() {
     $('.demo2').bootstrapNews(options);
     //执行活动新闻的slider js
     $(".pic").slick({
-        dots: true,
+        appendArrows:$('.newspics .panel-body'),
+        prevArrow:'<div class="pre"><span class="glyphicon glyphicon-triangle-left"></span></div>',
+        nextArrow:'<div class="pre"><span class="glyphicon glyphicon-triangle-right"></span></div>',
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
     })

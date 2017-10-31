@@ -58,27 +58,27 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 /*.icons .glyphicon-class {    display: block;    text-align: center;    word-wrap: break-word;}*/
 .icons li:hover {    color: #fff;    background-color: #563d7c;}
 
-
+/*第三行*/
 /*第三行左侧newsbox*/
 #newsbox{background-color: rgba(255,255,255,1);}
 #newsbox .panel-body{     padding:10px; padding-bottom: 0px;}
 #newsbox .panel-body>ul{    padding-right: 2px;}
-#newsbox .panel-footer{ padding:1px 15px;}
+#newsbox .panel-footer{ padding:0px 15px 1px 15px;}
 .news-item{    padding:4px 8px;    margin:0px;    border-bottom:1px dotted #555; }
 .news-item>a{ white-space: nowrap;    text-overflow:ellipsis;    overflow: hidden;    padding-right: 2px;}
 .news-item>span{text-align: right;font-style:italic;font-size:10px;float:right;line-height: 20px;}
 .glyphicon{    margin-right:4px !important; /*override*/}
 .pagination .glyphicon{    margin-right:0px !important; /*override*/}
-.pagination li a{    padding:1px 5px 0px 5px; /*override*/}
-
+.pagination li a{padding:1px 4px 0px 5px; line-height: 13px;/*override*/}
+.panel-footer>.div-td-50:first-child{padding-right: 15px}
 /*第三行右侧图片新闻*/
-.newspics{}
 .newspics .panel-body{}
-.newspics .pre,.nex{width:15%;height:100%;display: table;}
-.newspics .pre,.nex,.slider{position:relative;float:left;min-height: 1px;height:132px;text-align: center;}
-.newspics .slider{width:70%;}
+.newspics .pre,.nex{width:17.5%;height:100%;display: table;cursor:pointer;}
+.newspics .pre,.nex,.slider{position:relative;float:left;min-height: 1px;height:130px;text-align: center;}
+.newspics .slider{width:65%;}
 .newspics span{display: table-cell;vertical-align: middle}
-.newspics img{width:100%;height:100%}
+.newspics img{width:100%;height:130px;}
+.slick-dotted.slick-slider{margin-bottom: 0px;}
 
 /*footer*/
 .bs-docs-footer {width:100%;padding-top: 20px;padding-bottom: 20px;color: #fff;/*#99979c;*/
