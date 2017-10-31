@@ -14,7 +14,7 @@
                         [#list tag_list as d]
                         <li class="news-item">
                             <span>${d.date?string(dateFormat)}</span>
-                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=18 /]">[@text_cut s=d.title len=16 /]</a>
+                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=24 /]">[@text_cut s=d.title len=24 /]</a>
                         </li>
                         [/#list]
                     </ul>
@@ -27,7 +27,7 @@
                         [#list tag_list as d]
                         <li class="news-item">
                             <span>${d.date?string(dateFormat)}</span>
-                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=18 /]">[@text_cut s=d.title len=16 /]</a>
+                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=24 /]">[@text_cut s=d.title len=24 /]</a>
                         </li>
                         [/#list]
                     </ul>
@@ -49,9 +49,8 @@
                 [#list tag_list as a]
                 <li>
                     <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
-                    <a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen /]</a>
+                    <a href="${a.url}" title="[@text_cut s=a.title len=24 /]" target="_blank">[@text_cut s=a.title len=titLen /]</a>
                 </li>
-
                 [/#list]
                 [/@cms_content_list]
             </div>

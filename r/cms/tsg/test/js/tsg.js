@@ -38,7 +38,7 @@ $(function() {
         appendArrows:$('.newspics .panel-body'),
         prevArrow:'<div class="pre"><span class="glyphicon glyphicon-triangle-left"></span></div>',
         nextArrow:'<div class="pre"><span class="glyphicon glyphicon-triangle-right"></span></div>',
-        dots: false,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
     })
