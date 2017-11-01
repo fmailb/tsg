@@ -46,12 +46,12 @@ body {/*给navbar留出空间*/padding-top: 50px;margin-left:auto;margin-right:a
 .row2 .glyphicon-class {display: block;text-align: center;word-wrap: break-word;}
 .row2 .panel {margin-bottom:0px;}
 /*第二行资源链接*/
-.quicklink li{float: left;width: 50%;padding: 10px;font-size: 10px;line-height: 1.4;
+.quicklink li{float: left;width: 50%;padding: 10px;font-size: 12px;line-height: 1.4;
     text-align: center;background-color: #fff;border: 1px solid #fff;}
 .quicklink li:hover{color: #fff;background-color:#563d7c;}
 .quicklink img{height: 30px;width:30px;margin-bottom: 5px;}
 /*第二行icons*/
-.icons li {float: left;width: 50%;height: 100px;padding: 10px;font-size: 10px;line-height: 1.4;
+.icons li {float: left;width: 50%;height: 100px;padding: 10px;font-size: 12px;line-height: 1.4;
     text-align: center;background-color: #fff;border: 1px solid #fff;}
 @media  screen and (min-width: 768px) {.icons li {  width: 25%;font-size: 12px; }}
 .icons .glyphicon {    margin-top: 5px;    margin-bottom: 10px;    font-size: 24px;}

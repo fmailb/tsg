@@ -38,14 +38,13 @@
         <div role="tabpanel" class="tab-pane fade" id="profile">
             <div class="searchform">
                 <div class="text-center">
-                    <form class="form-inline" target="_blank" method="post" action="http://www.yidu.edu.cn/educhina/educhina.do" onsubmit="return chkinput(this)">
-                        <input type="hidden"  class="form-control" name="artifact" value="">
+                    <form class="form-inline" target="_blank" method="get" action="http://www.yidu.edu.cn/xuezhi/educhina.do" onsubmit="return chkinput(this)">
+                        <input id="caliscode" type="hidden" name="caliscode" value="337300">
                         <input type="hidden"  class="form-control"  name="skey" value="0">
+                        <input type="hidden"  class="form-control"  name="stype" value="99">
                         <div class="form-group">
                             <input type="text"  class="form-control"  name="svalue" size="20" maxlength="100" placeholder="E读电子书" onclick="resetInput(this)">
                         </div>
-                        <input type="hidden"  class="form-control"  name="stype" value="99">
-                        <input type="hidden"  class="form-control" name="s" value="on">
                         <input type="submit" class="btn btn-primary" title="E读搜索" value="搜索"/>
                     </form>
                 </div>
