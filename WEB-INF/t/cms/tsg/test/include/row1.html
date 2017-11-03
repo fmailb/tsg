@@ -1,76 +1,78 @@
-<div class="searchTabs">
-    <!-- Nav tabs -->
-    <ul class="nav nav-pills nav-justified" role="tablist">
-        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">馆藏搜索</a></li>
-        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">开源知海·E读</a></li>
-        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">百度学术</a></li>
-        <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="home">
-            <div class="searchform">
-                <!--搜索-->
-                <div class="text-center">
-                    <form class="form-inline" target="_blank" action="http://opac.jsit.edu.cn:8080/opac/openlink.php" onsubmit="return chkinput(this)">
-                        <select class="form-control" name="strSearchType" id="searchType_1">
-                            <option value="title">题&nbsp;&nbsp;名</option>
-                            <option value="author">责任者</option>
-                            <option value="keyword">主题词</option>
-                            <option value="isbn">ISBN</option>
-                            <option value="asordno">订购号</option>
-                            <option value="coden">分类号</option>
-                            <option value="callno">索书号</option>
-                            <option value="publisher">出版社</option>
-                            <option value="series">丛书名</option>
-                        </select>
-                        <input type="hidden" class="form-control" name="historyCount" value="1" />
-                        <!--单独添加formgroup为check1函数定位input提供锚-->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="strText" placeholder="馆藏纸本" onclick="resetInput(this)"/>
-                        </div>
-                        <input type="submit" class="btn btn-primary" title="馆藏搜索" value="搜索"/>
-                        <!--<a href="http://opac.jsit.edu.cn:8080/opac/search_adv.php#/highSearch" class="btn btn-default" value="高级检索" target="_blank">高级检索</a>-->
-                    </form>
+<div class="col-md-12">
+    <div class="searchTabs">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">馆藏搜索</a></li>
+            <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">开源知海·E读</a></li>
+            <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">百度学术</a></li>
+            <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">站内搜索</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                <div class="searchform">
+                    <!--搜索-->
+                    <div class="text-center">
+                        <form class="form-inline" target="_blank" action="http://opac.jsit.edu.cn:8080/opac/openlink.php" onsubmit="return chkinput(this)">
+                            <select class="form-control" name="strSearchType" id="searchType_1">
+                                <option value="title">题&nbsp;&nbsp;名</option>
+                                <option value="author">责任者</option>
+                                <option value="keyword">主题词</option>
+                                <option value="isbn">ISBN</option>
+                                <option value="asordno">订购号</option>
+                                <option value="coden">分类号</option>
+                                <option value="callno">索书号</option>
+                                <option value="publisher">出版社</option>
+                                <option value="series">丛书名</option>
+                            </select>
+                            <input type="hidden" class="form-control" name="historyCount" value="1" />
+                            <!--单独添加formgroup为check1函数定位input提供锚-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="strText" placeholder="馆藏纸本" onclick="resetInput(this)"/>
+                            </div>
+                            <input type="submit" class="btn btn-primary" title="馆藏搜索" value="搜索"/>
+                            <!--<a href="http://opac.jsit.edu.cn:8080/opac/search_adv.php#/highSearch" class="btn btn-default" value="高级检索" target="_blank">高级检索</a>-->
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="profile">
-            <div class="searchform">
-                <div class="text-center">
-                    <form class="form-inline" target="_blank" method="get" action="http://www.yidu.edu.cn/xuezhi/educhina.do" onsubmit="return chkinput(this)">
-                        <input id="caliscode" type="hidden" name="caliscode" value="337300">
-                        <input type="hidden"  class="form-control"  name="skey" value="0">
-                        <input type="hidden"  class="form-control"  name="stype" value="99">
-                        <div class="form-group">
-                            <input type="text"  class="form-control"  name="svalue" size="20" maxlength="100" placeholder="E读电子书" onclick="resetInput(this)">
-                        </div>
-                        <input type="submit" class="btn btn-primary" title="E读搜索" value="搜索"/>
-                    </form>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+                <div class="searchform">
+                    <div class="text-center">
+                        <form class="form-inline" target="_blank" method="get" action="http://www.yidu.edu.cn/xuezhi/educhina.do" onsubmit="return chkinput(this)">
+                            <input id="caliscode" type="hidden" name="caliscode" value="337300">
+                            <input type="hidden"  class="form-control"  name="skey" value="0">
+                            <input type="hidden"  class="form-control"  name="stype" value="99">
+                            <div class="form-group">
+                                <input type="text"  class="form-control"  name="svalue" size="20" maxlength="100" placeholder="E读电子书" onclick="resetInput(this)">
+                            </div>
+                            <input type="submit" class="btn btn-primary" title="E读搜索" value="搜索"/>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="messages">
-            <div class="searchform">
-                <!--搜索-->
-                <div class="text-center">
-                    <form class="form-inline" target="_blank" action="http://xueshu.baidu.com/s" onsubmit="return chkinput(this)">
-                        <div class="form-group">
-                            <input class="form-control" type="text" size="22" name="wd" maxlenth="100" onclick="resetInput(this)">
-                        </div>
-                        <input class="form-control" type="hidden" name="rsv_bp" value="0">
-                        <input class="form-control" type="hidden" name="tn" value="SE_baiduxueshu_c1gjeupa">
-                        <input class="form-control" type="hidden" name="rsv_spt" value="3">
-                        <input class="form-control" type="hidden" name="ie" value="utf-8">
-                        <input class="form-control" type="hidden" name="f" value="8">
-                        <input class="form-control" type="hidden" name="rsv_sug2" value="1">
-                        <input class="form-control" type="hidden" name="sc_f_para" value="sc_tasktype={firstSimpleSearch}">
-                        <input class="btn btn-primary" type="submit" title="百度学术搜索" id="su" onmousedown="return ns_c_xs({'fm':'behs','tab':'btn_1'})" value="搜索">
-                    </form>
+            <div role="tabpanel" class="tab-pane fade" id="messages">
+                <div class="searchform">
+                    <!--搜索-->
+                    <div class="text-center">
+                        <form class="form-inline" target="_blank" action="http://xueshu.baidu.com/s" onsubmit="return chkinput(this)">
+                            <div class="form-group">
+                                <input class="form-control" type="text" size="22" name="wd" maxlenth="100" onclick="resetInput(this)">
+                            </div>
+                            <input class="form-control" type="hidden" name="rsv_bp" value="0">
+                            <input class="form-control" type="hidden" name="tn" value="SE_baiduxueshu_c1gjeupa">
+                            <input class="form-control" type="hidden" name="rsv_spt" value="3">
+                            <input class="form-control" type="hidden" name="ie" value="utf-8">
+                            <input class="form-control" type="hidden" name="f" value="8">
+                            <input class="form-control" type="hidden" name="rsv_sug2" value="1">
+                            <input class="form-control" type="hidden" name="sc_f_para" value="sc_tasktype={firstSimpleSearch}">
+                            <input class="btn btn-primary" type="submit" title="百度学术搜索" id="su" onmousedown="return ns_c_xs({'fm':'behs','tab':'btn_1'})" value="搜索">
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
     </div>
 </div>
 
