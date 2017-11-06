@@ -135,8 +135,8 @@ if (typeof Object.create !== 'function') {
             var panel = this.findPanelObject();
             if( panel ) {
                 var nav = '<div class="div-td-50"><ul class="pagination pull-right" style="margin: 0px;">' +
-                             '<li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a></li>' +
-                             '<li><a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a></li>' +
+                             '<li><a href="#" class="prev"><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>' +
+                             '<li><a href="#" class="next"><span class="glyphicon glyphicon-triangle-top"></span></a></li>' +
                            '</ul><div class="clearfix"></div></div>';
 
 
