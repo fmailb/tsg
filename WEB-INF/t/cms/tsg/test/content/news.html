@@ -5,12 +5,28 @@
 [#include "../include/navi.html"]
 
 <div>
-新闻模板待施工
+施工中
+    <h3>        您的位置:
+        <a href='${base}/'>首页</a>
+        [#list channel.nodeList as n]
+        &gt;<a href='${n.url}' target='_blank'>${n.name}</a>
+
+        [/#list]  &gt;
+    </h3>
+    </br>
+    <li>
+        [@cms_channel_list]
+        <a href="${base}/">首页</a>
+        [#list tag_list as c]
+        <A href="${c.url}">${c.name}</A>
+        [/#list]
+        [/@cms_channel_list]
+    </li>
+    </ul>
 </div>
 
-
 [#include "../include/footer.html"]
-
+</body>
 
 
 
