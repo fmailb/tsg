@@ -1,32 +1,59 @@
-[#include "../include/header.html"]
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--js-->
+    <script src="/${res}/js/jquery-3.2.1.js"></script>
+    <script src="/${res}/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script src="/${res}/js/tsg2.js"></script>
+
+    <!--css-->
+    <link href="/${res}/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <!--最后加载-->
+    <link href="/${res}/css/test.css" rel="stylesheet" type="text/css"/>
+    <link href="/${res}/css/test2.css" rel="stylesheet" type="text/css"/>
+
+    <!--freemaker的if语句-->
+    <title>
+        ${site.name}
+        [#if channel??]--${channel.name}[/#if]
+    </title>
+</head>
 
 <body>
 
 [#include "../include/navi.html"]
 
 <div>
-施工中
-    <h3>        您的位置:
-        <a href='${base}/'>首页</a>
-        [#list channel.nodeList as n]
-        &gt;<a href='${n.url}' target='_blank'>${n.name}</a>
+    施工中</br>
+    <div class="container-fluid">
+        <a href='${base}/'>首页</a> &gt;
+        [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>
+        [#if n_has_next] &gt; [/#if]
+        [/#list] &gt;
 
-        [/#list]  &gt;
-    </h3>
-    </br>
-    <li>
-        [@cms_channel_list]
-        <a href="${base}/">首页</a>
-        [#list tag_list as c]
-        <A href="${c.url}">${c.name}</A>
-        [/#list]
-        [/@cms_channel_list]
-    </li>
-    </ul>
+        <div class="contentpage panel panel-default">
+            <div class="panel-heading">
+                ${content.title}
+            </div>
+
+            <div class="panel-body">
+                <div>发布日期：${content.releaseDate?string('yyyy-MM-dd')}</div>
+                <div class="">
+                    ${txt!}
+                </div>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
 </div>
-
 [#include "../include/footer.html"]
 </body>
+</html>
+
+<script>
+
+</script>
 
 
 

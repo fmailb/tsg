@@ -1,5 +1,5 @@
 /**
- * Created by fy on 2017/6/7.
+ * Created by fy on 2017/6/7. 首页的js
  */
 function chkinput(self) {
     //处理输入检查。使用时1.用<div class="form-group">包裹input.2.form的onsubmit=return chkinput(this)
@@ -42,6 +42,8 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     })
+
+
 })
 
 
