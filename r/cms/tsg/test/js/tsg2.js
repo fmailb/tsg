@@ -3,7 +3,7 @@
  */
 // 其他页面的js
 $(function() {
-    if ($(document).height()>1000)
+    if ($('body').height()>750)
     {$('.footer').css("position","static")}
 
 })

@@ -5,3 +5,4 @@
 .contentpage .panel-heading{text-align: center;font-size: 15px}
 .contentpage .panel-body div:first-child{text-align: center;font-size: 12px}
 .contentpage .panel-body div:nth-child(2){padding: 5px 15px;font-size: 14px}
+.contentpage .panel-body div:nth-child(3){text-align: center;}

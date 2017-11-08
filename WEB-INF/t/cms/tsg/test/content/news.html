@@ -25,7 +25,7 @@
 [#include "../include/navi.html"]
 
 <div>
-    施工中</br>
+    施工中1</br>
     <div class="container-fluid">
         <a href='${base}/'>首页</a> &gt;
         [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>
@@ -33,8 +33,10 @@
         [/#list] &gt;
 
         <div class="contentpage panel panel-default">
+
             <div class="panel-heading">
                 ${content.title}
+                ${content.pageCount!}
             </div>
 
             <div class="panel-body">
@@ -42,7 +44,11 @@
                 <div class="">
                     ${txt!}
                 </div>
+                <div>
+                    [#include "../style_page/content.html"/]
+                </div>
             </div>
+
             <div class="panel-footer"></div>
         </div>
     </div>
