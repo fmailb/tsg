@@ -1,0 +1,14 @@
+一 如何使用自定义分页样式
+   1 选择分页模板
+     格式一：[@cms_content_page sysPage='x'] ，则系统调用WEB-INF/t/cms_sys_defined/style_list目录下的content_x或channel_x
+     格式二：[@cms_content_page]中不设置sysPage属性，在它结束标签之前，使用[@cms_ pagination sysPage='x'].
+   2 传入自定义样式
+     [@cms_content_page pageClass='classname' pageStyle='stylename']可以在分页模板中使用传入的类名和sytle属性值
+
+二 模板中的注释写法
+    例：
+    [#--
+    栏目翻页样式
+    pageClass: 翻页DIV class
+    pageStyle: 翻页DIV style
+    --]

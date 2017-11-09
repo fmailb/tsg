@@ -1,5 +1,6 @@
 <!--栏目页模板 http://www.jeecms.com/mbzz/569.htm-->
 <!--header2和是除主页外的头部-->
+<!--cms_pagination的使用方法-->
 [#include "../include/header2.html"]
 
 <body>
@@ -20,7 +21,8 @@
 
         </li>
 
-        [@cms_content_page orderBy='4' channelId=channel.id count=14  sysPage='1' dateFormat='yyyy-MM-dd' channelOption='1' tpl='0' ]
+        [@cms_content_page orderBy='4' channelId=channel.id count=14   dateFormat='yyyy-MM-dd' channelOption='1']
+
         [#list tag_pagination.list as a]
         <li class="list-group-item ">
             <a href="${a.url}" title="${a.title}" target="_blank">
@@ -29,8 +31,7 @@
             <span class="badge">${a.date?string(dateFormat)}</span>
         </li>
         [/#list]
-        [@cms_pagination sysPage='0' userPage='content' /]
-
+        [@cms_pagination  sysPage='2' /]
         [/@cms_content_page]
 
     </ul>
