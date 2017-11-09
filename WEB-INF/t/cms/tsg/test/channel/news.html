@@ -1,16 +1,48 @@
-
-[#include "../include/header.html"]
-
+<!--栏目页模板 http://www.jeecms.com/mbzz/569.htm-->
+<!--header2和是除主页外的头部-->
+[#include "../include/header2.html"]
 
 <body>
 
 [#include "../include/navi.html"]
 
-<div>
-栏目模板待施工1
+<div class="container-fluid">
+
+    <ul class="list-group ">
+
+        <li class="list-group-item list-group-item-info">
+            <a href='${base}/'>首页</a> &gt;
+
+            [#list channel.nodeList as n]
+            <a href='${n.url}' target='_blank'>${n.name}</a>
+            [#if n_has_next] &gt; [/#if]
+            [/#list] &gt;
+
+        </li>
+
+        [@cms_content_page orderBy='4' channelId=channel.id count=14  sysPage='1' dateFormat='yyyy-MM-dd' channelOption='1' tpl='0' ]
+        [#list tag_pagination.list as a]
+        <li class="list-group-item ">
+            <a href="${a.url}" title="${a.title}" target="_blank">
+                [@text_cut s=a.title len=titLen append=append/]
+            </a>
+            <span class="badge">${a.date?string(dateFormat)}</span>
+        </li>
+        [/#list]
+        [@cms_pagination sysPage='0' userPage='content' /]
+
+        [/@cms_content_page]
+
+    </ul>
+
 </div>
 
-[#include "../include/footer.html"]
+</ul>
+    [#include "../include/footer.html"]
+</body>
+</html>
+
+
 
 
 

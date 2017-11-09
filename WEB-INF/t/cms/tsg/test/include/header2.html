@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--js-->
+    <script src="/${res}/js/jquery-3.2.1.js"></script>
+    <script src="/${res}/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script src="/${res}/js/tsg2.js"></script>
+
+    <!--css-->
+    <link href="/${res}/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <!--最后加载-->
+    <link href="/${res}/css/test.css" rel="stylesheet" type="text/css"/>
+    <link href="/${res}/css/test2.css" rel="stylesheet" type="text/css"/>
+
+    <!--freemaker的if语句-->
+    <title>
+        ${site.name}
+        [#if channel??]--${channel.name}[/#if]
+    </title>
+</head>
