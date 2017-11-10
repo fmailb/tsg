@@ -1,24 +1,26 @@
 <!--新闻页分页-->
+<!--在后台编辑内容时，使用编辑器的分页按钮，会使用到这个分页标签模板-->
 [#assign p=pagination/]
-
+<ol class="breadcrumb">
 [#if p.totalPage gt 1]
 
 	[#if !p.firstPage]
-		<a href="${hrefFormer}[#if p.prePage gt 1]_${p.prePage}[/#if]${hrefLatter}">[上一页]</a>
+		<li><a href="${hrefFormer}[#if p.prePage gt 1]_${p.prePage}[/#if]${hrefLatter}">上一页</a></li>
 	[/#if]
 
 	[#list 1..p.totalPage as i]
 
         [#if p.pageNo == i]
-            ${i}
+            <li>${i}</li>
         [#else]
-            <a href="${hrefFormer}[#if i gt 1]_${i}[/#if]${hrefLatter}">${i}</a>
+            <li><a href="${hrefFormer}[#if i gt 1]_${i}[/#if]${hrefLatter}">${i}</a></li>
         [/#if]
 
 	[/#list]
 
     [#if !p.lastPage]
-    <a href="${hrefFormer+'_'+p.nextPage+hrefLatter}">[下一页]</a>
+    <li><a href="${hrefFormer+'_'+p.nextPage+hrefLatter}">下一页</a></li>
     [/#if]
 
 [/#if]
+</ol>

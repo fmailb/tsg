@@ -7,12 +7,13 @@
 [#include "../include/navi.html"]
 
 <div>
-    施工中1</br>
     <div class="container-fluid">
-        <a href='${base}/'>首页</a> &gt;
-        [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>
-            [#if n_has_next] &gt; [/#if]
-        [/#list] &gt;
+        <ol class="breadcrumb">
+            <li><a href='${base}/'>首页</a></li>
+            [#list channel.nodeList as n]
+                <li><a href='${n.url}'>${n.name}</a></li>
+            [/#list]
+        </ol>
 
         <div class="contentpage panel panel-default">
 
@@ -26,12 +27,13 @@
                 <div class="">
                     ${txt!}
                 </div>
+            </div>
+            <!--分页-->
+            <div class="panel-footer">
                 <div>
                     [#include "../style_page/content.html"/]
                 </div>
             </div>
-
-            <div class="panel-footer"></div>
         </div>
     </div>
 </div>

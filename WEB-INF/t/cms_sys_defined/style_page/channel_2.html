@@ -1,26 +1,36 @@
+<!--test模板的分页标签模板-->
 [#assign p=tag_pagination/]
 
-<div>
 
-共${p.totalCount}条记录 ${p.pageNo}/${p.totalPage}页
-[#if p.firstPage]
-    &nbsp;<a disabled="disabled">首页</a> <a disabled="disabled">上一页</a>
-[#else]
-    &nbsp;<a href="#" onclick="location.href=encodeURI('${hrefFormer}${hrefLatter}');">首页</a>
-    <a href="#" onclick="location.href=encodeURI('${hrefFormer}[#if p.prePage gt 1]_${p.prePage}[/#if]${hrefLatter}');">上一页</a>
-[/#if]
+<ol class="breadcrumb">
 
-[#if p.lastPage]
-    &nbsp;<a disabled="disabled">下一页</a> <a disabled="disabled">尾页</a>
-[#else]
-    &nbsp;<a href="#" onclick="location.href=encodeURI('${hrefFormer}_${p.nextPage}${hrefLatter}');">下一页</a>
-    <a href="#" onclick="location.href=encodeURI('${hrefFormer}_${p.totalPage}${hrefLatter}');">尾页</a>
-[/#if]
+    <li>共${p.totalCount}条记录 ${p.pageNo}/${p.totalPage}页</li>
 
-&nbsp;第<select onChange="if(this.value==1){location.href=encodeURI('${hrefFormer}${hrefLatter}')}else{location.href=encodeURI('${hrefFormer}_'+this.value+'${hrefLatter}')}this.disabled='disabled'">
-[#list 1..p.totalPage as i]
-    <option value="${i}" [#if p.pageNo==i]selected="selected"[/#if]>${i}</option>
-[/#list]
-</select>页
+    [#if p.firstPage]
+    <li><a disabled="disabled">首页</a></li>
+    <li><a disabled="disabled">上一页</a></li>
+    [#else]
+    <li><a href="#" onclick="location.href=encodeURI('${hrefFormer}${hrefLatter}');">首页</a></li>
+    <li><a href="#"
+           onclick="location.href=encodeURI('${hrefFormer}[#if p.prePage gt 1]_${p.prePage}[/#if]${hrefLatter}');">上一页</a>
+    </li>
+    [/#if]
 
-</div>
+    [#if p.lastPage]
+    <li><a disabled="disabled">下一页</a> <a disabled="disabled">尾页</a>
+    </li>
+    [#else]
+    <li><a href="#" onclick="location.href=encodeURI('${hrefFormer}_${p.nextPage}${hrefLatter}');">下一页</a>
+    </li>
+    <li><a href="#" onclick="location.href=encodeURI('${hrefFormer}_${p.totalPage}${hrefLatter}');">尾页</a></li>
+    [/#if]
+
+    <li>第<select class=""
+                 onChange="if(this.value==1){location.href=encodeURI('${hrefFormer}${hrefLatter}')}else{location.href=encodeURI('${hrefFormer}_'+this.value+'${hrefLatter}')}this.disabled='disabled'">
+        [#list 1..p.totalPage as i]
+        <option value="${i}" [#if p.pageNo==i]selected="selected"[/#if]>${i}</option>
+        [/#list]
+    </select>页
+    </li>
+
+</ol>
