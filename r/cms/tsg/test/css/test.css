@@ -72,7 +72,7 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .news-item>span{text-align: right;font-style:italic;font-size:10px;float:right;line-height: 20px;}
 .glyphicon{    margin-right:4px !important; /*override*/}
 .pagination .glyphicon{    margin-right:0px !important; /*override*/}
-.pagination>li>a{padding:1px 4px 0px 5px; line-height: 13px;color:#333/*override*/}
+.pagination>li>a{padding:1px 4px 0px 4px; line-height: 15px;color:#333/*override*/}
 .pagination>li>a:focus{color: #333;background:#fff}
 .pagination>li>a:hover{color: #fff; background: #563d7c;text-decoration: none;}
 .panel-footer>.div-td-50:first-child{padding-right: 15px}
