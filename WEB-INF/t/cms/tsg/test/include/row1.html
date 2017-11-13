@@ -71,7 +71,18 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">
+                <div class="searchform">
+                    <div class="text-center">
+                        <form class="form-inline" target="_blank" action="${base}/search.jspx"  onsubmit="return chkinput(this)">
+                            <div class="form-group">
+                                <input class="form-control" name="q" type="text" placeholder="站内搜索" onclick="resetInput(this)">
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

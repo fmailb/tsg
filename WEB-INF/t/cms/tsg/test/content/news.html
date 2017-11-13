@@ -19,11 +19,10 @@
 
             <div class="panel-heading">
                 ${content.title}
-                ${content.pageCount!}
             </div>
 
             <div class="panel-body">
-                <div>发布日期：${content.releaseDate?string('yyyy-MM-dd')}</div>
+                <div class="">${content.releaseDate?string('yyyy-MM-dd')}</div>
                 <div class="">
                     ${txt!}
                 </div>
@@ -38,12 +37,15 @@
     </div>
 </div>
 [#include "../include/footer.html"]
-</body>
+<script>
+    $(function() {
+        if ($('body').height()>$(window).height()-130)
+        {$('.footer').css("position","static")}
+    })
+</script>
 </html>
 
-<script>
 
-</script>
 
 
 

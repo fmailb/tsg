@@ -18,3 +18,9 @@
 [#include "../include/footer.html"]
 
 </body>
+<script>
+    $(function() {
+        if ($('body').height()>$(window).height()-130)
+        {$('.footer').css("position","static")}
+    })
+</script>

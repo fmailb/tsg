@@ -8,3 +8,5 @@
 .contentpage .panel-body div:nth-child(3){text-align: center;}
 .panel .breadcrumb {margin: 0px;padding:0px;}
 .container-fluid>.panel{margin-top: 10px}
+.slash{padding: 0 5px;color: #ccc;}
+.context{width:90%}

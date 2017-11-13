@@ -1,40 +1,65 @@
-[#include "../include/header.html"/]
+[#include "../include/header2.html"/]
 <body>
 [#include "../include/navi.html"/]
 <!--搜索结果-->
 
-    <div class="container-fluid">
-        <div class="LanMu01-2">
-            <div class="LanMu01-1"></div>
-            <span>搜索结果</span>
-            <div class="LanMu01-3"></div>
+<div class="container-fluid">
+
+    <div class="panel panel-default">
+
+        [#if q??]
+        [@cms_lucene_page q=q channelId=channelId siteId='16' descLen='75' append='...' count='10' dateFormat='yyyy-MM-dd']
+
+        <div class="panel-heading">
+            <span class="badge">
+                您搜索的<span style="color:red">“${q!}”</span>，共有 <span style="color:red">${tag_pagination.totalCount!} </span>条查询结果
+            </span>
         </div>
-        <div class="sousuoCon">
-            [#if q??]
-            [@cms_lucene_page q=q channelId=channelId siteId='16' descLen='60' append='...' count='8' dateFormat='yyyy-MM-dd']
-            <div class="search_msg">
-                您搜索的<span class="red">“${input!}”</span>， 1111共有 <span class="red">${tag_pagination.totalCount!} 条</span> 查询结果，[@process_time/]
-            </div>
+
+
+
+        <ul class="list-group">
             [#list tag_list as s]
-            <dl class="sslist">
-                <dt><span>[<a href="${s.ctgUrl}" target="_blank">${s.ctgName}</a>]</span>  <a href="${s.url}" title="${s.title}" target="_blank">
+
+            <li class="list-group-item">
+                <!--栏目标题-->
+                <a href="${s.ctgUrl}" target="_blank">${s.ctgName}</a></span>
+                <!--中间斜杠-->
+                <span class="slash">/</span>
+                <!--新闻标题-->
+                <a href="${s.url}" title="${s.title}" target="_blank">
                     ${s.title?replace('${q!}', "<span style='color: red;'>${q!}</span>")}
-                </a></dt>
-                <dd class="zy">
+                </a>
+                <span class="badge">${s.date?string(dateFormat)}</span>
+
+                <div class="context">
+                    <!--检索词前后文-->
                     [#if s.txt??]
                     [#assign bb=s.txt?replace("<(S*?)[^>]*>.*?|<.*? />","","ri")?replace("&nbsp;","","ri")/]
                     [@text_cut s=bb?replace('${q!}', "<span style='color: red;'>${q!}</span>") len=descLen append=append/]
                     [/#if]
-                </dd>
-                <dd>浏览次数：${s.views}次 &nbsp;&nbsp; 发布时间：${s.date?string(dateFormat)}</dd>
-            </dl>
+                </div>
+            </li>
+
             [/#list]
-            <div class="pagesite">[@cms_pagination sysPage='1'/]</div>
-            [/@cms_lucene_page]
-            [/#if]
-        </div>
-        [#include "../include/footer.html"/]
+        </ul>
+
+
+        <div class="panel-footer"> [@cms_pagination sysPage='2'/]</div>
+
+        [/@cms_lucene_page]
+        [/#if]
+
     </div>
+
+</div>
+[#include "../include/footer.html"/]
 </div>
 </body>
 </html>
+<script>
+    $(function() {
+        if ($('body').height()>$(window).height()-130)
+        {$('.footer').css("position","static")}
+    })
+</script>
