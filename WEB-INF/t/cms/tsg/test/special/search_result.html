@@ -57,9 +57,10 @@
 </div>
 </body>
 </html>
+<!--写在页面中，每次刷新都会执行-->
 <script>
     $(function() {
-        if ($('body').height()>$(window).height()-130)
+        if ($(window).height()<820)
         {$('.footer').css("position","static")}
     })
 </script>
