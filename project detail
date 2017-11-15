@@ -12,3 +12,6 @@
     pageClass: 翻页DIV class
     pageStyle: 翻页DIV style
     --]
+
+三 删不掉栏目
+   维护里有一个回收站，删掉回收站里的内容就可以了。
