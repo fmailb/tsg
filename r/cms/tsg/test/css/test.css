@@ -106,22 +106,27 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .row3 .title{}
 
 /*footer*/
-.footer {width:100%;padding: 20px;padding-bottom: 20px;margin-top:20px;text-align: center;
+.footer {width:100%;padding: 20px;margin-top:20px;text-align: center;
     color: #fff;background-color: rgba(51,122,183,0.7);bottom:0px}
 .footer a {color:#fff; /*#99979c;*/ }
-.footerlinks { padding-left: 0; margin-bottom: 20px;float:left;margin:auto}
+.footer .container-fluid{text-align: center}
+.footer p{margin:0 auto;text-align: center}
+@media screen and (min-width: 1000px) {.footer {position:fixed}}
+@media screen and (max-width: 768px) {.footerlinks,.qrcode {float: none;} }
+
+.wraper{display:inline-block;margin:0 auto;}
+.footerlinks ,.qrcode{float:left}
+.footerlinks{margin-top: 15px;}
 .footerlinks li { display: inline-block;}
 .footerlinks li + li { margin-left: 15px;}
+.footerlinks li:last-child{display:block;margin-top: 15px}
 
-.qrcode{float:left;left:70%;top:7%;margin:auto}
 .qrcode li{display:inline-block;margin:0px 20px;text-align: center}
 .qrcode img{width:70px;height: 70px}
-@media screen and (max-width: 768px) {.footerlinks,.qrcode {float: none;margin:auto}
-                                    .footer{padding: 5px} p{marin:0px}.qrcode{padding: 5px}}
-@media screen and (min-width: 1000px) {.footer {text-align: left;position:fixed}
-    .footer p {margin-bottom: 0;} .footerlinks{margin:15px}}
-.footer p{margin:0 auto;text-align: center}
-.footerlinks li:last-child{display:block;margin-top: 15px}
+
+
+
+
 
 /*一些细节*/
 /*url如果没有/开头，会自动获得{respath}/css的路径前缀:background:url(../images/bg-2.jpg) no-repeat;*/
