@@ -13,3 +13,7 @@
 
 待修改
 footer在手机屏幕分辨率下遮挡内容 ok
+
+
+
+qq浏览器wiki：http://browser.qq.com/wiki/index.html#!index.md
