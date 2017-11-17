@@ -9,3 +9,4 @@
 .container-fluid>.panel{margin-top: 10px}
 .slash{padding: 0 5px;color: #ccc;}
 .context{width:90%}
+.listwrapper{display: block; white-space: nowrap; text-overflow: ellipsis;  overflow: hidden;  }

@@ -21,8 +21,13 @@
      https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx
    2 rgba的替代：-ms-filter属性opacity
      https://msdn.microsoft.com/en-us/library/ms530752(v=vs.85).aspx//最后用了
+     实测：opacity也无法渲染带下拉条菜单的元素，无法显示下拉条。
    3 background-size兼容
    4 根据浏览器不同引入不同版本的jquery
         <!--[if lte IE 8]>   在这里引入ie8及以下使用的文件<![endif]-->
         <!--[if gt IE 8]><!-->在这里引入ie8以上及其他浏览器使用的文件。注意写法和上面不同了。一种hack方法<!--<![endif]-->
    5 ie8不支持“getElementsByClassName”属性或方法
+
+
+五 新闻列表中，让发布日期右对齐
+    重点是要把发布日期放在span中，并且让它成为容器的第一个元素。新闻标题等放在它的后面。

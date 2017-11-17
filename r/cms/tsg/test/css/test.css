@@ -51,8 +51,6 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .searchform {padding-right: 15px; padding-left: 15px; border-radius: 6px;}
 .searchform .container {    max-width: 100%;}
 @media screen and (min-width: 768px) {
-    /*.searchform {padding-top: 64px; padding-bottom: 64px; }*/
-    /*.searchform,{ padding-right: 60px;padding-left: 60px;}*/
     .searchform h1,.searchform .h1 {font-size: 63px;}
 }
 
@@ -110,10 +108,9 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .footer a {color:#fff; /*#99979c;*/ }
 .footer .container-fluid{text-align: center}
 .footer p{margin:0 auto;text-align: center}
-@media screen and (min-width: 1000px) {.footer {position:fixed}}
-@media screen and (max-width: 768px) {.footerlinks,.qrcode {float: none;} }
 
-.wraper{display:inline-block;margin:0 auto;}
+
+.ftwrapper{display:inline-block;margin:0 auto;}
 .footerlinks ,.qrcode{float:left}
 .footerlinks{margin-top: 15px;}
 .footerlinks li { display: inline-block;}
@@ -121,7 +118,8 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 li.lastchild{display:block;margin-top: 15px}
 .qrcode li{display:inline-block;margin:0px 20px;text-align: center}
 .qrcode img{width:70px;height: 70px}
-
+@media screen and (min-width: 1000px) {.footer {position:fixed}}
+@media screen and (max-width: 768px) {.footerlinks,.qrcode {float: none;} }
 
 
 

@@ -16,6 +16,7 @@
                 <li><a href='${n.url}'>${n.name}</a></li>
                 [/#list]
             </ol>
+
         </div>
 
         <ul class="list-group ">
@@ -23,10 +24,17 @@
 
             [#list tag_pagination.list as a]
             <li class="list-group-item ">
-                <a href="${a.url}" title="${a.title}" target="_blank">
-                    [@text_cut s=a.title len=titLen append=append/]
-                </a>
                 <span class="badge">${a.date?string(dateFormat)}</span>
+                <div class="listwrapper">
+                    <!--栏目标题-->
+                    <a href="${a.ctgUrl}" target="_blank">${a.ctgName}</a>
+                    <!--中间斜杠-->
+                    <span class="slash">/</span>
+                    <!--新闻标题-->
+                    <a href="${a.url}" title="${a.title}" target="_blank">
+                        [@text_cut s=a.title len=titLen append=append/]
+                    </a>
+                </div>
             </li>
             [/#list]
         </ul>
