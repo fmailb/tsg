@@ -8,34 +8,40 @@
 
 <div>
     <div class="container-fluid">
-        <ol class="breadcrumb">
-            <li><a href='${base}/'>首页</a></li>
-            [#list channel.nodeList as n]
-                <li><a href='${n.url}'>${n.name}</a></li>
-            [/#list]
-        </ol>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <ol class="breadcrumb">
+                    <li><a href='${base}/'>首页</a></li>
+                    [#list channel.nodeList as n]
+                    <li><a href='${n.url}'>${n.name}</a></li>
+                    [/#list]
+                </ol>
 
-        <div class="contentpage panel panel-default">
+                <div class="contentpage panel panel-default">
 
-            <div class="panel-heading">
-                ${content.title}
-            </div>
+                    <div class="panel-heading">
+                        ${content.title}
+                    </div>
 
-            <div class="panel-body">
-                <div class="pubTime">${content.releaseDate?string('yyyy-MM-dd')}</div>
-                <div class="newsContent">
-                    ${txt!}
-                </div>
-            </div>
-            <!--分页-->
-            <div class="panel-footer">
-                <div>
-                    [#include "../style_page/content.html"/]
+                    <div class="panel-body">
+                        <div class="pubTime">${content.releaseDate?string('yyyy-MM-dd')}</div>
+                        <div class="newsContent">
+                            ${txt!}
+                        </div>
+                    </div>
+                    <!--分页-->
+                    <div class="panel-footer">
+                        <div>
+                            [#include "../style_page/content.html"/]
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 [#include "../include/footer.html"]
 <!--写在页面中，每次刷新都会执行-->
 </body>

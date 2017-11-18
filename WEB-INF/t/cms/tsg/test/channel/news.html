@@ -7,44 +7,68 @@
 [#include "../include/navi.html"]
 
 <div class="container-fluid">
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <ol class="breadcrumb">
-                <li><a href='${base}/'>首页</a></li>
-                [#list channel.nodeList as n]
-                <li><a href='${n.url}'>${n.name}</a></li>
-                [/#list]
-            </ol>
-
-        </div>
-
-        <ul class="list-group ">
-            [@cms_content_page orderBy='4' channelId=channel.id count=14 dateFormat='yyyy-MM-dd' channelOption='1']
-
-            [#list tag_pagination.list as a]
-            <li class="list-group-item ">
-                <span class="badge">${a.date?string(dateFormat)}</span>
-                <div class="listwrapper">
-                    <!--栏目标题-->
-                    <a href="${a.ctgUrl}" target="_blank">${a.ctgName}</a>
-                    <!--中间斜杠-->
-                    <span class="slash">/</span>
-                    <!--新闻标题-->
-                    <a href="${a.url}" title="${a.title}" target="_blank">
-                        [@text_cut s=a.title len=titLen append=append/]
-                    </a>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <ol class="breadcrumb">
+                        <li><a href='${base}/'>首页</a></li>
+                        [#list channel.nodeList as n]
+                        <li><a href='${n.url}'>${n.name}</a></li>
+                        [/#list]
+                    </ol>
                 </div>
-            </li>
-            [/#list]
-        </ul>
 
-        <div class="panel-footer">
-            [@cms_pagination sysPage='2' /]
-            [/@cms_content_page]
+                <!--获得当前栏目的子栏目数量ChildNum-->
+                [#assign ChildNum=0]
+
+                [@cms_channel_list parentId=channel.id]
+                    [#list tag_list as d]
+                    [#assign ChildNum=ChildNum+1]
+                    [/#list]
+                [/@cms_channel_list]
+
+                <ul class="list-group ">
+                    [@cms_content_page orderBy='4' channelId=channel.id count=14 dateFormat='yyyy-MM-dd' channelOption='1']
+                        <!--如果栏目下属有两个以上子栏目，就在新闻标题前显示子栏目名称，否则只显示新闻标题，节省空间-->
+                        [#if ChildNum>1]
+                            [#list tag_pagination.list as a]
+                            <li class="list-group-item ">
+                                <span class="badge">${a.date?string(dateFormat)}</span>
+                                <div class="listwrapper">
+                                    <!--栏目标题-->
+                                    <a href="${a.ctgUrl}" target="_blank">${a.ctgName}</a>
+                                    <!--中间斜杠-->
+                                    <span class="slash">/</span>
+                                    <!--新闻标题-->
+                                    <a href="${a.url}" title="${a.title}" >
+                                        [@text_cut s=a.title len=titLen append=append/]
+                                    </a>
+                                </div>
+                            </li>
+                            [/#list]
+                        [#else]
+                            [#list tag_pagination.list as a]
+                            <li class="list-group-item ">
+                                <span class="badge">${a.date?string(dateFormat)}</span>
+                                <div class="listwrapper">
+                                    <!--新闻标题-->
+                                    <a href="${a.url}" title="${a.title}" >
+                                        [@text_cut s=a.title len=titLen append=append/]
+                                    </a>
+                                </div>
+                            </li>
+                            [/#list]
+                        [/#if]
+                </ul>
+
+                <div class="panel-footer">
+                    [@cms_pagination sysPage='2' /]
+                    [/@cms_content_page]
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 
 [#include "../include/footer.html"]

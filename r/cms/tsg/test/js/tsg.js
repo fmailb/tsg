@@ -20,6 +20,7 @@ function resetInput(self) {
 
 //使用$(function{})的方式调用newsbox.js的参数，确保在document.ready之后执行。
 $(function() {
+    //执行新闻盒子的滚动js
     var options = {
         newsPerPage: 4,
         autoplay: false,
@@ -30,10 +31,10 @@ $(function() {
         onToDo: function () {
         }
     };
-    //执行新闻盒子的滚动js
     $('.demo1').bootstrapNews(options);
     $('.demo2').bootstrapNews(options);
-    //执行活动新闻的slider js
+
+    //执行图片的slider
     $(".pic").slick({
         appendArrows:$('.newspics .panel-body'),
         prevArrow:'<div class="pre"><span class="glyphicon glyphicon-triangle-left"></span></div>',
@@ -42,7 +43,6 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     })
-
 
 })
 

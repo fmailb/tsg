@@ -11,7 +11,6 @@
   <div class="row row2">[#include "../include/row2.html"]</div>
   <!--第三行，newsbox和其他资源搜索-->
   <div class="row row3">[#include "../include/row3.html"]</div>
-
 </div>
 
 <!--footer-->
@@ -21,7 +20,13 @@
 <!--写在页面中，每次刷新都会执行-->
 <script>
     $(function() {
+//      设置footer不要遮住内容
         if ($(window).height()<840)
-        {$('.footer').css("position","static")}
+        {$('.footer').css("position","static")};
+
+        //访问计数，由于有模板变量只能放在模板里。
+
+        Cms.siteFlow("${base}", location.href, document.referrer);
+        $.cookie("_site_id_cookie","${site.id!}",{path: '${base}' });
     })
 </script>

@@ -30,4 +30,12 @@
 
 
 五 新闻列表中，让发布日期右对齐
-    重点是要把发布日期放在span中，并且让它成为容器的第一个元素。新闻标题等放在它的后面。
+    重点是要把发布日期放在span中，并且让它成为容器的第一个元素。新闻标题等放在它的后面。去掉white-space:nowrap就会自动换行并且也是对齐的
+
+六 项目中起配置作用的web.xml位于web-inf目录下
+
+七 负margin值可以直接让元素在原来的位置移动，而不必relative定位。
+
+八 网站的访问量显示需要front.js和jquery.cookie.js
+
+九 可以用[@cms_channel_list]配合freemarker语法获取当前栏目有多少子栏目。具体见channel\news.html

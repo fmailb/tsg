@@ -15,6 +15,7 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .title span{color:#337ab7}
 /*导航条*/
 .navbar-default{background-color: rgba(51,122,183,0.6) !important;}
+.navbar-brand {background: url(../images/logo75.png) no-repeat center; width:80%;float:left;background-size:191px 30px;}
 @media screen and (min-width: 768px){.navbar-brand {width:45px;background: url(../images/logo75.png) no-repeat left;
     background-size:287px 45px;height: 75px;}}
 @media screen and (min-width: 1000px){.navbar-brand {width:479px;
@@ -42,6 +43,7 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 .searchTabs ul {height: 40%;}
 .searchTabs .active>a:after{position: absolute;display: block;content: "";width: 0;height: 0;border: 5px solid transparent;
     border-top-color: #337ab7;bottom: -10px;left: 50%;margin-left: -5px;}
+@media screen and (max-width: 767px){.searchTabs .active>a:after{display: none}}
 /*搜索*/
 .searchform { ;color: inherit;}
 .searchform h1,.searchform .h1 { color: inherit;}
@@ -111,7 +113,7 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 
 
 .ftwrapper{display:inline-block;margin:0 auto;}
-.footerlinks ,.qrcode{float:left}
+.footerlinks ,.qrcode{float:left;padding-left:0px}
 .footerlinks{margin-top: 15px;}
 .footerlinks li { display: inline-block;}
 .footerlinks li + li { margin-left: 15px;}
@@ -119,7 +121,10 @@ li.lastchild{display:block;margin-top: 15px}
 .qrcode li{display:inline-block;margin:0px 20px;text-align: center}
 .qrcode img{width:70px;height: 70px}
 @media screen and (min-width: 1000px) {.footer {position:fixed}}
-@media screen and (max-width: 768px) {.footerlinks,.qrcode {float: none;} }
+@media screen and (max-width: 767px) {
+    .footerlinks,.qrcode {float: none;}
+    .footer{margin-top: 0px; }
+}
 
 
 
