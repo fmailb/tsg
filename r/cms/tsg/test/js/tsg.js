@@ -44,6 +44,12 @@ $(function() {
         slidesToScroll: 1,
     })
 
+    //鼠标悬停显示信息
+    var tooltipOpt ={
+        placement:"top",
+        title:"如果需要登陆账号请使用vpn访问",
+    }
+    $('[data-toggle="tooltip"]').tooltip(tooltipOpt)
 })
 
 

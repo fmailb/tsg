@@ -102,7 +102,8 @@ body {/*给navbar留出空间*/padding-top: 75px;margin-left:auto;margin-right:a
 /*中*/
 .r3m li{display:inline-block;width:50%;float:left;}
 @media screen and (max-width: 768px){.row3 .title,.row3 li{text-align: center}}
-.row3 .title{}
+.tooltip-inner{color: #fff;background-color: #563d7c;}
+.tooltip.top .tooltip-arrow {border-top-color: #563d7c}
 
 /*footer*/
 .footer {width:100%;padding: 20px;margin-top:20px;text-align: center;
