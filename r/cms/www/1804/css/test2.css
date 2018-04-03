@@ -1,0 +1,21 @@
+/*其他页面css*/
+
+/*内容页 标题*/
+body{padding-top:85px}
+@media screen and (max-width: 767px){body{padding-top: 60px}}
+.contentpage .panel-heading{text-align: center;font-size: 15px}
+.contentpage .pubTime{text-align: center;font-size: 12px}
+.contentpage .newsContent{padding: 5px 15px;font-size: 14px}
+.contentpage .panel-body div:nth-child(3){text-align: center;}
+.panel .breadcrumb {margin: 0px;padding:0px;}
+.slash{padding: 0 5px;color: #ccc;}
+.context{width:90%}
+.listwrapper{display: block;  }
+
+@media screen and (max-width: 767px){
+    /*适配手机端访问时的图片大小*/
+    img{max-width:90%;}
+    /*适配手机端链接*/
+    .contentpage a{word-wrap: break-word;word-break: break-all;}
+    .badge{margin-right:-5px}
+}
