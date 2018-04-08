@@ -1,45 +1,41 @@
-<div class="topbg">
-    <div class="w980 mc cb">
-        <div class="fL logo"><a href="index.html"><img src="../../${res}/images/logo.jpg" /></a></div>
-        <div class="fL topone"></div>
-        <div class="fL toptwo">
-                   </div>
-    </div>
+<!--导航栏校徽校名标识-->
+<div>
+	<div>
+		<div><a href="index.html"><img src="../../${res}/images/logo.jpg" /></a></div>
+	</div>
 </div>
-<div class="navbg">
-	<div id="b" class="mc">
-    <div class="topnav">
-        <ul class="menu">
-		[@cms_channel_list ]
-            <li class="no_sub"><a href="${site.url!}" id='_首 页' class="tablink nosub">本站首页&nbsp;&nbsp;&nbsp;|</a></li>
-           [#list tag_list as c]
-		   <li>
-            	<a href="" class="tablink">${c.name}&nbsp;&nbsp;&nbsp;|</a>
-                [@cms_channel_list parentId='${c.id}']
-				<ul style="width:120px">
-				[#list tag_list as d]
-					<li style="clear:both;">
-                    	<div><a href="${d.url}" target="_blank">
-						<span style="font-size:15px; color:#ffba00; font-weight:82px; margin-right:15px;">${d.name}</span></a>
+
+<!--主栏目导航-->
+<div>
+	<div>
+		<ul>
+			[@cms_channel_list ]
+			[#list tag_list as c]
+			<li>
+				<a href="">${c.name}&nbsp;&nbsp;&nbsp;|</a>
+				[@cms_channel_list parentId='${c.id}']
+				<ul>
+					[#list tag_list as d]
+					<li>
+						<div><a href="${d.url}" target="_blank">
+							<span >${d.name}</span></a>
 						</div>
 						[@cms_channel_list parentId='${d.id}']
-                        <div class="navone cb" >
+						<div class="navone cb" >
 							[#list tag_list as e]
-							<a style=" margin-right:15px; " href="${e.url}" id="ss">[@text_cut s=e.name append=""/]</a>
-							 [/#list]
+							<a href="${e.url}" id="ss">[@text_cut s=e.name append=""/]</a>
+							[/#list]
 						</div>
 						[/@cms_channel_list]
-                    </li>
+					</li>
 					[/#list]
-                </ul>
+				</ul>
 				[/@cms_channel_list]
-            </li>
+			</li>
 			[/#list]
-			<li class="no_sub"><a href="${base}/www/rczp/index.jhtml"  class="tablink nosub">人才招聘&nbsp;&nbsp;&nbsp;|</a></li>
-			  <li class="no_sub"><a href="http://58.214.11.18/xyc/index.jhtml"  class="tablink nosub">校友网&nbsp;&nbsp;&nbsp;</a></li>
+			<li><a href="${base}/www/rczp/index.jhtml" >人才招聘&nbsp;&nbsp;&nbsp;|</a></li>
+			<li><a href="http://58.214.11.18/xyc/index.jhtml" >校友网&nbsp;&nbsp;&nbsp;</a></li>
 			[/@cms_channel_list]
-        </ul>
-		
-    </div>
-</div>
+		</ul>
+	</div>
 </div>
