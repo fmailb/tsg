@@ -5,20 +5,32 @@
 [#include "../include/navi.html"]
 
 
-<div>
-
-    <!--row1：首页标题图-->
-    <div>
-        <div>
-            <ul>
-                [@cms_content_list count='7' orderBy='4' typeId='3' titLen='18' channelOption='1' channelId='358']
-                [#list tag_list as a]
-                <li style="background:url('${a.typeImg!site.defImg}') no-repeat center top"></li>
-                [/#list]
-                [/@cms_content_list]
-            </ul>
-        </div>
+<div class="row1">
+    <!--row1：图片轮播-->
+    <div class="FocusSlider">
+        [@cms_content_list count='4' orderBy='4' typeId='4' titLen='16' channelOption='1'
+        channelId='364,366,368']
+            [#list tag_list as a]
+            <div class="FocusNews">
+                <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
+                <a href="${a.url}" title="[@text_cut s=a.title len=24 /]" target="_blank">[@text_cut s=a.title len=titLen /]</a>
+            </div>
+            [/#list]
+        [/@cms_content_list]
     </div>
+
+
+
+    <div>
+        <ul>
+            [@cms_content_list count='7' orderBy='4' typeId='3' titLen='18' channelOption='1' channelId='358']
+            [#list tag_list as a]
+            <li style="background:url('${a.typeImg!site.defImg}') no-repeat center top"></li>
+            [/#list]
+            [/@cms_content_list]
+        </ul>
+    </div>
+
 
     <!--row2 left 新闻区域-->
     <div>
@@ -170,7 +182,7 @@
 
     [#include "../include/footer.html"]
 
-<!--首页漂浮物-->
+    <!--首页漂浮物-->
     <div id="lovexin1" style='POSITION:absolute;left:0px;TOP:200px; '>
         [@cms_content_list orderBy='4'  channelId='346'  count=1   ]
         [#list tag_list as d]

@@ -1,41 +1,43 @@
 <!--导航栏校徽校名标识-->
-<div>
-	<div>
+<div class="wrapper">
+	<div class="">
 		<div><a href="index.html"><img src="../../${res}/images/logo.jpg" /></a></div>
 	</div>
-</div>
 
-<!--主栏目导航-->
-<div>
-	<div>
-		<ul>
-			[@cms_channel_list ]
-			[#list tag_list as c]
-			<li>
-				<a href="">${c.name}&nbsp;&nbsp;&nbsp;|</a>
+
+	<!--主栏目导航-->
+	<div class="navbar">
+		<div class="mainnavbar">
+			<ul>
+				[@cms_channel_list ] [#list tag_list as c]
+				<li>
+					${c.name}&nbsp;&nbsp;&nbsp;|
+				</li>
+				[/#list][/@cms_channel_list]
+				<li><a href="${base}/www/rczp/index.jhtml" >人才招聘&nbsp;&nbsp;&nbsp;|</a></li>
+				<li><a href="http://58.214.11.18/xyc/index.jhtml" >校友网&nbsp;&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="subnavbar">
+			[@cms_channel_list ] [#list tag_list as c]
 				[@cms_channel_list parentId='${c.id}']
-				<ul>
-					[#list tag_list as d]
-					<li>
-						<div><a href="${d.url}" target="_blank">
-							<span >${d.name}</span></a>
-						</div>
-						[@cms_channel_list parentId='${d.id}']
-						<div class="navone cb" >
-							[#list tag_list as e]
-							<a href="${e.url}" id="ss">[@text_cut s=e.name append=""/]</a>
-							[/#list]
-						</div>
-						[/@cms_channel_list]
-					</li>
-					[/#list]
-				</ul>
+					<ul>
+						[#list tag_list as d]
+						<li>
+							<div><a href="${d.url}" target="_blank">
+								<span>${d.name}</span></a>
+							</div>
+						</li>
+						[/#list]
+					</ul>
 				[/@cms_channel_list]
-			</li>
-			[/#list]
-			<li><a href="${base}/www/rczp/index.jhtml" >人才招聘&nbsp;&nbsp;&nbsp;|</a></li>
-			<li><a href="http://58.214.11.18/xyc/index.jhtml" >校友网&nbsp;&nbsp;&nbsp;</a></li>
-			[/@cms_channel_list]
-		</ul>
+
+			[/#list][/@cms_channel_list]
+		</div>
+
+		<div class="clear"></div>
 	</div>
 </div>
