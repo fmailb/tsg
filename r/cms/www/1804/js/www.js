@@ -1,62 +1,29 @@
-// $(document).ready(function(){
-// 	$(".menu li").hover(function(){
-// 			$(this).addClass("hover");
-// 			$(this).children("ul li").attr('class','');
-// 		},function(){
-// 			$(this).removeClass("hover");
-// 			$(this).children("ul li").attr('class','');
-// 		}
-// 	);
-// 	$(".menu li.no_sub").hover(function(){
-// 			$(this).addClass("hover1");
-// 		},function(){
-// 			$(this).removeClass("hover1");
-// 		}
-// 	);
-// })
-// $(function() {
-//     Cms.siteFlow("${base}", location.href, document.referrer);
-// });
-
-
-$(function() {
-    //自动完成，似乎没有用
-    // $("input[name=q]").autocomplete({
-    //     source: "${base}/search/v_ajax_list.jspx",
-    //     minLength: 2,
-    //     max:5,
-    //     delay:100,
-    //     autoFocus: true,
-    //     select: function(e, ui) {
-    //         $("input[name='q']").val(ui.item.value);
-    //         $("#searchForm").submit();
-    //     },
-    //     success: function( data ) {
-    //         response( $.map( data.items, function( item ) {
-    //             return {
-    //                 label: '<B>' + item.id + '</B><br>',
-    //                 value: item.id
-    //             }
-    //         }));
-    //     }
-    // });
-    //首页新闻hover栏目名称切换
-    $(".tab01 li").hover(function(e) {
-        nowTab=$(this).index();
-        $(this).parent().children().removeClass("selected01");
-        $(this).addClass("selected01");
-        $(this).parent().parent().nextAll().addClass("dpN");
-        $(this).parent().parent().parent().children().eq(nowTab+1).removeClass("dpN");
+/**
+ * Created by fy on 2018/4/10. 首页的js
+ */
+//jquery执行
+$(function(){
+    //navbar的下拉功能
+    $(".mainnavbar").click(function(){
+        $(".subnavbar").slideToggle("slow");
+        return false;
+    });
+    $("body,html").click(function(){
+        $(".subnavbar").slideUp();
     });
 
-    $(".tab02 li").hover(function(e) {
-        nowTab=$(this).index();
-        $(this).parent().children().removeClass("selected02");
-        $(this).addClass("selected02");
-        $(this).parent().parent().nextAll().addClass("dpN");
-        $(this).parent().parent().parent().children().eq(nowTab+1).removeClass("dpN");
-    });
-});
+    //头条新闻滚动
+    $(".FocusSlider").slick({
+        appendArrows:$('.FocusNews'),
+        prevArrow:'<div class="SliderArrow left"><span class="glyphicon glyphicon-triangle-left"></span></div>',
+        nextArrow:'<div class="SliderArrow right"><span class="glyphicon glyphicon-triangle-right"></span></div>',
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    })
+
+})
+
 
 function qkeypress(){
     var q=$("input[name=q]");
