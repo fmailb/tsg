@@ -13,7 +13,9 @@
             [#list tag_list as a]
             <div class="FocusNews">
                 <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
-                <a href="${a.url}" title="[@text_cut s=a.title len=24 /]" target="_blank">[@text_cut s=a.title len=titLen /]</a>
+                <div class="FocusNewsTitle">
+                    <a href="${a.url}" title="[@text_cut s=a.title len=48 /]" target="_blank">[@text_cut s=a.title /]</a>
+                </div>
             </div>
             [/#list]
             [/@cms_content_list]

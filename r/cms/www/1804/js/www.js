@@ -12,17 +12,29 @@ $(function(){
         $(".subnavbar").slideUp();
     });
 
-    //头条新闻滚动
-    $(".FocusSlider").slick({
-        appendArrows:$('.FocusNews'),
-        prevArrow:'<div class="SliderArrow left"><span class="glyphicon glyphicon-triangle-left"></span></div>',
-        nextArrow:'<div class="SliderArrow right"><span class="glyphicon glyphicon-triangle-right"></span></div>',
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    })
+    //头条新闻滚动的几个js
+    //滚动框设置
+    $(".FocusSlider")
+        .slick({
+            appendArrows:$('.FocusSlider'),
+            prevArrow:'<div class="SliderArrow left"><span class="glyphicon glyphicon-triangle-left"></span></div>',
+            nextArrow:'<div class="SliderArrow right"><span class="glyphicon glyphicon-triangle-right"></span></div>',
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    displayArrow();
 
-})
+    //鼠标划过
+
+});
+
+function displayArrow(){
+    $arr=$(".SliderArrow");
+    $(".FocusSlider")
+        .mouseover(function(){$arr.show()})
+        .mouseout(function(){$arr.hide()})
+}
 
 
 function qkeypress(){
