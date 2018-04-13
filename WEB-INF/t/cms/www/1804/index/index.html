@@ -5,8 +5,8 @@
 <div class="container">
     <!--导航-->
     [#include "../include/navi.html"]
-    <!--焦点新闻，图片-->
-    <div class="row1">
+    <!--焦点新闻-->
+    <div class="row row1">
         <div class="FocusSlider">
             [@cms_content_list count='4' orderBy='4' typeId='4' titLen='16' channelOption='1'
             channelId='364,366,368']
@@ -21,7 +21,9 @@
             [/@cms_content_list]
         </div>
 
+    </div>
 
+    <div class="row row2">
 
         <div>
             <ul>
@@ -52,13 +54,15 @@
                                 <div>
                                     [@cms_channel id='366']
                                     <a href="${tag_bean.url}"><img src="../../${res}/images/in02.jpg" /></a>
+
                                     [/@cms_channel]
                                 </div>
                                 <ul>
                                     <ul>
-                                        [@cms_content_list orderBy='4' channelId='366' titLen='21' count=10 dateFormat='yyyy-MM-dd' ]
+                                        [@cms_content_list orderBy='4' channelId='344' titLen='21' count=10 dateFormat='yyyy-MM-dd' channelOption='1' ]
                                         [#list tag_list as d]
-                                        <li><a href="${d.url}" title="${d.title}" target="_blank"><span style="">[@text_cut s=d.title len=21 append="..."/]</span></a><em>${d.date?string(dateFormat)}</em></li>
+                                        <li><a href="${d.url}" title="${d.title}" target="_blank"><span style="">[@text_cut s=d.title len=21 append="..."/]11</span>1</a><em>${d.date?string(dateFormat)}</em></li>
+                                        <li style="background:url('${d.titleImg!site.defImg}') no-repeat center top"></li>
                                         [/#list]
                                         [/@cms_content_list]
                                     </ul >
@@ -75,7 +79,8 @@
                                     <ul>
                                         [@cms_content_list orderBy='4' channelId='368' titLen='21' count=10 dateFormat='yyyy-MM-dd' ]
                                         [#list tag_list as d]
-                                        <li><a href="${d.url}" title="${d.title}" target="_blank"><span style="">[@text_cut s=d.title len=21 append="..."/]</span></a><em>${d.date?string(dateFormat)}</em></li>
+                                       <li><a href="${d.url}" title="${d.title}" target="_blank"><span style="">[@text_cut s=d.title len=21 append="..."/]</span></a><em>${d.date?string(dateFormat)}</em></li>
+                                        [#if d.titleImg??] <img border="0" src="${d.titleImg!site.defImg}"/> [/#if]
                                         [/#list]
                                         [/@cms_content_list]
                                     </ul >

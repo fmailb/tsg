@@ -17,16 +17,19 @@ $(function(){
     $(".FocusSlider")
         .slick({
             appendArrows:$('.FocusSlider'),
-            prevArrow:'<div class="SliderArrow left"><span class="glyphicon glyphicon-triangle-left"></span></div>',
-            nextArrow:'<div class="SliderArrow right"><span class="glyphicon glyphicon-triangle-right"></span></div>',
+            prevArrow:'<div class="SliderArrow prev"><span class="glyphicon glyphicon-triangle-left"></span></div>',
+            nextArrow:'<div class="SliderArrow next"><span class="glyphicon glyphicon-triangle-right"></span></div>',
             dots: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            speed:700,
+            autoplay:false,
+            easing:'swing',
+
         });
+
+    //鼠标划过显示翻页箭头
     displayArrow();
-
-    //鼠标划过
-
 });
 
 function displayArrow(){
