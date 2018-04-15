@@ -1,0 +1,35 @@
+
+<div class="row">
+
+    <div class="module">
+        <div class=modHead">
+            [@cms_channel id='366']
+            <span class="modTitle">${tag_bean.name}</span>
+            <span class="modEnter"><a href="${tag_bean.url}">MORE</a></span>
+            [/@cms_channel]
+        </div>
+
+        <div class="row modContent">
+            <div class="col-md-4">
+                <div class="modPicNews"></div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="modNewslist">
+                    <ul>
+                        [@cms_content_list orderBy='4' channelId='344' titLen='21' count=10 dateFormat='yyyy-MM-dd'
+                        channelOption='1' ]
+                        [#list tag_list as d]
+                        <li><a href="${d.url}" title="${d.title}" target="_blank"><span style="">[@text_cut s=d.title len=21 append="..."/]11</span>1</a><em>${d.date?string(dateFormat)}</em>
+                        </li>
+                        <li style="background:url('${d.titleImg!site.defImg}') no-repeat center top"></li>
+                        [/#list]
+                        [/@cms_content_list]
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
