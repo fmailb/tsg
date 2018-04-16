@@ -1,7 +1,7 @@
-* { list-style: none; margin: 0px; padding: 0px;
+* {  margin: 0px; padding: 0px;
     font-family: \5FAE\8F6F\96C5\9ED1, Verdana, Tahoma; line-height: 150%;
-    font-weight: normal; text-decoration: none; border: 0px;
-}
+    font-weight: normal; text-decoration: none; border: 0px;}
+ul,ol{list-style: none}
 body { background: #F1EEE4; }
 a { color: #333; }
 a:hover { color: #F00; }
@@ -15,6 +15,7 @@ a:hover { color: #F00; }
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
 
 .row1{display: block}
+.row2{overflow: hidden}
 /*slide图片效果*/
 .FocusSlider{margin:0 auto;}
 .FocusSlider img{width:1170px;height: 430px}
@@ -27,4 +28,18 @@ a:hover { color: #F00; }
 .FocusNewsTitle{position: absolute;bottom: 0px; z-index: 40;height: 30px;width:100%;
     background-color:rgba(0,0,0,0.7)}
 .FocusNewsTitle a{ padding: 0 30px; color: #fff;font-size: 16px;line-height: 30px;}
+/*图片新闻栏目*/
+.module{overflow: hidden;margin-bottom: 20px}
+.modHead{height: 40px;line-height: 40px;font-size: 22px;color: #992e1c;border-bottom: 1px solid #992e1c;margin-bottom: 10px;}
+.modEnter{float:right;font-size:14px;line-height: 40px}
+.modContent{}
+.modPic1{width:260px;height:180px;margin-top:5px}
+.modPicTitle1{font-size: 16px;color: #333;font-weight: bold;}
+.modNewslist{border-left: 1px #ccc dotted;}
+.newsList .glyphicon{color:#992e1c;font-size: 2px;opacity:0.8}
+.newsListItem{margin: 5px 8px;overflow: hidden;border-bottom: 1px #ccc dotted;}
+.date{float:right}
+.picList{padding-left: 0;margin-left: -5px;}
+.picList > li {display:inline-block;}
+.modPic2{width:240px;height: 160px}
 
