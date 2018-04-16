@@ -42,4 +42,5 @@ a:hover { color: #F00; }
 .picList{padding-left: 0;margin-left: -5px;}
 .picList > li {display:inline-block;}
 .modPic2{width:240px;height: 160px}
-
+/*通知公告*/
+.module2{}
