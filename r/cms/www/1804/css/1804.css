@@ -15,7 +15,7 @@ a:hover { color: #F00; }
 .subnavbar ul {    float: left;    width: 124px;    margin-bottom: 15px;    margin-top: 15px;}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
 
-.row1{display: block}
+.row2{padding:0px 0px 5px 15px;}
 /*slide图片效果*/
 .FocusSlider{margin:0 auto;}
 .FocusSlider img{width:1170px;height: 430px}
@@ -59,3 +59,9 @@ a:hover { color: #F00; }
 .nlItem2 span{margin-top: 15px;float: right;width: 236px;height: 70px;line-height: 20px;}
 .nlItem2 a{font-weight: bold}
 .news-item{border:none}
+/*footer*/
+.footer{width:100%;font-size: 12px}
+.ftUpperBlock{background: #E0D9C9;height:230px;}
+.ftMidBlock{background: #820B0B;height:200px;}
+.ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
+.ftBottomBlock{height:24px ;}

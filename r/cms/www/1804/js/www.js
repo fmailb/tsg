@@ -40,6 +40,10 @@ $(function(){
 
     //鼠标划过显示翻页箭头
     displayArrow();
+
+    //访问计数等
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+    $.cookie("_site_id_cookie","${site.id!}",{path: '${base}' });
 });
 
 function displayArrow(){
