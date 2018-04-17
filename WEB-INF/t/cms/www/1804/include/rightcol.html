@@ -1,9 +1,81 @@
 <div class="module module2">
-    <div class="modHead"></div>
-    <div class="modContent"></div>
+
+    <div class="modHead modHead2">
+        [@cms_channel id='368']
+        <span class="modTitle">${tag_bean.name}</span>
+        <div class="bottomline">
+            <span class="modEnter"><a href="${tag_bean.url}">MORE></a></span>
+        </div>
+        [/@cms_channel]
+    </div>
+
+    <div class="modContent">
+        <ul class="modNewslist2">
+            [@cms_content_list orderBy='4' channelId='368' titLen='21' count=4 channelOption='1' ]
+            [#list tag_list as d]
+            <li class="newsListItem nlItem2">
+                <div class="date2">
+                    <p>${d.date?string('dd')}</p>
+                    <p>${d.date?string('yyyy-mm')}</p>
+                </div>
+                <span>
+                <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=24 append=".."/]</a>
+                </span>
+            </li>
+            [/#list]
+            [/@cms_content_list]
+        </ul>
+    </div>
+
 </div>
 
 <div class="module module2">
-    <div class="modHead"></div>
-    <div class="modContent"></div>
+    <div class="modHead modHead2">
+        [@cms_channel id='2251']
+        <span class="modTitle">${tag_bean.name}</span>
+        <div class="bottomline">
+            <span class="modEnter"><a href="${tag_bean.url}">MORE></a></span>
+        </div>
+        [/@cms_channel]
+    </div>
+
+    <div class="modContent">
+        <ul class="modNewslist2">
+            [@cms_content_list orderBy='4' channelId='2251' titLen='16' count=12 channelOption='1' dateFormat='MM-dd']
+            [#list tag_list as d]
+            <li class="newsListItem">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=16 append=".."/]</a>
+                <span class="date">${d.date?string(dateFormat)}</span>
+            </li>
+            [/#list]
+            [/@cms_content_list]
+        </ul>
+        <div class="modFooter"></div>
+    </div>
+</div>
+
+<div class="module module2">
+    <div class="modHead modHead2">
+        [@cms_channel id='364']
+        <span class="modTitle">${tag_bean.name}</span>
+        <div class="bottomline">
+            <span class="modEnter"><a href="${tag_bean.url}">MORE></a></span>
+        </div>
+        [/@cms_channel]
+    </div>
+
+    <div class="modContent" id="newsbox">
+        <ul class="modNewslist2 demo1">
+            [@cms_content_list orderBy='4' channelId='364' titLen='16' count=12 channelOption='1' dateFormat='MM-dd']
+            [#list tag_list as d]
+            <li class="newsListItem ">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=20 append=".."/]</a>
+            </li>
+            [/#list]
+            [/@cms_content_list]
+        </ul>
+
+    </div>
 </div>

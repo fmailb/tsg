@@ -3,6 +3,7 @@
     font-weight: normal; text-decoration: none; border: 0px;}
 ul,ol{list-style: none}
 body { background: #F1EEE4; }
+div{overflow: hidden}
 a { color: #333; }
 a:hover { color: #F00; }
 .clear{clear:both;height: 0px}
@@ -15,7 +16,6 @@ a:hover { color: #F00; }
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
 
 .row1{display: block}
-.row2{overflow: hidden}
 /*slide图片效果*/
 .FocusSlider{margin:0 auto;}
 .FocusSlider img{width:1170px;height: 430px}
@@ -28,19 +28,34 @@ a:hover { color: #F00; }
 .FocusNewsTitle{position: absolute;bottom: 0px; z-index: 40;height: 30px;width:100%;
     background-color:rgba(0,0,0,0.7)}
 .FocusNewsTitle a{ padding: 0 30px; color: #fff;font-size: 16px;line-height: 30px;}
+/*两列新闻开始*/
+.col-md-8>.row{margin-right: 5px }/*两列间距*/
 /*图片新闻栏目*/
-.module{overflow: hidden;margin-bottom: 20px}
-.modHead{height: 40px;line-height: 40px;font-size: 22px;color: #992e1c;border-bottom: 1px solid #992e1c;margin-bottom: 10px;}
-.modEnter{float:right;font-size:14px;line-height: 40px}
+.module{margin-bottom: 20px;}
+.modHead{height: 50px;line-height: 40px;font-size: 22px;color: #992e1c;
+    border-bottom: 1px solid #992e1c;margin-bottom: 10px;padding: 10px 21px}
+.modEnter{float:right;font-size:12px;line-height: 40px}
 .modContent{}
 .modPic1{width:260px;height:180px;margin-top:5px}
 .modPicTitle1{font-size: 16px;color: #333;font-weight: bold;}
-.modNewslist{border-left: 1px #ccc dotted;}
-.newsList .glyphicon{color:#992e1c;font-size: 2px;opacity:0.8}
+.modNewslist1{border-left: 1px #ccc dotted;}
+.modNewslist1 .glyphicon,.modNewslist2 .glyphicon{color:#992e1c;font-size: 2px;opacity:0.8}
 .newsListItem{margin: 5px 8px;overflow: hidden;border-bottom: 1px #ccc dotted;}
+.newsListItem:last-child{border: none}
 .date{float:right}
 .picList{padding-left: 0;margin-left: -5px;}
 .picList > li {display:inline-block;}
 .modPic2{width:240px;height: 160px}
 /*通知公告*/
-.module2{}
+.module2{width:100%;background: #f9f9f9;border: 1px #CCC solid;}
+.modHead2{border-bottom: none;}
+.modNewslist2{padding: 0px 21px}
+.modFooter{width:100%;height: 20px}
+.bottomline{display:inline;float:right;height: 40px;width:70%;border-bottom: 1px solid #992e1c;}
+.date2{float: left;width: 56px;height: 60px;text-align: center;overflow: hidden;color: #333;margin-top: 17px;}
+.date2 p:nth-child(1){font-size:22px;background-color:#95291B;color: white}
+.date2 p:nth-child(2){font-size:12px;background-color:#E6E6E6;color:#929CB4}
+.nlItem2{height: 90px;}
+.nlItem2 span{margin-top: 15px;float: right;width: 236px;height: 70px;line-height: 20px;}
+.nlItem2 a{font-weight: bold}
+.news-item{border:none}

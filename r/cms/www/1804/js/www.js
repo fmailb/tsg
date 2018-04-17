@@ -12,7 +12,7 @@ $(function(){
         $(".subnavbar").slideUp();
     });
 
-    //头条新闻滚动的几个js
+    //焦点图片滚动的几个js
     //滚动框设置
     $(".FocusSlider")
         .slick({
@@ -25,8 +25,18 @@ $(function(){
             speed:700,
             autoplay:false,
             easing:'swing',
-
         });
+
+    //新闻滚动
+    var options = {
+        newsPerPage: 6,
+        autoplay: true,
+        pauseOnHover: true,
+        navigation: false,
+        direction: 'up',
+        newsTickerInterval: 1500,
+    };
+    $('.demo1').bootstrapNews(options);
 
     //鼠标划过显示翻页箭头
     displayArrow();
