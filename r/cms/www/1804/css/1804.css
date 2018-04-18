@@ -4,8 +4,9 @@
 ul,ol{list-style: none}
 body { background: #F1EEE4; }
 div{overflow: hidden}
-a { color: #333; }
-a:hover { color: #F00; }
+a { color: #333; } a.white{color:#FFF}
+a:hover,a.white:hover { color: #F00; }
+
 .clear{clear:both;height: 0px}
 .wrapper { margin:0 auto;}
 .navbar {background: #820B0B; width: 100%; margin: 0px auto;}
@@ -62,6 +63,10 @@ a:hover { color: #F00; }
 /*footer*/
 .footer{width:100%;font-size: 12px}
 .ftUpperBlock{background: #E0D9C9;height:230px;}
-.ftMidBlock{background: #820B0B;height:200px;}
+.ftMidBlock{background: #820B0B;height:200px;text-align: center}
+.ftMidBlock ul{float:left;position: relative;left:50%;top:25%}
+.ftMidBlock li{float:left;position:relative;left:-50%;color: #FFF;margin-right: 10px;}
+.ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
+.orgAddress{width:360px}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
 .ftBottomBlock{height:24px ;}
