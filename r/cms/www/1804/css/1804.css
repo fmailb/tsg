@@ -63,10 +63,13 @@ a:hover,a.white:hover { color: #F00; }
 /*footer*/
 .footer{width:100%;font-size: 12px}
 .ftUpperBlock{background: #E0D9C9;height:230px;}
-.ftMidBlock{background: #820B0B;height:200px;text-align: center}
+.ftMidBlock{background: #820B0B;height:200px;text-align: center;overflow: visible}
 .ftMidBlock ul{float:left;position: relative;left:50%;top:25%}
-.ftMidBlock li{float:left;position:relative;left:-50%;color: #FFF;margin-right: 10px;}
+.ftMidBlock li{float:left;position:relative;left:-50%;color: #FFF;margin-right: 20px;}
 .ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
-.orgAddress{width:360px}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
-.ftBottomBlock{height:24px ;}
+.ftBottomBlock{height:24px }
+.orgAddress{width:360px}
+.qrCode{padding-top: 20px}
+.qrCode1 .tooltip-inner{background: url("../images/qrcode-wx.jpg") center center /100% 100%;}
+.qrCode2 .tooltip-inner{background: url("../images/qrcode-wb.jpg") center center /100% 100%;}
