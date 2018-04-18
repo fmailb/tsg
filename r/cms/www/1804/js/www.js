@@ -38,8 +38,15 @@ $(function(){
     };
     $('.demo1').bootstrapNews(options);
 
+    //bootstrap tooltip 初始化
+    var tooltipOpt ={
+        placement:"top",
+    }
+    $('[data-toggle="tooltip"]').tooltip(tooltipOpt)
+
     //鼠标划过显示翻页箭头
     displayArrow();
+
 
     //访问计数等
     Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
