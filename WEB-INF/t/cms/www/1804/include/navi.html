@@ -1,7 +1,19 @@
 <!--导航栏校徽校名标识-->
 <div class="row">
-	<div class="">
-		<div><a href="index.html"><img src="../../${res}/images/logo.jpg" /></a></div>
+	<div class="header">
+		<ul class="list-inline">
+			<li><a href="#"><img src="/${res}/images/logo-main.png" /></a></li>
+			<li class="searchform">
+				<div class="text-center">
+					<form class="form-inline" target="_blank" action="${base}/search.jspx"  onsubmit="return chkinput(this)">
+						<div class="form-group">
+							<input class="form-control" name="q" type="text" placeholder="站内搜索" onclick="resetInput(this)">
+						</div>
+						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+				</div>
+			</li>
+		</ul>
 	</div>
 
 

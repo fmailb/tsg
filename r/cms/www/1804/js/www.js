@@ -69,4 +69,20 @@ function qkeypress(){
         $("input[name=q]").autocomplete("disable");
     }
 }
+//搜索框检查
+function chkinput(self) {
+    //处理输入检查。使用时1.用<div class="form-group">包裹input.2.form的onsubmit=return chkinput(this)
+    var $div=$(self).children('.form-group');
+    var $input=$div.children('input')[0];
+    s=$input.value;
+    //问号表达式 必须用 == 以形成条件，=会出错
+    if (s == "" || s == null || s == "请输入有意义的检索词")
+    {$input.value= "请输入有意义的检索词";$div.addClass('form-group has-error');return false; }
+    else {return true;}
+}
 
+function resetInput(self) {
+    //点击输入框清空上次输入,取消 has-error状态
+    self.value="";
+    self.parentNode.className="form-group"
+}
