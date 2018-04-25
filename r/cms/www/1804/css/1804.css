@@ -4,17 +4,26 @@
 ul,ol{list-style: none}
 body { background: #F1EEE4; }
 div{overflow: hidden}
-a { color: #333; } a.white{color:#FFF}
+.white{color:#FFF}
+.red1{color:#820B0B} .red2{color:#992e1c}
+a { color: #333; }
 a:hover,a.white:hover { color: #F00; }
-/*头部校徽标识*/
+[type=submit]{cursor: pointer;}
+input[type=text]:focus {background: #fff;color: #333333;}
+/*头部*/
 .header{height: 140px}
 .clear{clear:both;height: 0px}
-.searchform{float:right;margin-top: 22px}
+.searchform{float:right;margin-top: 22px;position: relative}
+.searchform input{border:0px; background: rgba(255,255,255,0.6);height:37px;line-height: 30px}
+.searchform button{position: absolute; top: 9px;right: 8px; ;margin: 0;border: none;
+    background: transparent;margin-right: 7px;}
+.searchform .glyphicon{font-size: 16px}
+
 /*navbar*/
 .wrapper { margin:0 auto;}
 .navbar {background: #820B0B; width: 100%; margin: 0px auto;}
 .mainnavbar li{font-size: 16px;    color: #FFF;    height: 45px;    line-height: 45px;
-    text-align: center;    float: left;    width: 120px; float: left;}
+    text-align: center;    float: left;    width: 120px; float: left;cursor: pointer}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
 .subnavbar ul {    float: left;    width: 124px;    margin-bottom: 15px;    margin-top: 15px;}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
