@@ -1,7 +1,7 @@
 * {  margin: 0px; padding: 0px;
     font-family: \5FAE\8F6F\96C5\9ED1, Verdana, Tahoma; line-height: 150%;
     font-weight: normal; text-decoration: none; border: 0px;}
-ul,ol{list-style: none}
+ul,ol{list-style: none;}
 body { background: #F1EEE4; }
 div{overflow: hidden}
 .white{color:#FFF}
@@ -14,7 +14,8 @@ input[type=text]:focus {background: #fff;color: #333333;}
 .header{height: 140px}
 .clear{clear:both;height: 0px}
 .searchform{float:right;margin-top: 22px;position: relative}
-.searchform input{border:0px; background: rgba(255,255,255,0.6);height:37px;line-height: 30px}
+.searchform .form-control:focus{border-color:#820B0B}
+.searchform input{ background: rgba(255,255,255,0.6);height:37px;line-height: 30px}
 .searchform button{position: absolute; top: 9px;right: 8px; ;margin: 0;border: none;
     background: transparent;margin-right: 7px;}
 .searchform .glyphicon{font-size: 16px}
@@ -22,10 +23,13 @@ input[type=text]:focus {background: #fff;color: #333333;}
 /*navbar*/
 .wrapper { margin:0 auto;}
 .navbar {background: #820B0B; width: 100%; margin: 0px auto;}
-.mainnavbar li{font-size: 16px;    color: #FFF;    height: 45px;    line-height: 45px;
-    text-align: center;    float: left;    width: 120px; float: left;cursor: pointer}
+.mainnavbar ul{display: inline;}
+.mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
+    text-align: center;width:10.7%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+    vertical-align:middle;  /*去掉下边距*/}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
-.subnavbar ul {    float: left;    width: 124px;    margin-bottom: 15px;    margin-top: 15px;}
+.subnavbar ul {float: left;width: 11%;margin-bottom: 15px;margin-top:15px;}
+.subnavbar li{text-align: center}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
 
 .row2{padding:0px 0px 5px 15px;}
