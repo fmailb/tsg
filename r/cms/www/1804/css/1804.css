@@ -7,19 +7,24 @@ div{overflow: hidden}
 .white{color:#FFF}
 .red1{color:#820B0B} .red2{color:#992e1c} .gray1{color:#9D9D9D}
 a { color: #333; }
-a:hover,a.white:hover { color: #F00; }
+a:hover,a.white:hover,a.red2:hover { color: #F00; }
 [type=submit]{cursor: pointer;}
 input[type=text]:focus {background-color: #FFF;}
 .clear{clear:both;height: 0px}
-
+/***************/
 /*头部*/
+/***************/
 .wrapper1{background:rgba(255,255,255,0.7)}
 .headerTop,.headerBottom,.headerTopL,.mainnavbar{margin:0 auto;width:1170px}
 .headerTop{height: 38px;}
-.headerTop ul{display: inline;width:1170px;margin: 0 auto}
-.headerTop li{font-size: 12px;color: #000;height: 45px;line-height: 45px;
-        text-align: center;width:5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
-         vertical-align:middle;  /*去掉下边距*/}
+.headerTop ul:nth-child(1){float:left}
+.headerTop ul:nth-child(2){float:right}
+.headerTop li{text-align: center;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+    vertical-align:middle;  /*去掉下边距*/ margin-right: -4px;}
+.headerTop a{display:block;font-size: 13px;color: #992e1c;font-weight: bold;height: 38px;
+    line-height: 38px;padding:0 6px;}
+.headerTop li:hover{background-color: #575757 ;}
+.headerTop a:hover{color:#fff;}
 .headerBottom{height: 140px;}
 .headerBottom img{}
 .searchform{float:right;margin-top: 22px;position: relative}
@@ -29,14 +34,15 @@ input[type=text]:focus {background-color: #FFF;}
 .searchform button{position: absolute; top: 9px;right: 8px; ;margin: 0;border: none;
     background: transparent;margin-right: 7px;color:#992e1c}
 .searchform .glyphicon{font-size: 16px}
-
+/***************/
 /*navbar*/
+/***************/
 .wrapper {width:100%;}
 .navbar {background: #992e1c; width: 100%; }
 .mainnavbar ul{margin-bottom:0px;}
 .mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
     text-align: center;width:13.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
-    vertical-align:middle;  /*去掉下边距*/}
+    vertical-align:middle; /*去掉下边距*/}
 .mainnavbar .glyphicon{font-size: 5px;margin-left: 4px}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
 .subnavbar ul {float: left;width: 13.8%;margin-bottom: 15px;margin-top:15px;}
@@ -54,8 +60,9 @@ input[type=text]:focus {background-color: #FFF;}
 .FocusNewsTitle{position: absolute;bottom: 0px; z-index: 40;height: 30px;width:100%;
     background-color:rgba(0,0,0,0.7)}
 .FocusNewsTitle a{ padding: 0 30px; color: #fff;font-size: 16px;line-height: 30px;}
-
+/***************/
 /*row2*/
+/***************/
 .row2{padding:0px 0px 5px 15px;}
 /*两列新闻开始*/
 .col-md-8>.row{margin-right: 5px }/*两列间距*/
@@ -85,10 +92,12 @@ input[type=text]:focus {background-color: #FFF;}
 .date2 p:nth-child(1){font-size:22px;background-color:#95291B;color: white}
 .date2 p:nth-child(2){font-size:12px;background-color:#E6E6E6;color:#929CB4}
 .nlItem2{height: 90px;}
-.nlItem2 span{margin-top: 15px;float: right;width: 236px;height: 70px;line-height: 20px;}
+.nlItem2 span{display:block;margin-top:15px;float:right;width:225px;height: 70px;line-height: 20px;}
 .nlItem2 a{font-weight: bold}
 .news-item{border:none}
+/***************/
 /*footer*/
+/***************/
 .footer{width:100%;font-size: 12px}
 .ftUpperBlock{background: #E0D9C9;height:230px;}
 .ftMidBlock{background: #820B0B;height:200px;text-align: center;overflow: visible}
