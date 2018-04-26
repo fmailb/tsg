@@ -5,34 +5,43 @@ ul,ol{list-style: none;}
 body { background: #F1EEE4; }
 div{overflow: hidden}
 .white{color:#FFF}
-.red1{color:#820B0B} .red2{color:#992e1c}
+.red1{color:#820B0B} .red2{color:#992e1c} .gray1{color:#9D9D9D}
 a { color: #333; }
 a:hover,a.white:hover { color: #F00; }
 [type=submit]{cursor: pointer;}
-input[type=text]:focus {background: #fff;color: #333333;}
-/*头部*/
-.header{height: 140px}
+input[type=text]:focus {background-color: #FFF;}
 .clear{clear:both;height: 0px}
+
+/*头部*/
+.wrapper1{background:rgba(255,255,255,0.7)}
+.headerTop,.headerBottom,.headerTopL,.mainnavbar{margin:0 auto;width:1170px}
+.headerTop{height: 38px;}
+.headerTop ul{display: inline;width:1170px;margin: 0 auto}
+.headerTop li{font-size: 12px;color: #000;height: 45px;line-height: 45px;
+        text-align: center;width:5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+         vertical-align:middle;  /*去掉下边距*/}
+.headerBottom{height: 140px;}
+.headerBottom img{}
 .searchform{float:right;margin-top: 22px;position: relative}
 .searchform .form-control:focus{border-color:#820B0B}
-.searchform input{ background: rgba(255,255,255,0.6);height:37px;line-height: 30px}
+.searchform .form-control{border:0px}
+.searchform input{ background: rgba(255,255,255,0.7);height:37px;line-height: 30px}
 .searchform button{position: absolute; top: 9px;right: 8px; ;margin: 0;border: none;
-    background: transparent;margin-right: 7px;}
+    background: transparent;margin-right: 7px;color:#992e1c}
 .searchform .glyphicon{font-size: 16px}
 
 /*navbar*/
-.wrapper { margin:0 auto;}
-.navbar {background: #820B0B; width: 100%; margin: 0px auto;}
-.mainnavbar ul{display: inline;}
+.wrapper {width:100%;}
+.navbar {background: #992e1c; width: 100%; }
+.mainnavbar ul{margin-bottom:0px;}
 .mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
-    text-align: center;width:10.7%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+    text-align: center;width:13.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
     vertical-align:middle;  /*去掉下边距*/}
+.mainnavbar .glyphicon{font-size: 5px;margin-left: 4px}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
-.subnavbar ul {float: left;width: 11%;margin-bottom: 15px;margin-top:15px;}
+.subnavbar ul {float: left;width: 13.8%;margin-bottom: 15px;margin-top:15px;}
 .subnavbar li{text-align: center}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
-
-.row2{padding:0px 0px 5px 15px;}
 /*slide图片效果*/
 .FocusSlider{margin:0 auto;}
 .FocusSlider img{width:1170px;height: 430px}
@@ -45,6 +54,9 @@ input[type=text]:focus {background: #fff;color: #333333;}
 .FocusNewsTitle{position: absolute;bottom: 0px; z-index: 40;height: 30px;width:100%;
     background-color:rgba(0,0,0,0.7)}
 .FocusNewsTitle a{ padding: 0 30px; color: #fff;font-size: 16px;line-height: 30px;}
+
+/*row2*/
+.row2{padding:0px 0px 5px 15px;}
 /*两列新闻开始*/
 .col-md-8>.row{margin-right: 5px }/*两列间距*/
 /*图片新闻栏目*/
@@ -69,7 +81,7 @@ input[type=text]:focus {background: #fff;color: #333333;}
 .modNewslist2{padding: 0px 21px}
 .modFooter{width:100%;height: 20px}
 .bottomline{display:inline;float:right;height: 40px;width:70%;border-bottom: 1px solid #992e1c;}
-.date2{float: left;width: 56px;height: 60px;text-align: center;overflow: hidden;color: #333;margin-top: 17px;}
+.date2{float: left;width: 56px;height: 60px;text-align: center;overflow: hidden;color: #333;margin-top: 17px;margin-right: 2px}
 .date2 p:nth-child(1){font-size:22px;background-color:#95291B;color: white}
 .date2 p:nth-child(2){font-size:12px;background-color:#E6E6E6;color:#929CB4}
 .nlItem2{height: 90px;}

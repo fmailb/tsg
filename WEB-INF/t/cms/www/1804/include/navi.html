@@ -1,62 +1,67 @@
 <!--导航栏校徽校名标识-->
-<div class="row">
-	<div class="header">
-		<ul class="list-inline">
-			<li><a href="#"><img src="/${res}/images/logo-main.png" /></a></li>
-			<li class="searchform">
-				<div>
-					<form class="form-inline" target="_blank" action="${base}/search.jspx"  onsubmit="return chkinput(this)">
-						<div class="form-group">
-							<input class="form-control" name="q" type="text" placeholder="站内搜索.." onclick="resetInput(this)">
-						</div>
-						<button type="submit" class="red2"><span class="glyphicon glyphicon-search"></span></button>
-					</form>
-				</div>
-			</li>
-		</ul>
-	</div>
 
+<div class="wrapper wrapper1">
+    <div class="headerTop">
+        <ul>
+            <li>人才招聘</li>
+            <li>校友网</li>
+        </ul>
+        <ul>
 
-	<!--主栏目导航-->
-	<div class="navbar">
-		<div class="mainnavbar">
-			<ul>
-				[@cms_channel_list ] [#list tag_list as c]
-				<li>
-					${c.name}
-				</li>
-				[/#list][/@cms_channel_list]
-				<li>人才招聘</li>
-				<li>校友网</li>
-			</ul>
-		</div>
+        </ul>
+    </div>
+</div>
 
-		<div class="clear"></div>
+<div class="container">
+    <div class="row">
+        <!--logo，搜索-->
+        <div class="headerBottom">
+            <ul class="list-inline">
+                <li><a href="#"><img src="/${res}/images/logo-main1.png"/></a></li>
+                <li class="searchform">
+                    <div>
+                        <form class="form-inline" target="_blank" action="${base}/search.jspx"
+                              onsubmit="return chkinput(this)">
+                            <div class="form-group">
+                                <input class="form-control" name="q" type="text" placeholder="站内搜索.."
+                                       onclick="resetInput(this)">
+                            </div>
+                            <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-		<div class="subnavbar">
-			[@cms_channel_list ] [#list tag_list as c]
-				[@cms_channel_list parentId='${c.id}']
-					<ul>
-						[#list tag_list as d]
-						<li>
-							<div><a href="${d.url}" target="_blank">
-								<span>${d.name}</span></a>
-							</div>
-						</li>
-						[/#list]
-					</ul>
-				[/@cms_channel_list]
-			[/#list][/@cms_channel_list]
-			<ul><li>
-				<div><a href="http://www.jsit.edu.cn/rczp/index.jhtml" target="_blank">
-					<span>人才招聘</span></a>	</div>
-			</li></ul>
-			<ul><li>
-				<div><a href="http://xyh.jsit.edu.cn/" target="_blank">
-					<span>校友网</span></a>	</div>
-			</li></ul>
-		</div>
+        <!--主栏目导航-->
+        <div class="navbar">
+            <div class="mainnavbar">
+                <ul>
+                    [@cms_channel_list ] [#list tag_list as c]
+                    <li>${c.name}<span class="glyphicon glyphicon-chevron-down"></span></li>
+                    [/#list][/@cms_channel_list]
+                </ul>
+            </div>
 
-		<div class="clear"></div>
-	</div>
+            <div class="clear"></div>
+
+            <div class="subnavbar">
+                [@cms_channel_list ] [#list tag_list as c]
+                [@cms_channel_list parentId='${c.id}']
+                <ul>
+                    [#list tag_list as d]
+                    <li>
+                        <div><a href="${d.url}" target="_blank">
+                            <span>${d.name}</span></a>
+                        </div>
+                    </li>
+                    [/#list]
+                </ul>
+                [/@cms_channel_list]
+                [/#list][/@cms_channel_list]
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
 </div>

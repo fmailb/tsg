@@ -2,9 +2,11 @@
 [#include "../include/header.html"]
 
 <body>
+
+<!--导航-->
+[#include "../include/navi.html"]
+
 <div class="container">
-    <!--导航-->
-    [#include "../include/navi.html"]
     <!--焦点新闻-->
     <div class="row row1">
         <div class="FocusSlider">
@@ -12,7 +14,7 @@
             channelId='364,366,368']
             [#list tag_list as a]
             <div class="FocusNews">
-                <img src="${a.typeImg!site.defImg}" alt="${a.title}"/>
+                <img src="${a.titleImg!site.defImg}" alt="${a.title}"/>
                 <div class="FocusNewsTitle">
                     <a href="${a.url}" title="[@text_cut s=a.title len=48 /]" target="_blank">[@text_cut s=a.title /]</a>
                 </div>
@@ -27,13 +29,13 @@
         <div class="col-md-8">[#include "../include/leftcol.html"]</div>
         <div class="col-md-4">[#include "../include/rightcol.html"]</div>
     </div>
-
+</div>
 
 <!--footer-->
-    <div class="row">
-        [#include "../include/footer.html"]
-    </div>
+<div class="row">
+    [#include "../include/footer.html"]
 </div>
+
 
 </body>
 </html>
