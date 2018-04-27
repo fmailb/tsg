@@ -1,6 +1,6 @@
 * {  margin: 0px; padding: 0px;
     font-family: \5FAE\8F6F\96C5\9ED1, Verdana, Tahoma; line-height: 150%;
-    font-weight: normal; text-decoration: none; border: 0px;}
+     text-decoration: none; border: 0px;}
 ul,ol{list-style: none;}
 body { background: #F1EEE4; }
 div{overflow: hidden}
@@ -42,7 +42,7 @@ input[type=text]:focus {background-color: #FFF;}
 .mainnavbar ul{margin-bottom:0px;}
 .mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
     text-align: center;width:13.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
-    vertical-align:middle; /*去掉下边距*/}
+    vertical-align:middle; }
 .mainnavbar .glyphicon{font-size: 5px;margin-left: 4px}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
 .subnavbar ul {float: left;width: 13.8%;margin-bottom: 15px;margin-top:15px;}
@@ -60,6 +60,7 @@ input[type=text]:focus {background-color: #FFF;}
 .FocusNewsTitle{position: absolute;bottom: 0px; z-index: 40;height: 30px;width:100%;
     background-color:rgba(0,0,0,0.7)}
 .FocusNewsTitle a{ padding: 0 30px; color: #fff;font-size: 16px;line-height: 30px;}
+.FocusNewsTitle a:hover{color:#F00}
 /***************/
 /*row2*/
 /***************/
@@ -99,14 +100,31 @@ input[type=text]:focus {background-color: #FFF;}
 /*footer*/
 /***************/
 .footer{width:100%;font-size: 12px}
-.ftUpperBlock{background: #E0D9C9;height:230px;}
-.ftMidBlock{background: #820B0B;height:200px;text-align: center;overflow: visible}
-.ftMidBlock ul{float:left;position: relative;left:50%;top:25%}
-.ftMidBlock li{float:left;position:relative;left:-50%;color: #FFF;margin-right: 20px;}
-.ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
-.ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
-.ftBottomBlock{height:24px }
-.orgAddress{width:360px}
-.qrCode{padding-top: 20px}
+.wrapper2{background: #E0D9C9;}
+.wrapper3{width:50%;float:left;height: 100%;}
+.ftUpperBlock{margin: 0 auto ;width:1170px;height: 100%}
+.ftUpperBlock div:first-child{border-right: 1px solid rgba(255,255,255,0.7)}
+.ftUpperBlock ul{display: block;margin: 0 auto;text-align: center;padding:20px 0px}
+.ftUpperBlock span{display: block}
+.ftUpperBlock .glyphicon{font-size: 24px;margin-bottom: 4px;color:#992e1c;opacity: 0.7}
+.ftUpperBlock li{font-size: 12px;line-height: 1.4;font-weight:bold;text-align: center;padding: 10px 0px;
+    background:rgba(255,255,255,0.7);display: inline-block;*display:inline;*zoom:1;
+    width:18%;margin: 0 auto}
+.ftUpperBlock li:hover{background:rgba(255,255,255,0);color:#fff }
+.ftUpperBlock li:hover .glyphicon{opacity: 1}
+.wrapper4{background: #820B0B;height:200px;width: 100%;overflow: visible}
+.ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;top:17%}
+.ftMidBlock ul{position: relative;top:25%;text-align: center;}
+.ftMidBlock li{display: inline-block;*display:inline;*zoom:1;position:relative;color: #FFF;margin-right: -5px}
+.orgAddress{width:40%;padding:0px 100px;}
+.orgBadge{width:20%}
+.qrCode.qrCode1,.qrCode.qrCode2{width:20%;padding-right: 15px;padding-bottom: 25px}
+.qrCode.qrCode1 img{float:right}
+.qrCode.qrCode2 img{float:left}
+.qrCode img{cursor: pointer;opacity: 0.7}
+.qrCode img:hover{opacity: 1}
 .qrCode1 .tooltip-inner{background: url("../images/qrcode-wx.jpg") center center /100% 100%;}
 .qrCode2 .tooltip-inner{background: url("../images/qrcode-wb.jpg") center center /100% 100%;}
+.ftBottomBlock{height:24px }
+.ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
+.ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
