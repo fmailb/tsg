@@ -1208,6 +1208,9 @@ form-inline .form-group {
 .form-inline .input-group > .form-control {
   width: 100%;
 }
+.has-error {
+  color: #a94442;
+}
 /*btn*/
 .btn {
   display: inline-block;

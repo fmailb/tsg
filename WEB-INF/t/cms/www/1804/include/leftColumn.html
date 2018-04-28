@@ -1,0 +1,121 @@
+
+<div class="row">
+
+    <div class="module">
+
+        <div class="modHead">
+            [@cms_channel id='366']
+            <span class="modTitle">${tag_bean.name}</span>
+            <span class="modEnter"><a class="red2" href="${tag_bean.url}">MORE></a></span>
+            [/@cms_channel]
+        </div>
+
+        <div class="row modContent">
+            <div class="col-md-4 modPicNews">
+                [@cms_content_list orderBy='4' channelId='366' typeId='2' titLen='21' count=1 dateFormat='MM-dd'
+                channelOption='1' ]
+                [#list tag_list as d]
+                    <div class="modPic1" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    <div class="modPicTitle1">
+                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append="..."/]</a>
+                    </div>
+                [/#list]
+                [/@cms_content_list]
+            </div>
+
+            <div class="col-md-8">
+                <div class="modNewslist1">
+                    <ul>
+                        [@cms_content_list orderBy='4' channelId='366' typeId='1' titLen='21' count=10
+                        dateFormat='MM-dd'
+                        channelOption='1' ]
+                        [#list tag_list as d]
+                        <li class="newsListItem">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=24
+                                append=".."/]</a>
+                            <span class="date">${d.date?string(dateFormat)}</span>
+                        </li>
+                        [/#list]
+                        [/@cms_content_list]
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module">
+        <div class="modHead">
+            [@cms_channel id='394']
+            <span class="modTitle">${tag_bean.name}</span>
+            <span class="modEnter"><a class="red2" href="${tag_bean.url}">MORE></a></span>
+            [/@cms_channel]
+        </div>
+
+        <div class=" modContent">
+            <ul class="row picList">
+                [@cms_content_list orderBy='4' channelId='394' typeId='2' titLen='21' count=3 dateFormat='MM-dd']
+                [#list tag_list as d]
+                <li class="col-md-4 picListItem">
+                    <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    <div class="modPicTitle2">
+                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                    </div>
+                </li>
+                [/#list]
+                [/@cms_content_list]
+            </ul>
+        </div>
+    </div>
+<!--院部动态-->
+    <div class="module">
+        <div class="modHead">
+            [@cms_channel id='2339']
+            <span class="modTitle">${tag_bean.name}</span>
+            <span class="modEnter"><a class="red2" href="${tag_bean.url}">MORE></a></span>
+            [/@cms_channel]
+        </div>
+
+        <div class=" modContent">
+            <ul class="row picList">
+                [@cms_content_list orderBy='4' channelId='2339' typeId='2' titLen='21' count=3 dateFormat='MM-dd']
+                [#list tag_list as d]
+                <li class="col-md-4 picListItem">
+                    <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    <div class="modPicTitle2">
+                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                    </div>
+                </li>
+                [/#list]
+                [/@cms_content_list]
+            </ul>
+        </div>
+    </div>
+
+<!-校友活动-->
+    <div class="module">
+        <div class="modHead">
+            [@cms_channel id='2340']
+            <span class="modTitle">${tag_bean.name}</span>
+            <span class="modEnter"><a class="red2" href="${tag_bean.url}">MORE></a></span>
+            [/@cms_channel]
+        </div>
+
+        <div class=" modContent">
+            <ul class="row picList">
+                [@cms_content_list orderBy='4' channelId='2340' typeId='2' titLen='21' count=3 dateFormat='MM-dd']
+                [#list tag_list as d]
+                <li class="col-md-4 picListItem">
+                    <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    <div class="modPicTitle2">
+                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                    </div>
+                </li>
+                [/#list]
+                [/@cms_content_list]
+            </ul>
+        </div>
+    </div>
+
+</div>
+

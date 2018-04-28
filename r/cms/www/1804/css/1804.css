@@ -14,15 +14,15 @@ input[type=text]:focus {background-color: #FFF;}
 /***************/
 /*头部*/
 /***************/
-.wrapper1{background:rgba(255,255,255,0.7)}
+.wrapper1{border-top:4px solid #992e1c;background:rgba(255,255,255,0.7)}
 .headerTop,.headerBottom,.headerTopL,.mainnavbar{margin:0 auto;width:1170px}
-.headerTop{height: 38px;}
+.headerTop{height: 34px;}
 .headerTop ul:nth-child(1){float:left}
 .headerTop ul:nth-child(2){float:right}
 .headerTop li{text-align: center;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
     vertical-align:middle;  /*去掉下边距*/ margin-right: -4px;}
 .headerTop a{display:block;font-size: 13px;color: #992e1c;font-weight: bold;height: 38px;
-    line-height: 38px;padding:0 6px;}
+    line-height: 34px;padding:0 6px;}
 .headerTop li:hover{background-color: #575757 ;}
 .headerTop a:hover{color:#fff;}
 .headerBottom{height: 140px;}
@@ -112,13 +112,13 @@ input[type=text]:focus {background-color: #FFF;}
     width:18%;margin: 0 auto}
 .ftUpperBlock li:hover{background:rgba(255,255,255,0);color:#fff }
 .ftUpperBlock li:hover .glyphicon{opacity: 1}
-.wrapper4{background: #820B0B;height:200px;width: 100%;overflow: visible}
-.ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;top:17%}
-.ftMidBlock ul{position: relative;top:25%;text-align: center;}
+.wrapper4{height:200px;width: 100%;overflow: visible;
+    background:#820B0B url("../images/logo-footer.png") center center no-repeat }
+.ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;top:25%;}
+.ftMidBlock ul{position: relative;top:25%;text-align: center;margin-bottom: 0px}
 .ftMidBlock li{display: inline-block;*display:inline;*zoom:1;position:relative;color: #FFF;margin-right: -5px}
 .orgAddress{width:40%;padding:0px 100px;}
-.orgBadge{width:20%}
-.qrCode.qrCode1,.qrCode.qrCode2{width:20%;padding-right: 15px;padding-bottom: 25px}
+.qrCode.qrCode1,.qrCode.qrCode2{width:30%;padding-right: 15px;}
 .qrCode.qrCode1 img{float:right}
 .qrCode.qrCode2 img{float:left}
 .qrCode img{cursor: pointer;opacity: 0.7}
@@ -128,3 +128,12 @@ input[type=text]:focus {background-color: #FFF;}
 .ftBottomBlock{height:24px }
 .ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
+
+/**************/
+      /*新闻页*/
+/**************/
+/*footer2*/
+.wrapper5{width: 100%;overflow: visible;}
+.wrapper5 .ftMidBlock{background:#820B0B url("../images/logo-footer.png") center center no-repeat;height: 140px }
+.wrapper5 .ftLowerBlock{width: 1170px;margin: 0 auto}
+.wrapper5 .ftBottomBlock{height: 5px}

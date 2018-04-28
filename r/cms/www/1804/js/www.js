@@ -76,8 +76,8 @@ function chkinput(self) {
     var $input=$div.children('input')[0];
     s=$input.value;
     //问号表达式 必须用 == 以形成条件，=会出错
-    if (s == "" || s == null || s == "请输入有意义的检索词")
-    {$input.value= "请输入有意义的检索词";$div.addClass('form-group has-error');return false; }
+    if (s == "" || s == null || s == "还没输入检索词˙﹏˙")
+    {$input.value= "还没输入检索词˙﹏˙";$div.addClass('form-group has-error');return false; }
     else {return true;}
 }
 

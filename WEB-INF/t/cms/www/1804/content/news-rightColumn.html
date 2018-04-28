@@ -1,0 +1,29 @@
+<div >
+    <div> <a href="${base}/">首页</a>[#list channel.nodeList as n] <a target="_blank" href="${n.url}"> &raquo;${n.name}</a>[#if n_has_next]  [/#if][/#list]</div>
+    <div>
+        <div>
+            <div></div>
+            <div>
+                <div class="w96">
+                    <h1>${content.title}</h1>
+                    ${txt!}
+                </div>
+
+                <ul>
+                    <li><strong>上一篇：</strong>
+                        [@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]
+                        <a href="${tag_bean.url}">${tag_bean.title}</a>
+                        [#else]没有了[/#if]
+                        [/@cms_content]
+                    </li>
+
+                    <li><strong>下一篇：</strong>
+                        [@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]
+                        <a href="${tag_bean.url}">${tag_bean.title}</a>[#else]没有了[/#if]
+                        [/@cms_content]
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
