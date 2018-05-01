@@ -1,0 +1,26 @@
+<div class="chnContent">
+    <ol class="breadcrumb">
+        <li><a href="${base}/">首页</a></li>
+        [#list channel.nodeList as n]
+        <li><a target="_blank" href="${n.url}"> ${n.name}</a></li>
+        [/#list]
+    </ol>
+
+    <div class="chnNewsList">
+        [@cms_content_page orderBy='4' channelId=channel.id count=25 titLen='40' append='...'
+        dateFormat='yyyy-MM-dd' channelOption='1']
+        [#list tag_pagination.list as a]
+        <div>
+            <a href="${a.ctgUrl}" target="_blank">[${channel.title!channel.name}]</a>
+            <a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
+            <div class="date">${a.date?string(dateFormat)}</div>
+        </div>
+        [/#list]
+    </div>
+
+    <div class="pagination">
+        [@cms_pagination sysPage='2' /]
+        [/@cms_content_page]
+    </div>
+</div>
+

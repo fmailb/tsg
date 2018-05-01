@@ -6,6 +6,7 @@
 <!--导航-->
 [#include "../include/navi.html"]
 
+
 <div class="container">
     <!--焦点新闻-->
     <div class="row row1">
@@ -16,7 +17,8 @@
             <div class="FocusNews">
                 <img src="${a.titleImg!site.defImg}" alt="${a.title}"/>
                 <div class="FocusNewsTitle">
-                    <a href="${a.url}" title="[@text_cut s=a.title len=48 /]" target="_blank">[@text_cut s=a.title /]</a>
+                    <a href="${a.url}" title="[@text_cut s=a.title len=48 /]" target="_blank">[@text_cut s=a.title
+                        /]</a>
                 </div>
             </div>
             [/#list]

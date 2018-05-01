@@ -39,3 +39,5 @@
 八 网站的访问量显示需要front.js和jquery.cookie.js
 
 九 可以用[@cms_channel_list]配合freemarker语法获取当前栏目有多少子栏目。具体见channel\news.html
+
+十 从内容页里，只获取顶级栏目和当前新闻所在栏目同级的栏目，可以参考1804\content\leftcol.html.大致是使用channel.parent.id

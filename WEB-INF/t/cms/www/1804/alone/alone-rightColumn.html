@@ -3,13 +3,12 @@
     [#list channel.nodeList as n]
     <li><a target="_blank" href="${n.url}"> ${n.name}</a></li>
     [/#list]
-    <li><span>${content.releaseDate?string('yyyy-MM-dd')}</span></li>
 </ol>
 
 
 <div class="newsContent">
-    <h1>${content.title}</h1>
-    <div class="newsTxt">${txt!}</div>
+    <h1>${channel.title!channel.name}</h1>
+    <div class="newsTxt">${channel.txt!}</div>
     <div class="funcBar">
         <ul class="list-inline">
             字体：
@@ -18,7 +17,5 @@
             <li for="18">正常</li>
         </ul>
     </div>
-
 </div>
-
 

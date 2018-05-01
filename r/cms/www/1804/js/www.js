@@ -38,13 +38,22 @@ $(function(){
     };
     $('.demo1').bootstrapNews(options);
 
-    //bootstrap tooltip 初始化
+    //bootstrap tooltip 初始化/footer显示二维码
     var tooltipOpt ={
         placement:"top",
     }
     $('[data-toggle="tooltip"]').tooltip(tooltipOpt)
 
-    //鼠标划过显示翻页箭头
+    //新闻页字体大小
+    $('.funcBar li').click(function(event){
+        event.preventDefault();
+        var fontSize=$(this).attr('for')+'px';
+        $('.newsTxt span').css('font-size',fontSize);
+    });
+
+    //修改某些显示不正常的文档颜色，使其正常显示底色。
+    $('.newsTxt p').css('background-color','transparent')
+
     displayArrow();
 
 

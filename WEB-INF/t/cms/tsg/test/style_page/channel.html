@@ -1,5 +1,5 @@
 [#if p.totalPage gt 1]
-<div[#if cssClass??] class="${cssClass!}"[/#if][#if cssStyle??] style="${cssStyle!}"[/#if]>
+<div>[#if cssClass??] class="${cssClass!}"[/#if][#if cssStyle??] style="${cssStyle!}"[/#if]>
 	[#if !p.firstPage]
 		<a href="${hrefFormer}[#if p.prePage gt 1]_${p.prePage}[/#if]${hrefLatter}">[上一页]</a>[#t/]
 	[/#if]

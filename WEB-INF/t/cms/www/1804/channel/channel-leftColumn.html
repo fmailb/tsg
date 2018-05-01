@@ -1,0 +1,21 @@
+<ul class="lcNavi1 nav nav-stacked">
+    [@cms_channel_list][#list tag_list as c]
+    <li class="nav-header">${c.name}</li>
+
+    [#if channel.parent??]
+        [#if channel.parent.id =c.id]
+        <ul class="lcNavi2 nav nav-stacked">
+            [@cms_channel_list parentId=c.id][#list tag_list as d]
+            <li><a href="${d.url}" target="_blank">${d.name}</a></li>
+            [/#list][/@cms_channel_list]
+        </ul>
+        [#else]
+        <ul class="lcNavi3 nav nav-stacked">
+            [@cms_channel_list parentId=c.id][#list tag_list as d]
+            <li><a href="${d.url}" target="_blank">${d.name}</a></li>
+            [/#list][/@cms_channel_list]
+        </ul>
+        [/#if]
+    [/#if]
+    [/#list][/@cms_channel_list]
+</ul>

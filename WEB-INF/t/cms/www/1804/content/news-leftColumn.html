@@ -1,5 +1,16 @@
-<ul>
-[@cms_channel_list][#list tag_list as d]
-    <li>${d.name}</li>
-[/#list][/@cms_channel_list]
+<ul class="lcNavi1">
+    [@cms_channel_list][#list tag_list as c]
+    <a href="${c.url}" target="_blank"><li>${c.name}</li></a>
+
+    [#if channel.parent.id=c.id]
+    <ul class="lcNavi2">
+        [@cms_channel_list parentId=c.id][#list tag_list as d]
+        <a href="${d.url}" target="_blank"><li>
+                        ${d.name}
+                    </li></a>
+        [/#list][/@cms_channel_list]
+    </ul>
+    [/#if]
+
+    [/#list][/@cms_channel_list]
 </ul>

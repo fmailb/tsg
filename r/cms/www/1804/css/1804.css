@@ -2,7 +2,8 @@
     font-family: \5FAE\8F6F\96C5\9ED1, Verdana, Tahoma; line-height: 150%;
      text-decoration: none; border: 0px;}
 ul,ol{list-style: none;}
-body { background: #F1EEE4; }
+html{height: 100%}
+body { background: #F1EEE4; position:relative;width:100%;min-height:100%; padding-bottom: 368px;}
 div{overflow: hidden}
 .white{color:#FFF}
 .red1{color:#820B0B} .red2{color:#992e1c} .gray1{color:#9D9D9D}
@@ -99,7 +100,7 @@ input[type=text]:focus {background-color: #FFF;}
 /***************/
 /*footer*/
 /***************/
-.footer{width:100%;font-size: 12px}
+.footer{width:100%;font-size: 12px;position: absolute;bottom: 0px;overflow: visible}
 .wrapper2{background: #E0D9C9;}
 .wrapper3{width:50%;float:left;height: 100%;}
 .ftUpperBlock{margin: 0 auto ;width:1170px;height: 100%}
@@ -114,8 +115,8 @@ input[type=text]:focus {background-color: #FFF;}
 .ftUpperBlock li:hover .glyphicon{opacity: 1}
 .wrapper4{height:200px;width: 100%;overflow: visible;
     background:#820B0B url("../images/logo-footer.png") center center no-repeat }
-.ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;top:25%;}
-.ftMidBlock ul{position: relative;top:25%;text-align: center;margin-bottom: 0px}
+.ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;height: 200px}
+.ftMidBlock ul{position: relative;top:30%;text-align: center;margin-bottom: 0px}
 .ftMidBlock li{display: inline-block;*display:inline;*zoom:1;position:relative;color: #FFF;margin-right: -5px}
 .orgAddress{width:40%;padding:0px 100px;}
 .qrCode.qrCode1,.qrCode.qrCode2{width:30%;padding-right: 15px;}
@@ -130,10 +131,32 @@ input[type=text]:focus {background-color: #FFF;}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
 
 /**************/
-      /*新闻页*/
+      /*新闻页/栏目页/搜索页*/
 /**************/
 /*footer2*/
 .wrapper5{width: 100%;overflow: visible;}
 .wrapper5 .ftMidBlock{background:#820B0B url("../images/logo-footer.png") center center no-repeat;height: 140px }
 .wrapper5 .ftLowerBlock{width: 1170px;margin: 0 auto}
 .wrapper5 .ftBottomBlock{height: 5px}
+.newsbody{padding-bottom:183px;overflow: visible }
+/*左导航*/
+.lcNavi1 .nav-header{display: block;padding: 3px 15px;font-size: 14px;font-weight: bold;line-height: 18px;color: #999999;}
+/*.lcNavi1 li{font-size: 16px;width:60%;margin:0 auto}*/
+/*.lcNavi1 li:hover{background-color:#575757;color:#fff;}*/
+/*.lcNavi1 a{color:#992e1c;}*/
+/*.lcNavi1 a:hover{}*/
+/*.lcNavi2 li{padding-left: 20px;font-size: 14px}*/
+/*新闻页内容*/
+.breadcrumb{background: rgba(255,255,255,0.7)}
+/*.breadcrumb >li:last-child{float:right}*/
+.newsContent{padding: 0px 20px 20px 20px;}
+.newsContent h1{text-align: center;margin-bottom:20px;}
+.funcBar{padding:15px 0px }
+.funcBar ul{margin: 0 auto;width:20%;font-weight: bold}
+.funcBar li{cursor: pointer;color:#992e1c;}
+.funcBar li:hover{background-color:#575757;color:#fff;}
+.chnNewsList{padding:0px 20px 20px 20px;}
+.chnNewsList a{color:#337ab7}
+.chnNewsList li{position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;border: 1px solid #ddd;}
+.chnContent{position: relative;padding-bottom: 57px;min-height: 500px}
+.pagination{position: absolute;bottom:0px;width: 100%}
