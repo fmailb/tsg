@@ -22,6 +22,40 @@
                 </li>
             </ul>
         </div>
+
+        <!--主栏目导航-->
+        <div class="navbar">
+            <div class="mainnavbar">
+                <ul>
+                    [@cms_channel_list ] [#list tag_list as c]
+                    <li>${c.name}<span class="glyphicon glyphicon-chevron-down"></span></li>
+                    [/#list][/@cms_channel_list]
+                    <li>人才招聘<span class="glyphicon glyphicon-chevron-down"></span></li>
+                    <li>校友网<span class="glyphicon glyphicon-chevron-down"></span></li>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="subnavbar">
+                [@cms_channel_list ] [#list tag_list as c]
+                [@cms_channel_list parentId='${c.id}']
+                <ul>
+                    [#list tag_list as d]
+                    <li>
+                        <div><a href="${d.url}" target="_blank">
+                            <span>${d.name}</span></a>
+                        </div>
+                    </li>
+                    [/#list]
+                </ul>
+                [/@cms_channel_list]
+                [/#list][/@cms_channel_list]
+                <ul><li><a href="http://localhost:8080/rczp/index.jhtml" target="_blank"><span>人才招聘</span></a></li></ul>
+                <ul><li><a href="http://xyh.jsit.edu.cn/" target="_blank"></a><span>校友网</span></li></ul>
+            </div>
+        </div>
+
     </div>
 </div>
 

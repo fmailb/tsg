@@ -15,7 +15,9 @@
                 [@cms_content_list orderBy='4' channelId='366' typeId='2' titLen='21' count=1 dateFormat='MM-dd'
                 channelOption='1' ]
                 [#list tag_list as d]
-                    <div class="modPic1" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    <a href="${d.url}" title="${d.title}" target="_blank">
+                        <div class="modPic1" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    </a>
                     <div class="modPicTitle1">
                         <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append="..."/]</a>
                     </div>
@@ -57,7 +59,9 @@
                 [@cms_content_list orderBy='4' channelId='394' typeId='2' titLen='21' count=3 dateFormat='MM-dd']
                 [#list tag_list as d]
                 <li class="col-md-4 picListItem">
+                    <a href="${d.url}" title="${d.title}" target="_blank">
                     <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    </a>
                     <div class="modPicTitle2">
                         <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
                     </div>
@@ -81,7 +85,9 @@
                 [@cms_content_list orderBy='4' channelId='2339' typeId='2' titLen='21' count=3 dateFormat='MM-dd']
                 [#list tag_list as d]
                 <li class="col-md-4 picListItem">
+                    <a href="${d.url}" title="${d.title}" target="_blank">
                     <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
+                    </a>
                     <div class="modPicTitle2">
                         <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
                     </div>

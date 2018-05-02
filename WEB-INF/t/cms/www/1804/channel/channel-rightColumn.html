@@ -1,10 +1,10 @@
 <div class="chnContent">
-    <ol class="breadcrumb">
-        <li><a href="${base}/">首页</a></li>
-        [#list channel.nodeList as n]
-        <li><a target="_blank" href="${n.url}"> ${n.name}</a></li>
-        [/#list]
-    </ol>
+    <!--[#--]<ol class="breadcrumb">-->
+        <!--<li><a href="${base}/">首页</a></li>-->
+        <!--[#list channel.nodeList as n]-->
+        <!--<li><a target="_blank" href="${n.url}"> ${n.name}</a></li>-->
+        <!--[/#list]-->
+    <!--</ol>--]-->
 
     <div class="chnNewsList">
         [@cms_content_page orderBy='4' channelId=channel.id count=25 titLen='40' append='...'

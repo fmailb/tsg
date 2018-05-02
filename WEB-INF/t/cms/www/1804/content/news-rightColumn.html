@@ -1,14 +1,15 @@
 <ol class="breadcrumb">
+    当前位置：
     <li><a href="${base}/">首页</a></li>
     [#list channel.nodeList as n]
     <li><a target="_blank" href="${n.url}"> ${n.name}</a></li>
     [/#list]
-    <li><span>${content.releaseDate?string('yyyy-MM-dd')}</span></li>
 </ol>
 
 
 <div class="newsContent">
     <h1>${content.title}</h1>
+    <div class="pubInfo"><span>${content.releaseDate?string('yyyy-MM-dd')}</span></div>
     <div class="newsTxt">${txt!}</div>
     <div class="funcBar">
         <ul class="list-inline">

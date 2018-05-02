@@ -18,8 +18,8 @@ input[type=text]:focus {background-color: #FFF;}
 .wrapper1{border-top:4px solid #992e1c;background:rgba(255,255,255,0.7)}
 .headerTop,.headerBottom,.headerTopL,.mainnavbar{margin:0 auto;width:1170px}
 .headerTop{height: 34px;}
-.headerTop ul:nth-child(1){float:left}
-.headerTop ul:nth-child(2){float:right}
+/*.headerTop ul:nth-child(1){float:left}*/
+.headerTop ul:nth-child(1){float:right}
 .headerTop li{text-align: center;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
     vertical-align:middle;  /*去掉下边距*/ margin-right: -4px;}
 .headerTop a{display:block;font-size: 13px;color: #992e1c;font-weight: bold;height: 38px;
@@ -42,11 +42,11 @@ input[type=text]:focus {background-color: #FFF;}
 .navbar {background: #992e1c; width: 100%; }
 .mainnavbar ul{margin-bottom:0px;}
 .mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
-    text-align: center;width:13.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+    text-align: center;width:10.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
     vertical-align:middle; }
 .mainnavbar .glyphicon{font-size: 5px;margin-left: 4px}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
-.subnavbar ul {float: left;width: 13.8%;margin-bottom: 15px;margin-top:15px;}
+.subnavbar ul {float: left;width: 10.8%;margin-bottom: 15px;margin-top:15px;}
 .subnavbar li{text-align: center}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
 /*slide图片效果*/
@@ -114,7 +114,7 @@ input[type=text]:focus {background-color: #FFF;}
 .ftUpperBlock li:hover{background:rgba(255,255,255,0);color:#fff }
 .ftUpperBlock li:hover .glyphicon{opacity: 1}
 .wrapper4{height:200px;width: 100%;overflow: visible;
-    background:#820B0B url("../images/logo-footer.png") center center no-repeat }
+    background:#820B0B url("../images/logo-footer-2.png") center center no-repeat }
 .ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;height: 200px}
 .ftMidBlock ul{position: relative;top:30%;text-align: center;margin-bottom: 0px}
 .ftMidBlock li{display: inline-block;*display:inline;*zoom:1;position:relative;color: #FFF;margin-right: -5px}
@@ -124,8 +124,8 @@ input[type=text]:focus {background-color: #FFF;}
 .qrCode.qrCode2 img{float:left}
 .qrCode img{cursor: pointer;opacity: 0.7}
 .qrCode img:hover{opacity: 1}
-.qrCode1 .tooltip-inner{background: url("../images/qrcode-wx.jpg") center center /100% 100%;}
-.qrCode2 .tooltip-inner{background: url("../images/qrcode-wb.jpg") center center /100% 100%;}
+.qrCode1 .tooltip-inner{background: url("../images/qrcode-wx.png") center center /100% 100%;}
+.qrCode2 .tooltip-inner{background: url("../images/qrcode-wb.png") center center /100% 100%;}
 .ftBottomBlock{height:24px }
 .ftLowerBlock li{display: inline;line-height: 38px;margin-right: 5px}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
@@ -147,16 +147,17 @@ input[type=text]:focus {background-color: #FFF;}
 /*.lcNavi1 a:hover{}*/
 /*.lcNavi2 li{padding-left: 20px;font-size: 14px}*/
 /*新闻页内容*/
-.breadcrumb{background: rgba(255,255,255,0.7)}
+.breadcrumb{background-color: transparent}
 /*.breadcrumb >li:last-child{float:right}*/
 .newsContent{padding: 0px 20px 20px 20px;}
-.newsContent h1{text-align: center;margin-bottom:20px;}
+.newsContent h1{text-align: center;}
+.pubInfo{text-align: center;padding-bottom: 10px}
 .funcBar{padding:15px 0px }
 .funcBar ul{margin: 0 auto;width:20%;font-weight: bold}
 .funcBar li{cursor: pointer;color:#992e1c;}
 .funcBar li:hover{background-color:#575757;color:#fff;}
 .chnNewsList{padding:0px 20px 20px 20px;}
-.chnNewsList a{color:#337ab7}
-.chnNewsList li{position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;border: 1px solid #ddd;}
-.chnContent{position: relative;padding-bottom: 57px;min-height: 500px}
+.srhNewsList a{color:#337ab7}
+.chnNewsList li,.srhNewsList li{position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;border: 1px solid #ddd;}
+.chnContent{position: relative;padding-bottom: 57px;min-height: 500px;padding-top: 20px}
 .pagination{position: absolute;bottom:0px;width: 100%}
