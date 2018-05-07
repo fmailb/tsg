@@ -2045,6 +2045,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   clear: both;
 }
 
+.affix {
+  position: fixed;
+}
 
 * {
   -webkit-box-sizing: border-box;

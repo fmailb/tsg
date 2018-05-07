@@ -10,6 +10,20 @@
     </div>
 </div>
 
+<!--侧边栏-->
+<div data-spy="affix" data-offset-top="100" data-offset-bottom="300" class="affixNews">
+    [@cms_content_list orderBy='4' channelId='2124' titLen='20' count=1 ]
+    [#list tag_list as d]
+    <div>
+        <a class="white" href="${d.url}" title="${d.title}" target="_blank" >
+            [@text_cut s=d.title len=24 append=".."/]
+        </a>
+    </div>
+    [/#list]
+    [/@cms_content_list]
+</div>
+
+<!--logo和主导航栏-->
 <div class="container">
     <div class="row">
         <!--logo，搜索-->
@@ -35,6 +49,7 @@
         <div class="navbar">
             <div class="mainnavbar">
                 <ul>
+                    <li>本站首页<span class="glyphicon glyphicon-chevron-down"></span></li>
                     [@cms_channel_list ] [#list tag_list as c]
                     <li>${c.name}<span class="glyphicon glyphicon-chevron-down"></span></li>
                     [/#list][/@cms_channel_list]
@@ -46,7 +61,9 @@
             <div class="clear"></div>
 
             <div class="subnavbar">
-                [@cms_channel_list ] [#list tag_list as c]
+                [@cms_channel_list ]
+                <ul><li><a href="${base}" target="_blank"><span>本站首页</span></a></li></ul>
+                [#list tag_list as c]
                 [@cms_channel_list parentId='${c.id}']
                 <ul>
                     [#list tag_list as d]

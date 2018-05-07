@@ -26,6 +26,9 @@ input[type=text]:focus {background-color: #FFF;}
     line-height: 34px;padding:0 6px;}
 .headerTop li:hover{background-color: #575757 ;}
 .headerTop a:hover{color:#fff;}
+.affixNews{float: left;position: fixed;width: 200px;}
+.affixNews div{margin: 0 auto;width: 100px; background-color:#992e1c;text-align: center;
+    word-break: break-all;font-size:16px}
 .headerBottom{height: 140px;}
 .headerBottom img{}
 .searchform{float:right;margin-top: 22px;position: relative}
@@ -42,13 +45,14 @@ input[type=text]:focus {background-color: #FFF;}
 .navbar {background: #992e1c; width: 100%; }
 .mainnavbar ul{margin-bottom:0px;}
 .mainnavbar li{font-size: 16px;color: #FFF;height: 45px;line-height: 45px;overflow:hidden;
-    text-align: center;width:10.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
+    text-align: center;width:9.5%;cursor: pointer;display:inline-block;*display:inline;*zoom:1;
     vertical-align:middle; }
-.mainnavbar .glyphicon{font-size: 5px;margin-left: 4px}
+.mainnavbar .glyphicon{font-size: 12px;margin-left: 4px}
 .subnavbar{ background: #575757;display: none;overflow: hidden}
-.subnavbar ul {float: left;width: 10.8%;margin-bottom: 15px;margin-top:15px;}
+.subnavbar ul {float: left;width: 9.8%;margin-bottom: 15px;margin-top:15px;}
 .subnavbar li{text-align: center}
 .subnavbar span {    font-size: 14px;    color: #FFF;    line-height: 30px;}
+.subnavbar span:hover{color:#F00}
 /*slide图片效果*/
 .FocusSlider{margin:0 auto;}
 .FocusSlider img{width:1170px;height: 430px}
@@ -77,7 +81,7 @@ input[type=text]:focus {background-color: #FFF;}
 .modPic1{width:260px;height:180px;margin-top:5px}
 .modPicTitle1{font-size: 16px;color: #333;font-weight: bold;}
 .modNewslist1{border-left: 1px #ccc dotted;}
-.modNewslist1 .glyphicon,.modNewslist2 .glyphicon{color:#992e1c;font-size: 2px;opacity:0.8}
+.modNewslist1 .glyphicon,.modNewslist2 .glyphicon{color:#992e1c;font-size: 12px;opacity:0.8}
 .newsListItem{margin: 5px 8px;overflow: hidden;border-bottom: 1px #ccc dotted;}
 .newsListItem:last-child{border: none}
 .date{float:right}
@@ -114,7 +118,7 @@ input[type=text]:focus {background-color: #FFF;}
 .ftUpperBlock li:hover{background:rgba(255,255,255,0);color:#fff }
 .ftUpperBlock li:hover .glyphicon{opacity: 1}
 .wrapper4{height:200px;width: 100%;overflow: visible;
-    background:#820B0B url("../images/logo-footer-2.png") center center no-repeat }
+    background:#820B0B url("../images/logo-footer-3.png") center center no-repeat }
 .ftMidBlock{width:1170px;margin:0 auto;overflow: visible;position: relative;height: 200px}
 .ftMidBlock ul{position: relative;top:30%;text-align: center;margin-bottom: 0px}
 .ftMidBlock li{display: inline-block;*display:inline;*zoom:1;position:relative;color: #FFF;margin-right: -5px}
@@ -135,7 +139,7 @@ input[type=text]:focus {background-color: #FFF;}
 /**************/
 /*footer2*/
 .wrapper5{width: 100%;overflow: visible;}
-.wrapper5 .ftMidBlock{background:#820B0B url("../images/logo-footer.png") center center no-repeat;height: 140px }
+.wrapper5 .ftMidBlock{background:#820B0B url("../images/logo-footer-3.png") center center no-repeat;height: 140px }
 .wrapper5 .ftLowerBlock{width: 1170px;margin: 0 auto}
 .wrapper5 .ftBottomBlock{height: 5px}
 .newsbody{padding-bottom:183px;overflow: visible }
@@ -148,6 +152,7 @@ input[type=text]:focus {background-color: #FFF;}
 /*.lcNavi2 li{padding-left: 20px;font-size: 14px}*/
 /*新闻页内容*/
 .breadcrumb{background-color: transparent}
+.breadcrumb a{color:#992e1c;font-weight: bold}
 /*.breadcrumb >li:last-child{float:right}*/
 .newsContent{padding: 0px 20px 20px 20px;}
 .newsContent h1{text-align: center;}
@@ -157,7 +162,7 @@ input[type=text]:focus {background-color: #FFF;}
 .funcBar li{cursor: pointer;color:#992e1c;}
 .funcBar li:hover{background-color:#575757;color:#fff;}
 .chnNewsList{padding:0px 20px 20px 20px;}
-.srhNewsList a{color:#337ab7}
+.srhNewsList a{color:#992e1c;font-weight: bold}
 .chnNewsList li,.srhNewsList li{position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;border: 1px solid #ddd;}
 .chnContent{position: relative;padding-bottom: 57px;min-height: 500px;padding-top: 20px}
 .pagination{position: absolute;bottom:0px;width: 100%}

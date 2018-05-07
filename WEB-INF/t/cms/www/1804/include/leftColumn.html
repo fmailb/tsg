@@ -34,9 +34,11 @@
                         [#list tag_list as d]
                         <li class="newsListItem">
                             <span class="glyphicon glyphicon-chevron-right"></span>
-                            <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=24
-                                append=".."/]</a>
+                            <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};" >
+                                [@text_cut s=d.title len=24 append=".."/]
+                            </a>
                             <span class="date">${d.date?string(dateFormat)}</span>
+
                         </li>
                         [/#list]
                         [/@cms_content_list]
@@ -63,7 +65,9 @@
                     <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
                     </a>
                     <div class="modPicTitle2">
-                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                        <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};" >
+                            [@text_cut s=d.title len=21 append=".."/]
+                        </a>
                     </div>
                 </li>
                 [/#list]
@@ -89,7 +93,9 @@
                     <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
                     </a>
                     <div class="modPicTitle2">
-                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                        <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};" >
+                            [@text_cut s=d.title len=21 append=".."/]
+                        </a>
                     </div>
                 </li>
                 [/#list]
@@ -114,7 +120,9 @@
                 <li class="col-md-4 picListItem">
                     <div class="modPic2" style="background:url(${d.titleImg!site.defImg}) center center /100% 100%"></div>
                     <div class="modPicTitle2">
-                        <a href="${d.url}" title="${d.title}" target="_blank">[@text_cut s=d.title len=21 append=".."/]</a>
+                        <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};" >
+                            [@text_cut s=d.title len=21 append=".."/]
+                        </a>
                     </div>
                 </li>
                 [/#list]

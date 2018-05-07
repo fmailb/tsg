@@ -2,8 +2,10 @@
 <div class="col-md-8 col-sm-8">
     <div id="newsbox" class="panel panel-default">
         <div class="title panel-heading div-table">
-            <div class="div-td-50"><span class="glyphicon glyphicon-bookmark"></span>&nbsp资源动态</div>
-            <div class="div-td-50"><span class="glyphicon glyphicon-envelope"></span>&nbsp公告消息</div>
+            <div class="div-td-50"><span class="glyphicon glyphicon-bookmark"></span>
+                <a href="http://lib.jsit.edu.cn/dzzy/index.jhtml" target="_blank"> &nbsp资源动态</a></div>
+            <div class="div-td-50"><span class="glyphicon glyphicon-envelope"></span>
+                <a href="http://lib.jsit.edu.cn/bgdt/index.jhtml" target="_blank"> &nbsp公告消息</a></div>
         </div>
 
         <div class="panel-body">
@@ -15,7 +17,7 @@
                         [#list tag_list as d]
                         <li class="news-item">
                             <span>${d.date?string(dateFormat)}</span>
-                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=24 /]">[@text_cut s=d.title len=24 /]</a>
+                            <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};">[@text_cut s=d.title len=24 /]</a>
                         </li>
                         [/#list]
                     </ul>
@@ -29,7 +31,7 @@
                         [#list tag_list as d]
                         <li class="news-item">
                             <span>${d.date?string(dateFormat)}</span>
-                            <a href="${d.url}" target="_blank" title="[@text_cut s=d.title len=24 /]">[@text_cut s=d.title len=24 /]</a>
+                            <a href="${d.url}" title="${d.title}" target="_blank" style="color:${d.titleColor!};">[@text_cut s=d.title len=24 /]</a>
                         </li>
                         [/#list]
                     </ul>
