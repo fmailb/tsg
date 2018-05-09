@@ -1,6 +1,7 @@
 * {  margin: 0px; padding: 0px;
     font-family: \5FAE\8F6F\96C5\9ED1, Verdana, Tahoma; line-height: 150%;
      text-decoration: none; border: 0px;}
+.img{z-index: 10}
 ul,ol{list-style: none;}
 html{height: 100%}
 body { background: #F1EEE4; position:relative;width:100%;min-height:100%; padding-bottom: 368px;}
@@ -26,9 +27,10 @@ input[type=text]:focus {background-color: #FFF;}
     line-height: 34px;padding:0 6px;}
 .headerTop li:hover{background-color: #575757 ;}
 .headerTop a:hover{color:#fff;}
-.affixNews{float: left;position: fixed;width: 200px;}
-.affixNews div{margin: 0 auto;width: 100px; background-color:#992e1c;text-align: center;
-    word-break: break-all;font-size:16px}
+/*漂浮*/
+.affixNews{float: left;position: fixed;width: 200px;z-index: 1030}
+.affixNews div{margin: 140px auto;width: 100px; background-color:#992e1c;text-align: center;
+    word-break: break-all;font-size:16px;}
 .headerBottom{height: 140px;}
 .headerBottom img{}
 .searchform{float:right;margin-top: 22px;position: relative}
@@ -135,7 +137,7 @@ input[type=text]:focus {background-color: #FFF;}
 .ftLowerBlock{background: #5A0707;line-height: 38px;text-align: center;height: 38px;color: #FFF;}
 
 /**************/
-      /*新闻页/栏目页/搜索页*/
+      /*新闻页/栏目页/搜索页/单页*/
 /**************/
 /*footer2*/
 .wrapper5{width: 100%;overflow: visible;}
@@ -166,3 +168,4 @@ input[type=text]:focus {background-color: #FFF;}
 .chnNewsList li,.srhNewsList li{position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;border: 1px solid #ddd;}
 .chnContent{position: relative;padding-bottom: 57px;min-height: 500px;padding-top: 20px}
 .pagination{position: absolute;bottom:0px;width: 100%}
+.newsTxt table{margin: 0 auto}
