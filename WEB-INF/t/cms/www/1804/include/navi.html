@@ -10,14 +10,30 @@
     </div>
 </div>
 
-<!--侧边栏-->
-<div data-spy="affix" data-offset-top="100" data-offset-bottom="300" class="affixNews">
+<!--左悬浮窗-->
+<div data-spy="affix" data-offset-top="100" data-offset-bottom="300" class="affixNews left">
+
     [@cms_content_list orderBy='4' channelId='2124' titLen='20' count=1 ]
     [#list tag_list as d]
     <div>
         <a class="white" href="${d.url}" title="${d.title}" target="_blank" >
             [@text_cut s=d.title len=24 append=".."/]
         </a>
+        <p onclick='this.parentNode.style.display="none"'>关闭</p>
+    </div>
+
+    [/#list]
+    [/@cms_content_list]
+</div>
+<!--右悬浮窗-->
+<div data-spy="affix" data-offset-top="100" data-offset-bottom="300" class="affixNews right">
+    [@cms_content_list orderBy='4' channelId='2133' titLen='20' count=1 ]
+    [#list tag_list as d]
+    <div>
+        <a class="white" href="${d.url}" title="${d.title}" target="_blank" >
+            [@text_cut s=d.title len=24 append=".."/]
+        </a>
+        <p onclick='this.parentNode.style.display="none"'>关闭</p>
     </div>
     [/#list]
     [/@cms_content_list]
@@ -86,3 +102,4 @@
         </div>
     </div>
 </div>
+

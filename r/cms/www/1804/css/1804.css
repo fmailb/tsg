@@ -13,6 +13,7 @@ a:hover,a.white:hover,a.red2:hover { color: #F00; }
 [type=submit]{cursor: pointer;}
 input[type=text]:focus {background-color: #FFF;}
 .clear{clear:both;height: 0px}
+.left{float:left;left:0px} .right{float:right;right:0px}
 /***************/
 /*头部*/
 /***************/
@@ -28,9 +29,10 @@ input[type=text]:focus {background-color: #FFF;}
 .headerTop li:hover{background-color: #575757 ;}
 .headerTop a:hover{color:#fff;}
 /*漂浮*/
-.affixNews{float: left;position: fixed;width: 200px;z-index: 1030}
-.affixNews div{margin: 140px auto;width: 100px; background-color:#992e1c;text-align: center;
+.affixNews{position: fixed;width: 200px;z-index: 1030}
+.affixNews div{margin: 0 auto;margin-top: 140px;width: 100px; background-color:#992e1c;text-align: center;
     word-break: break-all;font-size:16px;}
+.affixNews p{background-color:#F1EEE4 ;text-align: right;font-size: 12px;cursor: pointer}
 .headerBottom{height: 140px;}
 .headerBottom img{}
 .searchform{float:right;margin-top: 22px;position: relative}
